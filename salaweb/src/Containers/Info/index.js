@@ -15,7 +15,7 @@ class Info extends React.Component {
     return (
       <div className="info">
         <TopBar>
-          <GlobalNav />
+          <GlobalNav active="info" />
         </TopBar>
         <div className="container">
           <div className="col col-12">

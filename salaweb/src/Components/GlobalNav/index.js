@@ -9,27 +9,33 @@ class GlobalNav extends React.Component {
   componentDidMount() {}
 
   render() {
+    const { active } = this.props;
+
+    let className = 'global-nav ';
 
     return (
-      <div className="global-nav">
+      <div className={className}>
         <Link
           to="/"
-          replace
-          className="nav__link"
+          className="global-nav__home-link"
         >
-          home
+          Salatino.
         </Link>
         <Link
           to="/info"
-          replace
-          className="nav__link"
+          className= {
+            'global-nav__link' +
+            (active === "info" ? ' global-nav__link-active' : '')
+          }
         >
           info
         </Link>
         <Link
           to="/projects"
-          replace
-          className="nav__link"
+          className= {
+            'global-nav__link' +
+            (active === "projects" ? ' global-nav__link-active' : '')
+          }
         >
           currently working
         </Link>

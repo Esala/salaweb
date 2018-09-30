@@ -9,4 +9,21 @@
 
 .global-nav {
   font-size: 0.75rem;
-  line-height: 1.125rem; }
+  line-height: 1.125rem;
+  position: relative; }
+  .global-nav .global-nav__home-link {
+    font-family: es-display, sans-serif;
+    margin-right: 9px;
+    text-decoration: none;
+    position: fixed;
+    top: 54px;
+    left: 9px;
+    transform: rotate(-90deg);
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .global-nav .global-nav__link {
+    margin-right: 9px; }
+    .global-nav .global-nav__link.global-nav__link-active {
+      color: #448CFF;
+      cursor: default;
+      pointer-events: none; }

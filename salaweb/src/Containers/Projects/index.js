@@ -15,7 +15,7 @@ class Projects extends React.Component {
     return (
       <div className="projects">
         <TopBar>
-          <GlobalNav />
+          <GlobalNav active="projects" />
         </TopBar>
         <div className="container">
           <div className="col col-12">

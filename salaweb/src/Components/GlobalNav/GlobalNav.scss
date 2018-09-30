@@ -2,4 +2,24 @@
 .global-nav {
   font-size: font-size(s);
   line-height: line-height(s);
+  position: relative;
+  .global-nav__home-link {
+    font-family: font-family(display);
+    margin-right: spacing(9);
+    text-decoration: none;
+    position: fixed;
+    top: spacing(54);
+    left: spacing(9);
+    transform: rotate(-90deg);
+    font-size: font-size();
+    line-height: line-height();
+  }
+  .global-nav__link {
+    margin-right: spacing(9);
+    &.global-nav__link-active {
+      color: color(blue);
+      cursor: default;
+      pointer-events: none;
+    }
+  }
 }
