@@ -52,8 +52,7 @@ a {
   cursor: pointer;
   color: #1C2F4D; }
   a:hover {
-    color: #1C2F4D;
-    text-decoration: none; }
+    color: #448CFF; }
 
 .transition-fast {
   transition: all 0.1s ease-in-out; }

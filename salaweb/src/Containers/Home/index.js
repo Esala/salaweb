@@ -16,30 +16,26 @@ class Home extends React.Component {
           <div className="col col-12">
             <h1>Hi, I’m Ezequiel Salatino.<br/><span className="highlight">UI Designer</span>, living in <br/>Mendoza, Argentina.</h1>
             <p className="p-b">
-              <Link
-                to="/projects/"
-                className="link"
-              >
+              <Link to="/info/">
                 info
               </Link>
               <br/>
-              <Link
-                to="/projects/"
-                className="link"
-              >
+              <Link to="/projects/">
                 currently working
               </Link>
               <br/>
-              <Link
-                to="/projects/"
-                className="link"
+              <a
+                href="https://www.behance.net/EzequielSalatino"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 old work
-              </Link>
+              </a>
             </p>
 
           </div>
         </div>
+
       </div>
     );
   }

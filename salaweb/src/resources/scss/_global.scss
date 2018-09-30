@@ -34,8 +34,8 @@ a {
   cursor: pointer;
   color: color(black);
   &:hover {
-    color: color(black);
-    text-decoration: none;
+    color: color(blue);
+    
   }
 }
 @import "globals/_grid.scss";
