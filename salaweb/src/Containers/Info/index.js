@@ -8,7 +8,9 @@ import GlobalNav from 'app/Components/GlobalNav/index.js';
 import './Info.css';
 
 class Info extends React.Component {
-  componentDidMount() {}
+  componentDidMount() {
+     document.title = "About me - Ezequiel Salatino";
+  }
 
   render() {
 

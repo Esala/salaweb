@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import './Projects.css';
 
 class Projects extends React.Component {
-  componentDidMount() {}
+  componentDidMount() {document.title = "Currently Working - Ezequiel Salatino";}
 
   render() {
 

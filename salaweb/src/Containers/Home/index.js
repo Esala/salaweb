@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 class Home extends React.Component {
-  componentDidMount() {}
+  componentDidMount() {document.title = "Hi, I'm Ezequiel Salatino";}
 
   render() {
 
