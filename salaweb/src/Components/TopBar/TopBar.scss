@@ -1,0 +1,7 @@
+@import 'app/resources/scss/_foundation.scss';
+.top-bar {
+  background-color: color(white, lighten);
+  padding: spacing(18) 0;
+  font-size: font-size(s);
+  line-height: line-height(s);
+}

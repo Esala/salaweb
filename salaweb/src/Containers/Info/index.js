@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import TopBar from 'app/Components/TopBar/index.js';
+import GlobalNav from 'app/Components/GlobalNav/index.js';
 
 
 import './Info.css';
@@ -12,11 +14,11 @@ class Info extends React.Component {
 
     return (
       <div className="info">
+        <TopBar>
+          <GlobalNav />
+        </TopBar>
         <div className="container">
           <div className="col col-12">
-            <Link to="/">
-              Back
-            </Link>
             <h1>I’m a designer interested in user interfaces, design systems, maps & data visualizations.</h1>
           </div>
         </div>
