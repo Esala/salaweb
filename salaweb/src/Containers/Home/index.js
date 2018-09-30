@@ -12,14 +12,34 @@ class Home extends React.Component {
 
     return (
       <div className="home">
-          <h1>Home page</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quae natus soluta obcaecati. Fugiat est reprehenderit nemo quia ipsam. Mollitia autem modi corrupti quo deserunt numquam, quam ut consequuntur laborum.</p>
-        <Link
-          to="/projects/"
-          className="link"
-        >
-          Projects
-        </Link>
+        <div className="container">
+          <div className="col col-12">
+            <h1>Hi, I’m Ezequiel Salatino.<br/><span className="highlight">UI Designer</span>, living in <br/>Mendoza, Argentina.</h1>
+            <p className="p-b">
+              <Link
+                to="/projects/"
+                className="link"
+              >
+                info
+              </Link>
+              <br/>
+              <Link
+                to="/projects/"
+                className="link"
+              >
+                currently working
+              </Link>
+              <br/>
+              <Link
+                to="/projects/"
+                className="link"
+              >
+                old work
+              </Link>
+            </p>
+
+          </div>
+        </div>
       </div>
     );
   }

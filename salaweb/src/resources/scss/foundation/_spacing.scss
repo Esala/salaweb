@@ -1,0 +1,25 @@
+//SPACING
+$block: 9px;
+
+$spacing-map: (
+  none: 0,
+  9: $block,
+  18: $block*2,
+  27: $block * 3,
+  36: $block * 4,
+  45: $block * 5,
+  54: $block * 6,
+  63: $block * 7,
+  72: $block * 8
+);
+
+
+@function spacing($variant: 36) {
+  $fetched-value: map-get($spacing-map, $variant);
+
+  @if type-of($fetched-value) == number {
+    @return $fetched-value;
+  } @else {
+    @error 'Spacing variant `#{$variant}` not found. Available variants: #{available-names($spacing-map)}';
+  }
+}

@@ -1,9 +1,44 @@
-body{
-  background-color: #F7F7F7;
+@import "_foundation.scss";
+@import "globals/_fonts.scss";
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.link {
-
+*:focus {
+  outline: none;
 }
 
+body,
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: font-family();
+  line-height: line-height();
+  font-size: $basicFontSize;
+  color: color(black);
+  background-color: color(white);
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: color(black);
+  &:hover {
+    color: color(black);
+    text-decoration: none;
+  }
+}
+@import "globals/_grid.scss";
+@import "globals/_paragraphs.scss";
+@import "globals/_headings.scss";
 @import "globals/_page_transitions.scss";

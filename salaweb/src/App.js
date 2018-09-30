@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <Router>
         <div className="main">
-          <Nav />
+          {/* <Nav /> */}
           <PageContainer />
         </div>
       </Router>

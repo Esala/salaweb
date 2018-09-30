@@ -1,0 +1,37 @@
+//Paragraphs
+@import 'app/resources/scss/_foundation.scss';
+p {
+  font-family: font-family();
+  font-size: font-size();
+  line-height: line-height();
+  margin: 0;
+  padding: 0 0 line-height() 0;
+  max-width: $block*98;
+  color: color(black);
+  &.p-b {
+    font-size: font-size(b);
+    line-height: line-height(b);
+    max-width: $block*112;
+    padding-bottom: line-height(b);
+    //Mobile
+    @media only screen and (max-width: $mobile) {
+      font-size: $block*3;
+      line-height: $block*4.5;
+
+    }
+  }
+
+  &.p-s {
+    font-size: font-size(s);
+    line-height: line-height(s);
+    max-width: $block*72;
+    padding-bottom: line-height(s);
+    color: color(black);
+
+  }
+
+}
+
+.highlight {
+  color: color(blue);
+}

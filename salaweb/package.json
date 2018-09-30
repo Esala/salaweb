@@ -2,7 +2,7 @@
   "name": "salaweb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://esala.github.io/salaweb",
+  "homepage": "http://esala.github.io/",
 
   "dependencies": {
     "classnames": "^2.2.6",

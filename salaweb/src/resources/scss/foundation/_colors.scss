@@ -1,0 +1,77 @@
+// Need to define the raw colors somewhere!
+// stylelint-disable color-no-hex, function-max-empty-lines, value-list-max-empty-lines
+$color-map: (
+  white: (
+    base: #FAFAFA,
+    lighten: (
+      1: #FFF,
+    )
+  ),
+
+  black: (
+    base: #1C2F4D,
+    darken: (
+      1: #000,
+    )
+  ),
+
+
+  blue: (
+    base: #448CFF,
+    darken: (
+      1: #345B93
+    ),
+    lighten: (
+      1: #99B8E9
+    )
+  )
+
+);
+
+
+/// Returns the color value for a given color name and group.
+///
+/// @param {String} $hue - The color's hue.
+/// @param {String} $value - The darkness/lightness of the color. Defaults to base.
+/// @param {Color} $for-background - The background color on which this color will
+/// appear. Applies a multiply filter to ensure appropriate contrast.
+/// @return {Color} The color value.
+
+@function color($color, $shade: null, $value: 1 ) {
+  @if $shade == null {
+    $fetched-color: map-get(map-get($color-map, $color), base);
+    @if map-has-key($color-map, $fetched-color) {
+      $fetched-color: map-get(map-get($color-map, $fetched-color), base);
+    }
+
+    @if type-of($fetched-color) == color {
+      @return $fetched-color;
+    } @else {
+      @error 'Color `#{$color} - #{$value}` not found. Available colors: #{available-names($color-map)}';
+    }
+
+  }@else {
+
+    $color-hue: map-get(map-get($color-map, $color), $shade);
+    @if map-has-key(map-get($color-map, $color), $shade) {
+      $color-hue: map-get(map-get($color-map, $color), $shade);
+
+      $fetched-color: map-get($color-hue, $value);
+
+      @if map-has-key($color-hue, $fetched-color) {
+        $fetched-color: map-get($color-hue, $value);
+      }
+
+      @if type-of($fetched-color) == color {
+        @return $fetched-color;
+      } @else {
+        @error 'Value `#{$value}` not found. Available values for this shade: #{available-names($color-hue)}';
+      }
+
+    }@else {
+      @error 'Shade `#{$shade}` not found. Available shades: #{available-names(map-get($color-map, $color))}';
+    }
+
+
+  }
+}

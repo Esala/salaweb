@@ -12,15 +12,19 @@ class Projects extends React.Component {
 
     return (
       <div className="projects">
-        <h1>Projects page</h1>
+        <div className="container">
+          <div className="col col-12">
+        <h1>Projects</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus commodi voluptates reiciendis voluptas aut. Alias dolorem ea eius error quas quisquam dignissimos repudiandae reiciendis, id beatae! Doloremque hic asperiores provident.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus commodi voluptates reiciendis voluptas aut. Alias dolorem ea eius error quas quisquam dignissimos repudiandae reiciendis, id beatae! Doloremque hic asperiores provident.</p>
-        <Link
-          to="/"
-          className="link"
-        >
-          Home
-        </Link>
+            <Link
+              to="/"
+              className="link"
+            >
+              Home
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }
