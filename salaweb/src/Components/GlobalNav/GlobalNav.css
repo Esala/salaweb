@@ -28,7 +28,7 @@
     position: absolute;
     left: -18px;
     top: 45px;
-    transform: rotate(-90deg);
+    transform: rotate(170deg);
     font-size: 1rem;
     line-height: 1.5rem;
     -webkit-perspective: 900000px;
@@ -36,7 +36,7 @@
     .global-nav .global-nav__home-link:hover {
       color: #1C2F4D;
       text-decoration: underline;
-      transform: rotate(-93deg); }
+      transform: rotate(173deg); }
     @media only screen and (max-width: 768px) {
       .global-nav .global-nav__home-link {
         background-color: #FFF;

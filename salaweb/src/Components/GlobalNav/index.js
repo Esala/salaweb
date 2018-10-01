@@ -23,7 +23,7 @@ class GlobalNav extends React.Component {
             Salatino.
           </Link>
         </div>
-
+        
         <Link
           to="/info"
           className= {
