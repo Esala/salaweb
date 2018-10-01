@@ -25,7 +25,9 @@
     left: 0;
     transform: rotate(-90deg);
     font-size: 1rem;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    -webkit-perspective: 900000px;
+    perspective: 900000px; }
     .global-nav .global-nav__home-link:hover {
       color: #1C2F4D;
       text-decoration: underline;

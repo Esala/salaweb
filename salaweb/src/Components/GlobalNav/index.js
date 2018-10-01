@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import './GlobalNav.css';
 
 class GlobalNav extends React.Component {
-  componentDidMount() {}
+  componentDidMount() { }
 
   render() {
     const { active } = this.props;

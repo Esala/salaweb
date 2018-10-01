@@ -19,6 +19,8 @@
     transform: rotate(-90deg);
     font-size: font-size();
     line-height: line-height();
+    -webkit-perspective: 900000px;
+    perspective: 900000px;
     &:hover {
       color: color(black);
       text-decoration: underline;

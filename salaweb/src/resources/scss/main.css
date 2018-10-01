@@ -53,6 +53,9 @@ a {
   color: #1C2F4D; }
   a:hover {
     color: #448CFF; }
+    @media only screen and (max-width: 768px) {
+      a:hover {
+        color: #1C2F4D; } }
 
 .transition-fast {
   transition: all 0.1s ease-in-out; }

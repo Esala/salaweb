@@ -35,7 +35,10 @@ a {
   color: color(black);
   &:hover {
     color: color(blue);
-    
+    //Mobile
+    @media only screen and (max-width: $mobile) {
+      color: color(black);
+    }
   }
 }
 @import "globals/_grid.scss";
