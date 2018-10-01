@@ -13,7 +13,7 @@ import './Psychopharmacology.css';
 class Psychopharmacology extends React.Component {
   componentDidMount() {
     document.title = "Psychopharmacology Institute - Ezequiel Salatino";
-    scrollToComponent(this.projectSection, { offset: 0, align: 'top', duration: 1500, ease:'inOutCirc'});
+    scrollToComponent(this.projectSection, { offset: 0, align: 'top', duration: 1, ease:'inOutCirc'});
   }
 
   render() {
