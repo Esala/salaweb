@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
+import animateScrollTo from 'animated-scroll-to';
 import Home from '../Home/index.js';
 import Info from '../Info/index.js';
 import Projects from '../Projects/index.js';
@@ -20,6 +20,19 @@ function PageContainer({ location }) {
           key={location.key}
           timeout={{ enter: 300, exit: 300 }}
           classNames={'fade'}
+          mountOnEnter
+          unmountOnExit
+          addEndListener={(n, done) => {
+
+
+            setTimeout(function() {
+              var locationTo = this.location.href;
+              if (locationTo.indexOf("/projects/") > 0){
+                animateScrollTo(145, {speed:500});
+              }
+            }, 10);
+
+          }}
         >
           <div className="page-container">
             <Switch location={location}>

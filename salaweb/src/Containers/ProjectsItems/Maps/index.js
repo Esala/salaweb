@@ -4,15 +4,15 @@ import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
 import ProjectsNav from 'app/Components/ProjectsNav/index.js';
 import ProjectStructure from 'app/Components/ProjectStructure/index.js';
-import scrollToComponent from 'react-scroll-to-component';
-
+import Image from 'app/Components/Image/index.js';
 
 import './Maps.css';
 
 class Maps extends React.Component {
   componentDidMount() {
     document.title = "Some Maps - Ezequiel Salatino";
-    scrollToComponent(this.projectSection, { offset: 0, align: 'top', duration: 1, ease:'inOutCirc'});
+
+
 }
 
   render() {
@@ -23,10 +23,19 @@ class Maps extends React.Component {
           <GlobalNav active="projects" />
           <ProjectsNav active="maps"/>
         </TopBar>
-        <ProjectStructure ref={(section) => { this.projectSection = section; }} title="Some Maps" color="#F8ECF0" description="Some maps created for a couple of websites." next="/projects/psychopharmacology-institute" >
-          <div className="col col-12">
-            ...
-          </div>
+        <ProjectStructure title="Some Maps" color="#F8ECF0" description="Some maps created for a couple of websites." next="/projects/psychopharmacology-institute" >
+        <div className="col col-6 col-m-12">
+          <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
+        </div>
+        <div className="col col-6 col-m-12">
+          <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/limon.png'} />
+        </div>
+        <div className="col col-6 col-m-12">
+          <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />
+        </div>
+        <div className="col col-6 col-m-12">
+          <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/tomate.png'} />
+        </div>
         </ProjectStructure>
       </div>
     );

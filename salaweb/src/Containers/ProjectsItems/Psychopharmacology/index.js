@@ -5,7 +5,8 @@ import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
 import ProjectsNav from 'app/Components/ProjectsNav/index.js';
 import ProjectStructure from 'app/Components/ProjectStructure/index.js';
-import scrollToComponent from 'react-scroll-to-component';
+import Image from 'app/Components/Image/index.js';
+
 
 
 import './Psychopharmacology.css';
@@ -13,7 +14,7 @@ import './Psychopharmacology.css';
 class Psychopharmacology extends React.Component {
   componentDidMount() {
     document.title = "Psychopharmacology Institute - Ezequiel Salatino";
-    scrollToComponent(this.projectSection, { offset: 0, align: 'top', duration: 1, ease:'inOutCirc'});
+
   }
 
   render() {
@@ -26,16 +27,34 @@ class Psychopharmacology extends React.Component {
           <ProjectsNav active="psychopharmacology"/>
         </TopBar>
         <Desktop>
-          <ProjectStructure ref={(section) => { this.projectSection = section; }} title="Psychopharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. Web / UI design. Educational platform." next="/projects/yacopini" >
-          <div className="col col-12">
-            ...
+          <ProjectStructure title="Psychopharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. Web / UI design. Educational platform." next="/projects/yacopini" >
+          <div className="col col-6 col-m-12">
+            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
+          </div>
+          <div className="col col-6 col-m-12">
+            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/limon.png'} />
+          </div>
+          <div className="col col-6 col-m-12">
+            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />
+          </div>
+          <div className="col col-6 col-m-12">
+            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/tomate.png'} />
           </div>
           </ProjectStructure>
         </Desktop>
         <Mobile>
-          <ProjectStructure ref={(section) => { this.projectSection = section; }} title="Psycho- pharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. Web / UI design. Educational platform." next="/projects/yacopini" >
-          <div className="col col-12">
-            ...
+          <ProjectStructure  title="Psycho- pharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. Web / UI design. Educational platform." next="/projects/yacopini" >
+          <div className="col col-6 col-m-12">
+            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
+          </div>
+          <div className="col col-6 col-m-12">
+            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/limon.png'} />
+          </div>
+          <div className="col col-6 col-m-12">
+            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />
+          </div>
+          <div className="col col-6 col-m-12">
+            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/tomate.png'} />
           </div>
           </ProjectStructure>
         </Mobile>
