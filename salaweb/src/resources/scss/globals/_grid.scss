@@ -1,14 +1,6 @@
 //GRID
 @import 'app/resources/scss/_foundation.scss';
-//responsive breakpoints
-$desktop: 1280px;
-$tablet: 1024px;
-$mobile: 768px;
-$mobileSmall: 375px;
-//container responsive widths
-$containerDesktop: 1197px;
-$containerTablet: 760px;
-$containerMobile: 100%;
+
 
 
 // This is mixin which you will include in parent
@@ -49,8 +41,8 @@ $containerMobile: 100%;
     //Mobile
     @media only screen and (max-width: $mobile) {
         width: 100% !important;
-        padding-left: 1em !important;
-        padding-right: 1em !important;
+        padding-left: $block*2 !important;
+        padding-right: $block*2 !important;
     }
 
     &.fluid { width: percentage($col/$sum); }

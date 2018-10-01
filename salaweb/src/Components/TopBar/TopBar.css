@@ -12,3 +12,8 @@
   padding: 18px 0;
   font-size: 0.75rem;
   line-height: 1.125rem; }
+  @media only screen and (max-width: 768px) {
+    .top-bar {
+      padding-left: 45px;
+      padding-top: 9px;
+      padding-bottom: 9px; } }

@@ -39,6 +39,14 @@ class GlobalNav extends React.Component {
         >
           currently working
         </Link>
+        <a
+          href="https://www.behance.net/EzequielSalatino"
+          target="_blank"
+          rel="noopener noreferrer"
+          className= {'global-nav__link'}
+        >
+          old work
+        </a>
       </div>
     );
   }

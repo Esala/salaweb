@@ -19,7 +19,10 @@ h1 {
   margin-bottom: heading-line-height(h1)/2;
   //Mobile
   @media only screen and (max-width: $mobile) {
-
+    font-size: heading-font-size(h1_mobile);
+    line-height: heading-line-height(h1_mobile);
+    margin-top: heading-line-height(h1_mobile);
+    margin-bottom: heading-line-height(h1_mobile)/2;
   }
 }
 h2 {
@@ -30,7 +33,10 @@ h2 {
   margin-bottom: heading-line-height(h2)/2;
   //Mobile
   @media only screen and (max-width: $mobile) {
-
+    font-size: heading-font-size(h1_mobile);
+    line-height: heading-line-height(h1_mobile);
+    margin-top: heading-line-height(h1_mobile);
+    margin-bottom: heading-line-height(h1_mobile)/2;
   }
 }
 h3 {
@@ -41,7 +47,10 @@ h3 {
   margin-bottom: heading-line-height(h3)/2;
   //Mobile
   @media only screen and (max-width: $mobile) {
-
+    font-size: heading-font-size(h1_mobile);
+    line-height: heading-line-height(h1_mobile);
+    margin-top: heading-line-height(h1_mobile);
+    margin-bottom: heading-line-height(h1_mobile)/2;
   }
 }
 

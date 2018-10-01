@@ -12,6 +12,10 @@
   line-height: 1.125rem;
   position: relative;
   z-index: 9999; }
+  @media only screen and (max-width: 768px) {
+    .global-nav {
+      white-space: nowrap;
+      overflow-x: auto; } }
   .global-nav .global-nav__home-link {
     font-family: es-display, sans-serif;
     margin-right: 9px;
@@ -22,6 +26,17 @@
     transform: rotate(-90deg);
     font-size: 1rem;
     line-height: 1.5rem; }
+    .global-nav .global-nav__home-link:hover {
+      color: #1C2F4D;
+      text-decoration: underline;
+      transform: rotate(-93deg); }
+    @media only screen and (max-width: 768px) {
+      .global-nav .global-nav__home-link {
+        left: -18px;
+        top: 45px;
+        background-color: #FFF;
+        padding: 9px;
+        margin-right: 0; } }
   .global-nav .global-nav__link {
     margin-right: 9px; }
     .global-nav .global-nav__link.global-nav__link-active {

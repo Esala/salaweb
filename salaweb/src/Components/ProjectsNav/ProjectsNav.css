@@ -12,6 +12,11 @@
   line-height: 1.125rem;
   position: relative;
   padding-top: 9px; }
+  @media only screen and (max-width: 768px) {
+    .projects-nav {
+      white-space: nowrap;
+      overflow-x: auto;
+      padding-top: 18px; } }
   .projects-nav .projects-nav__link {
     margin-right: 9px; }
     .projects-nav .projects-nav__link.projects-nav__link-active {

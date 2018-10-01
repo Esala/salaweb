@@ -15,8 +15,8 @@ p {
     padding-bottom: line-height(b);
     //Mobile
     @media only screen and (max-width: $mobile) {
-      font-size: $block*3;
-      line-height: $block*4.5;
+      font-size: font-size();
+      line-height: line-height();
 
     }
   }

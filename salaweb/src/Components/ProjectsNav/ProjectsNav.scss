@@ -4,6 +4,12 @@
   line-height: line-height(s);
   position: relative;
   padding-top: spacing(9);
+  //Mobile
+  @media only screen and (max-width: $mobile) {
+    white-space: nowrap;
+    overflow-x: auto;
+      padding-top: spacing(18);
+  }
 
   .projects-nav__link {
     margin-right: spacing(9);

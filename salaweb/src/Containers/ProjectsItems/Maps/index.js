@@ -6,20 +6,20 @@ import ProjectsNav from 'app/Components/ProjectsNav/index.js';
 import ProjectStructure from 'app/Components/ProjectStructure/index.js';
 
 
-import './Cooking.css';
+import './Maps.css';
 
-class Cooking extends React.Component {
-  componentDidMount() {document.title = "Cooking App Ideas - Ezequiel Salatino";}
+class Maps extends React.Component {
+  componentDidMount() {document.title = "Some Maps - Ezequiel Salatino";}
 
   render() {
 
     return (
-      <div className="cooking">
+      <div className="maps">
         <TopBar>
           <GlobalNav active="projects" />
-          <ProjectsNav active="cooking"/>
+          <ProjectsNav active="maps"/>
         </TopBar>
-        <ProjectStructure title="Cooking App Ideas" color="#FFF8F0" description="Nov 2018. UI design. iOS Application."  next="/projects/some-maps" >
+        <ProjectStructure title="Some Maps" color="#F8ECF0" description="Some maps created for a couple of websites." next="/projects/psychopharmacology-institute" >
           aca van las imagenes
         </ProjectStructure>
       </div>
@@ -38,4 +38,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Cooking);
+)(Maps);

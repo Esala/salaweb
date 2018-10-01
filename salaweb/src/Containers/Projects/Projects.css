@@ -9,18 +9,17 @@
 
 .projects .projects__project {
   display: inline-block;
-  width: 100%;
-  margin: 18px 0; }
-  .projects .projects__project:first-child {
-    margin-top: 45px; }
-  .projects .projects__project:last-child {
-    margin-bottom: 45px; }
+  width: 100%; }
   .projects .projects__project .projects__project__card {
     padding: 54px;
     position: relative;
-    transition: all .3s ease-in-out;
-    transform: rotate(0); }
+    transition: all .3s ease-in-out; }
+    @media only screen and (max-width: 768px) {
+      .projects .projects__project .projects__project__card {
+        padding: 18px; } }
     .projects .projects__project .projects__project__card.projects__project__card-light h2, .projects .projects__project .projects__project__card.projects__project__card-light p, .projects .projects__project .projects__project__card.projects__project__card-light a {
+      color: #FAFAFA; }
+    .projects .projects__project .projects__project__card.projects__project__card-light:before {
       color: #FAFAFA; }
     .projects .projects__project .projects__project__card h2 {
       margin-top: 0;
@@ -33,20 +32,22 @@
       top: 0px;
       left: 0;
       width: 100%;
-      height: 100%; }
-    .projects .projects__project .projects__project__card:hover {
-      transform: rotate(-2deg); }
-      .projects .projects__project .projects__project__card:hover:before {
-        opacity: 1;
-        transform: rotate(1deg); }
+      height: 100%;
+      z-index: 10; }
+    .projects .projects__project .projects__project__card:hover h2, .projects .projects__project .projects__project__card:hover p, .projects .projects__project .projects__project__card:hover a {
+      opacity: .5; }
+    .projects .projects__project .projects__project__card:hover:before {
+      opacity: 1; }
     .projects .projects__project .projects__project__card:before {
       position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border: 9px solid #1C2F4D;
-      content: "";
-      transform: rotate(0deg);
+      right: 72px;
+      top: 72px;
+      content: "View";
+      font-family: es-display, sans-serif;
+      font-size: 2.625rem;
+      line-height: 3rem;
       opacity: 0;
-      transition: all .3s ease-in-out; }
+      pointer-events: none; }
+      @media only screen and (max-width: 768px) {
+        .projects .projects__project .projects__project__card:before {
+          display: none; } }

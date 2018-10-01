@@ -21,7 +21,7 @@ class ProjectsNav extends React.Component {
             (active === "psychopharmacology" ? ' projects-nav__link-active' : '')
           }
         >
-          psychopharmacology Institute
+          psychopharmacology institute
         </Link>
         <Link
           to="/projects/yacopini"
@@ -49,6 +49,15 @@ class ProjectsNav extends React.Component {
           }
         >
           cooking app
+        </Link>
+        <Link
+          to="/projects/some-maps"
+          className={
+            'projects-nav__link' +
+            (active === "maps" ? ' projects-nav__link-active' : '')
+          }
+        >
+          some maps
         </Link>
       </div>
     );

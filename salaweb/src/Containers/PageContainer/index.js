@@ -10,6 +10,7 @@ import Psychopharmacology from '../ProjectsItems/Psychopharmacology/index.js';
 import Yacopini from '../ProjectsItems/Yacopini/index.js';
 import Mercadon from '../ProjectsItems/Mercadon/index.js';
 import Cooking from '../ProjectsItems/Cooking/index.js';
+import Maps from '../ProjectsItems/Maps/index.js';
 
 function PageContainer({ location }) {
   return (
@@ -30,6 +31,7 @@ function PageContainer({ location }) {
               <Route  path="/projects/yacopini" exact component={Yacopini} />
               <Route  path="/projects/el-mercadon" exact component={Mercadon} />
               <Route  path="/projects/cooking-app" exact component={Cooking} />
+              <Route  path="/projects/some-maps" exact component={Maps} />
             </Switch>
           </div>
         </CSSTransition>

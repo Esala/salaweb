@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Responsive from 'react-responsive';
 import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
 import ProjectsNav from 'app/Components/ProjectsNav/index.js';
@@ -12,16 +13,25 @@ class Psychopharmacology extends React.Component {
   componentDidMount() {document.title = "Psychopharmacology Institute - Ezequiel Salatino";}
 
   render() {
-
+    const Desktop = props => <Responsive {...props} minWidth={1280} />;
+    const Mobile = props => <Responsive {...props} maxWidth={1279} />;
     return (
       <div className="psychopharmacology">
         <TopBar>
           <GlobalNav active="projects" />
           <ProjectsNav active="psychopharmacology"/>
         </TopBar>
-        <ProjectStructure title="Psychopharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. Web / UI design. Educational platform." next="/projects/yacopini" >
-          aca van las imagenes
-        </ProjectStructure>
+        <Desktop>
+          <ProjectStructure title="Psychopharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. Web / UI design. Educational platform." next="/projects/yacopini" >
+            aca van las imagenes
+          </ProjectStructure>
+        </Desktop>
+        <Mobile>
+          <ProjectStructure title="Psycho- pharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. Web / UI design. Educational platform." next="/projects/yacopini" >
+            aca van las imagenes
+          </ProjectStructure>
+        </Mobile>
+
       </div>
     );
   }

@@ -27,6 +27,12 @@
     padding: spacing(72) 0;
     font-size: font-size(b);
     line-height: line-height(b);
+    //Mobile
+    @media only screen and (max-width: $mobile) {
+      font-size: font-size();
+      line-height: line-height();
+      padding: spacing(36) 0;
+    }
     a {
       &:hover {
         color: color(black);
@@ -35,10 +41,19 @@
     }
   }
   .project-structure__info {
+    overflow: hidden;
 
     h1 {
       padding-top: spacing(72);
       margin: 0;
+      //Mobile
+      @media only screen and (max-width: $mobile) {
+          font-size: heading-font-size(h2);
+          line-height: heading-line-height(h2);
+          margin-bottom: spacing(36);
+          word-break:normal;
+          padding-right: spacing(36);
+      }
     }
     .project-structure__info__description {
       vertical-align: bottom;
