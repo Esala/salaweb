@@ -1,12 +1,3 @@
-.transition-fast {
-  transition: all 0.1s ease-in-out; }
-
-.transition {
-  transition: all 0.3s ease-in-out; }
-
-.transition-slow {
-  transition: all 1s ease-in-out; }
-
 .global-nav {
   font-size: 0.75rem;
   line-height: 1.125rem;
@@ -31,7 +22,6 @@
     perspective: 900000px; }
     .global-nav .global-nav__home-link:hover {
       color: #1C2F4D;
-      text-decoration: underline;
       transform: rotate(-93deg); }
     @media only screen and (max-width: 768px) {
       .global-nav .global-nav__home-link {

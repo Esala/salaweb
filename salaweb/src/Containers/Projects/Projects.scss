@@ -1,16 +1,22 @@
 @import 'app/resources/scss/_foundation.scss';
 
 .projects {
-
+  line-height: 0;
   .projects__project {
     display: inline-block;
     width: 100%;
+    margin: 0;
 
 
     .projects__project__card {
       padding: spacing(54);
+
       position: relative;
-      
+      min-height: 340px;
+      overflow: hidden;
+      margin: 0;
+
+
       //Mobile
       @media only screen and (max-width: breakpoint(tabletSD)) {
         padding: spacing(18);
@@ -27,9 +33,11 @@
       h2{
         margin-top: 0;
         margin-bottom: spacing(18);
+        transition: transition();
       }
       p {
         padding: 0 0 spacing(9);
+        transition: transition();
       }
       a {
         display: block;
@@ -39,26 +47,32 @@
         width: 100%;
         height: 100%;
         z-index: 10;
+        transition: transition();
       }
       &:hover {
         h2, p, a {
           opacity: .5;
+          //Mobile
+          @media only screen and (max-width: breakpoint(tabletSD)) {
+            opacity: 1;
+          }
         }
         &:before {
           opacity: 1;
-
+          bottom: spacing(36);
         }
       }
       &:before {
         position: absolute;
         right: spacing(72);
-        top: spacing(72);
-        content: "View";
+        bottom: - spacing(72);
+        content: ".";
         font-family: font-family(display);
-        font-size: heading-font-size(h2);
-        line-height: heading-line-height(h2);
+        font-size: 432px;
+        line-height: 1;
         opacity: 0;
         pointer-events: none;
+        transition: transition();
         //Mobile
         @media only screen and (max-width: breakpoint(tabletSD)) {
           display: none;

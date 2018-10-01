@@ -16,11 +16,11 @@ class Home extends React.Component {
           <div className="col col-12">
             <h1 className="page-component page-component-1">Hi, I’m Ezequiel Salatino. <span className="highlight">UI Designer</span>, living in Mendoza, Argentina.</h1>
             <p className="p-b page-component page-component-2">
-              <Link to="/info/" className="page-component page-component-3">
+              <Link to="/info/">
                 info
               </Link>
               <br/>
-              <Link to="/projects/"  className="page-component page-component-5">
+              <Link to="/projects/"  >
                 currently working
               </Link>
               <br/>
@@ -28,7 +28,7 @@ class Home extends React.Component {
                 href="https://www.behance.net/EzequielSalatino"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="page-component page-component-7"
+                
               >
                 old work
               </a>

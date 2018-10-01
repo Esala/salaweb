@@ -33,6 +33,7 @@ a {
   text-decoration: underline;
   cursor: pointer;
   color: color(black);
+  transition: transition(fast);
   &:hover {
     color: color(blue);
     //Mobile

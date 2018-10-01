@@ -1,15 +1,15 @@
 
 
 $transition-speed-map: (
-  basic: .3s,
-  slow: 1s,
+  basic: .4s,
+  slow: 1.2s,
   fast: .1s
 );
 
 $transition-easing-map: (
-  basic: ease-in-out,
-  out: ease-out,
-  in: ease-in
+  basic: cubic-bezier(.58,-0.19,.54,1.05),
+  out: cubic-bezier(.91,-0.22,.76,.91),
+  in: cubic-bezier(.23,-0.24,.25,1.01)
 );
 
 
@@ -27,15 +27,4 @@ $transition-easing-map: (
   } @else {
     @error 'Speed variant `#{$speed}` not found. Available variants: #{available-names($transition-speed-map)}';
   }
-}
-
-
-.transition-fast {
-  transition: transition(fast);
-}
-.transition {
-  transition: transition();
-}
-.transition-slow {
-  transition: transition(slow);
 }

@@ -30,7 +30,7 @@ function PageContainer({ location }) {
               if (locationTo.indexOf("/projects/") > 0){
                 animateScrollTo(145, {speed:400,  minDuration: 400,  maxDuration: 600,});
               }
-            }, 10);
+            }, 50);
 
           }}
         >
