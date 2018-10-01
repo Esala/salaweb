@@ -23,7 +23,7 @@
     position: absolute;
     left: - spacing(18);
     top: spacing(45);
-    transform: rotate(-90deg);
+    transform: rotate(170deg);
     font-size: font-size();
     line-height: line-height();
     -webkit-perspective: 900000px;
@@ -31,7 +31,7 @@
     &:hover {
       color: color(black);
       text-decoration: underline;
-      transform: rotate(-93deg);
+      transform: rotate(173deg);
     }
     //Mobile
     @media only screen and (max-width: breakpoint(tabletSD)) {
