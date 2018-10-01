@@ -28,7 +28,7 @@ function PageContainer({ location }) {
             setTimeout(function() {
               var locationTo = this.location.href;
               if (locationTo.indexOf("/projects/") > 0){
-                animateScrollTo(145, {speed:400});
+                animateScrollTo(145, {speed:400,  minDuration: 400,  maxDuration: 600,});
               }
             }, 10);
 

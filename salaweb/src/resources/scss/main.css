@@ -465,7 +465,8 @@ div.transition-group {
 
 .page-component {
   transition: all 1000ms ease-in-out;
-  transition-delay: 800ms; }
+  transition-delay: 800ms;
+  position: relative; }
   .page-component.page-component-1 {
     transition-delay: 100ms; }
   .page-component.page-component-2 {
