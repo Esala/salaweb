@@ -15,12 +15,15 @@ class GlobalNav extends React.Component {
 
     return (
       <div className={className}>
-        <Link
-          to="/"
-          className="global-nav__home-link"
-        >
-          Salatino.
-        </Link>
+        <div className="global-nav__home-link-container">
+          <Link
+            to="/"
+            className="global-nav__home-link"
+          >
+            Salatino.
+          </Link>
+        </div>
+
         <Link
           to="/info"
           className= {

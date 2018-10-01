@@ -16,13 +16,17 @@
     .global-nav {
       white-space: nowrap;
       overflow-x: auto; } }
+  .global-nav .global-nav__home-link-container {
+    position: fixed;
+    top: 0;
+    left: 0; }
   .global-nav .global-nav__home-link {
     font-family: es-display, sans-serif;
     margin-right: 9px;
     text-decoration: none;
-    position: fixed;
-    top: 72px;
-    left: 0;
+    position: absolute;
+    left: -18px;
+    top: 45px;
     transform: rotate(-90deg);
     font-size: 1rem;
     line-height: 1.5rem;
@@ -34,8 +38,6 @@
       transform: rotate(-93deg); }
     @media only screen and (max-width: 768px) {
       .global-nav .global-nav__home-link {
-        left: -18px;
-        top: 45px;
         background-color: #FFF;
         padding: 9px;
         margin-right: 0; } }
