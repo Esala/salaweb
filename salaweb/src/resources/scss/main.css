@@ -430,17 +430,29 @@ h3 {
 
 .fade-enter {
   opacity: 0.01; }
+  .fade-enter .page-component {
+    opacity: 0.01;
+    transform: translateY(-18px); }
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 300ms ease-in; }
+  transition: opacity 400ms ease-in; }
+  .fade-enter.fade-enter-active .page-component {
+    opacity: 1;
+    transform: translateY(0px); }
 
 .fade-exit {
   opacity: 1; }
+  .fade-exit .page-component {
+    opacity: 1;
+    transform: translateY(0px); }
 
 .fade-exit.fade-exit-active {
   opacity: 0.01;
-  transition: opacity 300ms ease-in; }
+  transition: opacity 400ms ease-in; }
+  .fade-exit.fade-exit-active .page-component {
+    opacity: 0.01;
+    transform: translateY(-18px); }
 
 div.transition-group {
   position: relative; }
@@ -450,3 +462,21 @@ div.transition-group {
   width: 100%;
   top: 0;
   left: 0; }
+
+.page-component {
+  transition: all 1000ms ease-in-out;
+  transition-delay: 800ms; }
+  .page-component.page-component-1 {
+    transition-delay: 100ms; }
+  .page-component.page-component-2 {
+    transition-delay: 200ms; }
+  .page-component.page-component-3 {
+    transition-delay: 300ms; }
+  .page-component.page-component-4 {
+    transition-delay: 400ms; }
+  .page-component.page-component-5 {
+    transition-delay: 500ms; }
+  .page-component.page-component-6 {
+    transition-delay: 600ms; }
+  .page-component.page-component-7 {
+    transition-delay: 700ms; }

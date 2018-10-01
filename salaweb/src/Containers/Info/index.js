@@ -16,22 +16,22 @@ class Info extends React.Component {
 
     return (
       <div className="info">
-        <TopBar>
+        <TopBar className="page-component page-component-1">
           <GlobalNav active="info" />
         </TopBar>
-        <div className="container">
+        <div className="container page-component page-component-2">
           <div className="col col-12">
             <h1>I’m a designer interested in user interfaces, design systems, maps & data visualizations.</h1>
           </div>
         </div>
-        <div className="container">
+        <div className="container page-component page-component-3">
           <div className="col col-9">
             <p className="p-b">
               As an element in the world, each pattern is a <span className="highlight">relationship between</span> a certain context, a certain system of forces which occurs repeatedly in that context, and a certain spatial configuration which allows these forces to resolve themselves. As an element of language, a pattern is an instruction, which shows how this spatial configuration can be used, over and over again, to resolve the given system of forces, wherever the context makes it relevant.‎
             </p>
 
           </div>
-          <div className="col col-3">
+          <div className="col col-3 page-component page-component-4">
             <h3>Get in touch</h3>
             <p>
               <Link to="/">

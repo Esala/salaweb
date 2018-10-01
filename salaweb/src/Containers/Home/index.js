@@ -14,8 +14,8 @@ class Home extends React.Component {
       <div className="home">
         <div className="container">
           <div className="col col-12">
-            <h1>Hi, I’m Ezequiel Salatino. <span className="highlight">UI Designer</span>, living in Mendoza, Argentina.</h1>
-            <p className="p-b">
+            <h1 className="page-component page-component-1">Hi, I’m Ezequiel Salatino. <span className="highlight">UI Designer</span>, living in Mendoza, Argentina.</h1>
+            <p className="p-b page-component page-component-2">
               <Link to="/info/">
                 info
               </Link>

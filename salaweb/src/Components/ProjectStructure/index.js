@@ -26,21 +26,21 @@ class ProjectStructure extends React.Component {
         <div className="project-structure__info">
           <div className="container">
             <div className="col col-8">
-              <h1>{title}</h1>
+              <h1 className="page-component page-component-5">{title}</h1>
             </div>
-            <div className="col col-4 project-structure__info__description">
+            <div className="col col-4 project-structure__info__description page-component page-component-6">
               <p>{description}</p>
             </div>
           </div>
         </div>
-        <div className="container project-structure__content">
+        <div className="container project-structure__content page-component page-component-7">
 
             {this.props.children}
-          
+
         </div>
         <div className="container">
           <div className="col col-12">
-            <div className="project-structure__next">
+            <div className="project-structure__next page-component ">
               <Link to={next}>Next project</Link>
             </div>
           </div>

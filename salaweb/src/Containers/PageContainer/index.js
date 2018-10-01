@@ -18,7 +18,7 @@ function PageContainer({ location }) {
       <TransitionGroup className="transition-group">
         <CSSTransition
           key={location.key}
-          timeout={{ enter: 300, exit: 300 }}
+          timeout={{ enter: 400, exit: 400 }}
           classNames={'fade'}
           mountOnEnter
           unmountOnExit
@@ -28,7 +28,7 @@ function PageContainer({ location }) {
             setTimeout(function() {
               var locationTo = this.location.href;
               if (locationTo.indexOf("/projects/") > 0){
-                animateScrollTo(145, {speed:500});
+                animateScrollTo(145, {speed:400});
               }
             }, 10);
 
