@@ -22,6 +22,11 @@
   .project-structure__content {
     padding-top: spacing(144);
     padding-bottom: spacing(72);
+    //Mobile
+    @media only screen and (max-width: breakpoint(tabletSD)) {
+      padding-top: spacing(36);
+      padding-bottom: spacing(36);
+    }
   }
   .project-structure__next {
     padding: spacing(72) 0;

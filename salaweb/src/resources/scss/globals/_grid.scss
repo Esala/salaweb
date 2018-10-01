@@ -100,17 +100,17 @@
     @include col(12, 12, $align: top);
   }
 
-  &.col-m-three {
+  &.col-m-3 {
     @media only screen and (max-width: breakpoint(tabletSD)) {
       @include col(3, 12, $align: top);
     }
   }
-  &.col-m-six {
+  &.col-m-6 {
     @media only screen and (max-width: breakpoint(tabletSD)) {
       @include col(6, 12, $align: top);
     }
   }
-  &.col-m-twelve {
+  &.col-m-12 {
     @media only screen and (max-width: breakpoint(tabletSD)) {
       @include col(12, 12, $align: top);
     }

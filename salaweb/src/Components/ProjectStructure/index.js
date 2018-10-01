@@ -34,9 +34,9 @@ class ProjectStructure extends React.Component {
           </div>
         </div>
         <div className="container project-structure__content">
-          <div className="col col-12">
+
             {this.props.children}
-          </div>
+          
         </div>
         <div className="container">
           <div className="col col-12">
