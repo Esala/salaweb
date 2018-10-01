@@ -80,7 +80,7 @@ a {
   font-size: 0;
   position: relative;
   z-index: 1; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1280px) {
     .row {
       max-width: 760px; } }
   @media only screen and (max-width: 768px) {
@@ -89,7 +89,7 @@ a {
   .row.fluid {
     max-width: 100%; }
 
-.col-1 {
+.col.col-1 {
   width: 8.33333%;
   display: inline-block;
   font-size: 24px;
@@ -97,14 +97,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-1 {
+    .col.col-1 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-1.fluid {
+  .col.col-1.fluid {
     width: 8.33333%; }
 
-.col-2 {
+.col.col-2 {
   width: 16.66667%;
   display: inline-block;
   font-size: 24px;
@@ -112,14 +112,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-2 {
+    .col.col-2 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-2.fluid {
+  .col.col-2.fluid {
     width: 16.66667%; }
 
-.col-3 {
+.col.col-3 {
   width: 25%;
   display: inline-block;
   font-size: 24px;
@@ -127,14 +127,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-3 {
+    .col.col-3 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-3.fluid {
+  .col.col-3.fluid {
     width: 25%; }
 
-.col-4 {
+.col.col-4 {
   width: 33.33333%;
   display: inline-block;
   font-size: 24px;
@@ -142,14 +142,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-4 {
+    .col.col-4 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-4.fluid {
+  .col.col-4.fluid {
     width: 33.33333%; }
 
-.col-5 {
+.col.col-5 {
   width: 41.66667%;
   display: inline-block;
   font-size: 24px;
@@ -157,14 +157,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-5 {
+    .col.col-5 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-5.fluid {
+  .col.col-5.fluid {
     width: 41.66667%; }
 
-.col-6 {
+.col.col-6 {
   width: 50%;
   display: inline-block;
   font-size: 24px;
@@ -172,14 +172,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-6 {
+    .col.col-6 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-6.fluid {
+  .col.col-6.fluid {
     width: 50%; }
 
-.col-7 {
+.col.col-7 {
   width: 58.33333%;
   display: inline-block;
   font-size: 24px;
@@ -187,14 +187,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-7 {
+    .col.col-7 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-7.fluid {
+  .col.col-7.fluid {
     width: 58.33333%; }
 
-.col-8 {
+.col.col-8 {
   width: 66.66667%;
   display: inline-block;
   font-size: 24px;
@@ -202,14 +202,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-8 {
+    .col.col-8 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-8.fluid {
+  .col.col-8.fluid {
     width: 66.66667%; }
 
-.col-9 {
+.col.col-9 {
   width: 75%;
   display: inline-block;
   font-size: 24px;
@@ -217,14 +217,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-9 {
+    .col.col-9 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-9.fluid {
+  .col.col-9.fluid {
     width: 75%; }
 
-.col-10 {
+.col.col-10 {
   width: 83.33333%;
   display: inline-block;
   font-size: 24px;
@@ -232,14 +232,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-10 {
+    .col.col-10 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-10.fluid {
+  .col.col-10.fluid {
     width: 83.33333%; }
 
-.col-11 {
+.col.col-11 {
   width: 91.66667%;
   display: inline-block;
   font-size: 24px;
@@ -247,14 +247,14 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-11 {
+    .col.col-11 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-11.fluid {
+  .col.col-11.fluid {
     width: 91.66667%; }
 
-.col-12 {
+.col.col-12 {
   width: 100%;
   display: inline-block;
   font-size: 24px;
@@ -262,12 +262,66 @@ a {
   padding-right: 18px;
   vertical-align: top; }
   @media only screen and (max-width: 768px) {
-    .col-12 {
+    .col.col-12 {
       width: 100% !important;
       padding-left: 18px !important;
       padding-right: 18px !important; } }
-  .col-12.fluid {
+  .col.col-12.fluid {
     width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .col.col-m-three {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+    vertical-align: top; } }
+  @media only screen and (max-width: 768px) and (max-width: 768px) {
+    .col.col-m-three {
+      width: 100% !important;
+      padding-left: 18px !important;
+      padding-right: 18px !important; } }
+
+@media only screen and (max-width: 768px) {
+    .col.col-m-three.fluid {
+      width: 25%; } }
+
+@media only screen and (max-width: 768px) {
+  .col.col-m-six {
+    width: 50%;
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+    vertical-align: top; } }
+  @media only screen and (max-width: 768px) and (max-width: 768px) {
+    .col.col-m-six {
+      width: 100% !important;
+      padding-left: 18px !important;
+      padding-right: 18px !important; } }
+
+@media only screen and (max-width: 768px) {
+    .col.col-m-six.fluid {
+      width: 50%; } }
+
+@media only screen and (max-width: 768px) {
+  .col.col-m-twelve {
+    width: 100%;
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+    vertical-align: top; } }
+  @media only screen and (max-width: 768px) and (max-width: 768px) {
+    .col.col-m-twelve {
+      width: 100% !important;
+      padding-left: 18px !important;
+      padding-right: 18px !important; } }
+
+@media only screen and (max-width: 768px) {
+    .col.col-m-twelve.fluid {
+      width: 100%; } }
 
 .transition-fast {
   transition: all 0.1s ease-in-out; }

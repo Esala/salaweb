@@ -3,9 +3,9 @@
   font-size: font-size(s);
   line-height: line-height(s);
   position: relative;
-  z-index: 9999;
+  z-index: 8888;
   //Mobile
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: breakpoint(tabletSD)) {
     white-space: nowrap;
     overflow-x: auto;
   }
@@ -13,6 +13,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 9999;
 
   }
   .global-nav__home-link {
@@ -33,11 +34,13 @@
       transform: rotate(-93deg);
     }
     //Mobile
-    @media only screen and (max-width: $mobile) {
+    @media only screen and (max-width: breakpoint(tabletSD)) {
 
       background-color: color(white, lighten);
-      padding: spacing(9);
+      padding: spacing(9) spacing(27) spacing(9) spacing(18);
       margin-right: 0;
+      left: - spacing(45) ;
+      top: spacing(27) ;
     }
 
   }

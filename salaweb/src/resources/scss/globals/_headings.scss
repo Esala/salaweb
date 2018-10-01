@@ -18,7 +18,7 @@ h1 {
   margin-top: heading-line-height(h1);
   margin-bottom: heading-line-height(h1)/2;
   //Mobile
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: breakpoint(tabletSD)) {
     font-size: heading-font-size(h1_mobile);
     line-height: heading-line-height(h1_mobile);
     margin-top: heading-line-height(h1_mobile);
@@ -32,7 +32,7 @@ h2 {
   margin-top: heading-line-height(h2);
   margin-bottom: heading-line-height(h2)/2;
   //Mobile
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: breakpoint(tabletSD)) {
     font-size: heading-font-size(h1_mobile);
     line-height: heading-line-height(h1_mobile);
     margin-top: heading-line-height(h1_mobile);
@@ -46,7 +46,7 @@ h3 {
   margin-top: heading-line-height(h3);
   margin-bottom: heading-line-height(h3)/2;
   //Mobile
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: breakpoint(tabletSD)) {
     font-size: heading-font-size(h1_mobile);
     line-height: heading-line-height(h1_mobile);
     margin-top: heading-line-height(h1_mobile);
@@ -57,10 +57,10 @@ h3 {
 
 
 //Tablet
-@media only screen and (max-width: $tablet) {
+@media only screen and (max-width: breakpoint(desktopSD)) {
 
 }
 //Mobile
-@media only screen and (max-width: $mobile) {
+@media only screen and (max-width: breakpoint(tabletSD)) {
 
 }

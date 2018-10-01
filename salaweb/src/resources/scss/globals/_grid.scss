@@ -14,12 +14,12 @@
   z-index: 1;
 
   //Tablet
-  @media only screen and (max-width: $tablet) {
+  @media only screen and (max-width: breakpoint(desktopSD)) {
       max-width: $containerTablet;
   }
 
   //Mobile
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: breakpoint(tabletSD)) {
       max-width: $containerMobile;
   }
   &.fluid { max-width: 100%; }
@@ -36,10 +36,10 @@
     vertical-align: $align;
 
     //Tablet
-    @media only screen and (max-width: $tablet) {
+    @media only screen and (max-width: breakpoint(desktopSD)) {
     }
     //Mobile
-    @media only screen and (max-width: $mobile) {
+    @media only screen and (max-width: breakpoint(tabletSD)) {
         width: 100% !important;
         padding-left: $block*2 !important;
         padding-right: $block*2 !important;
@@ -54,7 +54,7 @@
   max-width: $containerDesktop + (spacing(18)*2) ;
 
   //Mobile
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: breakpoint(tabletSD)) {
     padding: spacing(27) spacing(9);
   }
 }
@@ -62,39 +62,57 @@
   @include row;
 
 }
-.col-1 {
-  @include col(1, 12, $align: top);
-}
-.col-2 {
-  @include col(2, 12, $align: top);
-}
-.col-3 {
-  @include col(3, 12, $align: top);
-}
-.col-4 {
-  @include col(4, 12, $align: top);
-}
-.col-5 {
-  @include col(5, 12, $align: top);
-}
-.col-6 {
-  @include col(6, 12, $align: top);
-}
-.col-7 {
-  @include col(7, 12, $align: top);
-}
-.col-8 {
-  @include col(8, 12, $align: top);
-}
-.col-9 {
-  @include col(9, 12, $align: top);
-}
-.col-10 {
-  @include col(10, 12, $align: top);
-}
-.col-11 {
-  @include col(11, 12, $align: top);
-}
-.col-12 {
-  @include col(12, 12, $align: top);
+.col {
+  &.col-1 {
+    @include col(1, 12, $align: top);
+  }
+  &.col-2 {
+    @include col(2, 12, $align: top);
+  }
+  &.col-3 {
+    @include col(3, 12, $align: top);
+  }
+  &.col-4 {
+    @include col(4, 12, $align: top);
+  }
+  &.col-5 {
+    @include col(5, 12, $align: top);
+  }
+  &.col-6 {
+    @include col(6, 12, $align: top);
+  }
+  &.col-7 {
+    @include col(7, 12, $align: top);
+  }
+  &.col-8 {
+    @include col(8, 12, $align: top);
+  }
+  &.col-9 {
+    @include col(9, 12, $align: top);
+  }
+  &.col-10 {
+    @include col(10, 12, $align: top);
+  }
+  &.col-11 {
+    @include col(11, 12, $align: top);
+  }
+  &.col-12 {
+    @include col(12, 12, $align: top);
+  }
+
+  &.col-m-three {
+    @media only screen and (max-width: breakpoint(tabletSD)) {
+      @include col(3, 12, $align: top);
+    }
+  }
+  &.col-m-six {
+    @media only screen and (max-width: breakpoint(tabletSD)) {
+      @include col(6, 12, $align: top);
+    }
+  }
+  &.col-m-twelve {
+    @media only screen and (max-width: breakpoint(tabletSD)) {
+      @include col(12, 12, $align: top);
+    }
+  }
 }

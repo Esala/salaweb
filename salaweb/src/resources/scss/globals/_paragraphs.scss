@@ -14,7 +14,7 @@ p {
     max-width: $block*112;
     padding-bottom: line-height(b);
     //Mobile
-    @media only screen and (max-width: $mobile) {
+    @media only screen and (max-width: breakpoint(tabletSD)) {
       font-size: font-size();
       line-height: line-height();
 

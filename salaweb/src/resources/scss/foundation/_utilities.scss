@@ -1,13 +1,5 @@
 //
-//responsive breakpoints
-$desktop: 1280px;
-$tablet: 1024px;
-$mobile: 768px;
-$mobileSmall: 375px;
-//container responsive widths
-$containerDesktop: 1197px;
-$containerTablet: 760px;
-$containerMobile: 100%;
+
 /// Slightly lighten a color
 @function lightenColor($color, $percentage) {
   @return mix(#FFF, $color, $percentage);

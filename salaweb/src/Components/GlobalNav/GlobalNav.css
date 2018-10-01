@@ -11,7 +11,7 @@
   font-size: 0.75rem;
   line-height: 1.125rem;
   position: relative;
-  z-index: 9999; }
+  z-index: 8888; }
   @media only screen and (max-width: 768px) {
     .global-nav {
       white-space: nowrap;
@@ -19,7 +19,8 @@
   .global-nav .global-nav__home-link-container {
     position: fixed;
     top: 0;
-    left: 0; }
+    left: 0;
+    z-index: 9999; }
   .global-nav .global-nav__home-link {
     font-family: es-display, sans-serif;
     margin-right: 9px;
@@ -39,8 +40,10 @@
     @media only screen and (max-width: 768px) {
       .global-nav .global-nav__home-link {
         background-color: #FFF;
-        padding: 9px;
-        margin-right: 0; } }
+        padding: 9px 27px 9px 18px;
+        margin-right: 0;
+        left: -45px;
+        top: 27px; } }
   .global-nav .global-nav__link {
     margin-right: 9px; }
     .global-nav .global-nav__link.global-nav__link-active {
