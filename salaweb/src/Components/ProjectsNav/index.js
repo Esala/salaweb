@@ -9,36 +9,46 @@ class ProjectsNav extends React.Component {
   componentDidMount() {}
 
   render() {
+    const { active } = this.props;
+    let className = 'projects-nav ';
 
     return (
-      <div className="projects-nav">
+      <div className={className}>
         <Link
-          to="/"
-          replace
-          className="nav__link"
+          to="/projects/psychopharmacology-institute"
+          className={
+            'projects-nav__link' +
+            (active === "psychopharmacology" ? ' projects-nav__link-active' : '')
+          }
         >
-          Phychopharmacology Institute
+          psychopharmacology Institute
         </Link>
         <Link
-          to="/projects"
-          replace
-          className="nav__link"
+          to="/projects/yacopini"
+          className={
+            'projects-nav__link' +
+            (active === "yacopini" ? ' projects-nav__link-active' : '')
+          }
         >
-          Yacopini
+          yacopini
         </Link>
         <Link
-          to="/projects"
-          replace
-          className="nav__link"
+          to="/projects/el-mercadon"
+          className={
+            'projects-nav__link' +
+            (active === "mercadon" ? ' projects-nav__link-active' : '')
+          }
         >
-          Aker
+          el mercadón
         </Link>
         <Link
-          to="/projects"
-          replace
-          className="nav__link"
+          to="/projects/cooking-app"
+          className={
+            'projects-nav__link' +
+            (active === "cooking" ? ' projects-nav__link-active' : '')
+          }
         >
-          Cooking App
+          cooking app
         </Link>
       </div>
     );

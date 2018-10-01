@@ -300,7 +300,19 @@ p {
     color: #1C2F4D; }
 
 .highlight {
-  color: #448CFF; }
+  color: #448CFF;
+  position: relative;
+  z-index: 0;
+  /*&:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 12px solid color(blue);
+    z-index: -1;
+  }*/ }
 
 .transition-fast {
   transition: all 0.1s ease-in-out; }

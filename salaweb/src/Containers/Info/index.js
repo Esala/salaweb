@@ -27,7 +27,7 @@ class Info extends React.Component {
         <div className="container">
           <div className="col col-9">
             <p className="p-b">
-              As an element in the world, each pattern is a relationship between a certain context, a certain system of forces which occurs repeatedly in that context, and a certain spatial configuration which allows these forces to resolve themselves. As an element of language, a pattern is an instruction, which shows how this spatial configuration can be used, over and over again, to resolve the given system of forces, wherever the context makes it relevant.‎
+              As an element in the world, each pattern is a <span className="highlight">relationship between</span> a certain context, a certain system of forces which occurs repeatedly in that context, and a certain spatial configuration which allows these forces to resolve themselves. As an element of language, a pattern is an instruction, which shows how this spatial configuration can be used, over and over again, to resolve the given system of forces, wherever the context makes it relevant.‎
             </p>
 
           </div>

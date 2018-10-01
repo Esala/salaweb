@@ -10,20 +10,24 @@
 .global-nav {
   font-size: 0.75rem;
   line-height: 1.125rem;
-  position: relative; }
+  position: relative;
+  z-index: 9999; }
   .global-nav .global-nav__home-link {
     font-family: es-display, sans-serif;
     margin-right: 9px;
     text-decoration: none;
     position: fixed;
-    top: 54px;
-    left: 9px;
+    top: 72px;
+    left: 0;
     transform: rotate(-90deg);
     font-size: 1rem;
     line-height: 1.5rem; }
   .global-nav .global-nav__link {
     margin-right: 9px; }
     .global-nav .global-nav__link.global-nav__link-active {
-      color: #448CFF;
+      color: #1C2F4D;
+      opacity: .5;
       cursor: default;
-      pointer-events: none; }
+      text-decoration: line-through; }
+      .global-nav .global-nav__link.global-nav__link-active:hover {
+        color: #1C2F4D; }

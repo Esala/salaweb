@@ -1,4 +1,20 @@
 @import 'app/resources/scss/_foundation.scss';
 .projects-nav {
+  font-size: font-size(s);
+  line-height: line-height(s);
+  position: relative;
+  padding-top: spacing(9);
 
+  .projects-nav__link {
+    margin-right: spacing(9);
+    &.projects-nav__link-active {
+      color: color(black);
+      opacity: .5;
+      cursor: default;
+      &:hover {
+        color: color(black);
+      }
+      text-decoration: line-through;
+    }
+  }
 }

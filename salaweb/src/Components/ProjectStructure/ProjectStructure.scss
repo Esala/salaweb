@@ -1,0 +1,51 @@
+@import 'app/resources/scss/_foundation.scss';
+.project-structure {
+  height: 100%;
+  position: relative;
+  padding: spacing(72) 0;
+  &.project-structure-light {
+    color: color(white);
+    h1, h2, p, a {
+      color: color(white);
+    }
+    .project-structure__next {
+
+      a {
+        &:hover {
+          color: color(white);
+          opacity: .5;
+        }
+      }
+    }
+
+  }
+  .project-structure__content {
+    padding-top: spacing(144);
+    padding-bottom: spacing(72);
+  }
+  .project-structure__next {
+    padding: spacing(72) 0;
+    font-size: font-size(b);
+    line-height: line-height(b);
+    a {
+      &:hover {
+        color: color(black);
+        opacity: .5;
+      }
+    }
+  }
+  .project-structure__info {
+
+    h1 {
+      padding-top: spacing(72);
+      margin: 0;
+    }
+    .project-structure__info__description {
+      vertical-align: bottom;
+      p {
+        margin: 0;
+        padding: 0 0 spacing(9);
+      }
+    }
+  }
+}
