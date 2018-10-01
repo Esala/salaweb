@@ -398,9 +398,9 @@ h1 {
   @media only screen and (max-width: 768px) {
     h1 {
       font-size: 1.33333rem;
-      line-height: 1.875rem;
-      margin-top: 1.875rem;
-      margin-bottom: 0.9375rem; } }
+      line-height: 1.6875rem;
+      margin-top: 1.6875rem;
+      margin-bottom: 0.84375rem; } }
 
 h2 {
   font-size: 2.625rem;
@@ -411,9 +411,9 @@ h2 {
   @media only screen and (max-width: 768px) {
     h2 {
       font-size: 1.33333rem;
-      line-height: 1.875rem;
-      margin-top: 1.875rem;
-      margin-bottom: 0.9375rem; } }
+      line-height: 1.6875rem;
+      margin-top: 1.6875rem;
+      margin-bottom: 0.84375rem; } }
 
 h3 {
   font-size: 1.625rem;
@@ -424,9 +424,9 @@ h3 {
   @media only screen and (max-width: 768px) {
     h3 {
       font-size: 1.33333rem;
-      line-height: 1.875rem;
-      margin-top: 1.875rem;
-      margin-bottom: 0.9375rem; } }
+      line-height: 1.6875rem;
+      margin-top: 1.6875rem;
+      margin-bottom: 0.84375rem; } }
 
 .fade-enter {
   opacity: 0.01; }
