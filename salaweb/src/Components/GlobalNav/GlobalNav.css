@@ -12,10 +12,6 @@
   line-height: 1.125rem;
   position: relative;
   z-index: 8888; }
-  @media only screen and (max-width: 768px) {
-    .global-nav {
-      white-space: nowrap;
-      overflow-x: auto; } }
   .global-nav .global-nav__home-link-container {
     position: fixed;
     top: 0;
@@ -28,7 +24,7 @@
     position: absolute;
     left: -18px;
     top: 45px;
-    transform: rotate(170deg);
+    transform: rotate(-90deg);
     font-size: 1rem;
     line-height: 1.5rem;
     -webkit-perspective: 900000px;
@@ -36,7 +32,7 @@
     .global-nav .global-nav__home-link:hover {
       color: #1C2F4D;
       text-decoration: underline;
-      transform: rotate(173deg); }
+      transform: rotate(-93deg); }
     @media only screen and (max-width: 768px) {
       .global-nav .global-nav__home-link {
         background-color: #FFF;
