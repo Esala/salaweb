@@ -1,0 +1,52 @@
+.transition-fast {
+  transition: all 0.1s ease-in-out; }
+
+.transition {
+  transition: all 0.3s ease-in-out; }
+
+.transition-slow {
+  transition: all 1s ease-in-out; }
+
+.projects .projects__project {
+  display: inline-block;
+  width: 100%;
+  margin: 18px 0; }
+  .projects .projects__project:first-child {
+    margin-top: 45px; }
+  .projects .projects__project:last-child {
+    margin-bottom: 45px; }
+  .projects .projects__project .projects__project__card {
+    padding: 54px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    transform: rotate(0); }
+    .projects .projects__project .projects__project__card.projects__project__card-light h2, .projects .projects__project .projects__project__card.projects__project__card-light p, .projects .projects__project .projects__project__card.projects__project__card-light a {
+      color: #FAFAFA; }
+    .projects .projects__project .projects__project__card h2 {
+      margin-top: 0;
+      margin-bottom: 18px; }
+    .projects .projects__project .projects__project__card p {
+      padding: 0 0 9px; }
+    .projects .projects__project .projects__project__card a {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .projects .projects__project .projects__project__card:hover {
+      transform: rotate(-2deg); }
+      .projects .projects__project .projects__project__card:hover:before {
+        opacity: 1;
+        transform: rotate(1deg); }
+    .projects .projects__project .projects__project__card:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 9px solid #1C2F4D;
+      content: "";
+      transform: rotate(0deg);
+      opacity: 0;
+      transition: all .3s ease-in-out; }
