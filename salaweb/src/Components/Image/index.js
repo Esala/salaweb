@@ -13,7 +13,7 @@ class Image extends React.Component {
     let className = 'image ';
     return (
       <div className={className}>
-        <LazyLoad height={height || 400} debounce={300} >
+        <LazyLoad height={height || 400} debounce={200} >
           <img src={url} alt=""/>
         </LazyLoad>
       </div>
