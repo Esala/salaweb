@@ -23,6 +23,7 @@ function PageContainer({ location }) {
           <div className="page-container">
             <Switch location={location}>
               <Route  path="/" exact component={Home} />
+              <Route  path="/salaweb" exact component={Home} />
               <Route  path="/info" exact component={Info} />
               <Route  path="/projects" exact component={Projects} />
               <Route  path="/projects/psychopharmacology-institute" exact component={Psychopharmacology} />
