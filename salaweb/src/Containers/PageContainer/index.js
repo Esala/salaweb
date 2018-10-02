@@ -28,7 +28,9 @@ function PageContainer({ location }) {
             setTimeout(function() {
               var locationTo = this.location.href;
               if (locationTo.indexOf("/projects/") > 0){
-                animateScrollTo(145, {speed:400,  minDuration: 400,  maxDuration: 600,});
+                animateScrollTo(145, {speed:200,  minDuration: 400,  maxDuration: 1200,});
+              }else {
+                animateScrollTo(0, {speed:200,  minDuration: 400,  maxDuration: 1200,});
               }
             }, 50);
 
@@ -46,7 +48,7 @@ function PageContainer({ location }) {
               <Route  path="/projects/cooking-app" exact component={Cooking} />
               <Route  path="/projects/some-maps" exact component={Maps} />
             </Switch>
-            
+
           </div>
         </CSSTransition>
       </TransitionGroup>

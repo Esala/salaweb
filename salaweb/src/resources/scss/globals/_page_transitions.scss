@@ -32,7 +32,7 @@
     transition: transition(basic, in);
     .page-component {
       opacity: 0.01;
-      transform: translateY(-18px);
+      transform: translateY(-36px);
     }
 
   }
@@ -47,7 +47,7 @@
    top: 0;
    left: 0;
  }
- 
+
 
 .page-component {
   transition: transition(slow, in);

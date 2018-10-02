@@ -417,7 +417,7 @@ h3 {
   transition: all 0.4s cubic-bezier(0.23, -0.24, 0.25, 1.01); }
   .fade-exit.fade-exit-active .page-component {
     opacity: 0.01;
-    transform: translateY(-18px); }
+    transform: translateY(-36px); }
 
 div.transition-group {
   position: relative; }
