@@ -5,15 +5,17 @@
       opacity: 0.01;
       transform: translateY(-18px);
     }
+
   }
 
   .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: transition(basic, out);
+    transition: transition();
     .page-component {
       opacity: 1;
       transform: translateY(0px);
     }
+
   }
 
   .fade-exit {
@@ -22,6 +24,7 @@
       opacity: 1;
       transform: translateY(0px);
     }
+
   }
 
   .fade-exit.fade-exit-active {
@@ -31,6 +34,7 @@
       opacity: 0.01;
       transform: translateY(-18px);
     }
+
   }
 
   div.transition-group {
@@ -43,6 +47,7 @@
    top: 0;
    left: 0;
  }
+ 
 
 .page-component {
   transition: transition(slow, in);

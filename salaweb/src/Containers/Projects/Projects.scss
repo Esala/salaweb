@@ -20,6 +20,7 @@
       //Mobile
       @media only screen and (max-width: breakpoint(tabletSD)) {
         padding: spacing(18);
+        min-height: 0px;
       }
 
       &.projects__project__card-light {

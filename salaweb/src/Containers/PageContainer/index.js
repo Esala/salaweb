@@ -46,6 +46,7 @@ function PageContainer({ location }) {
               <Route  path="/projects/cooking-app" exact component={Cooking} />
               <Route  path="/projects/some-maps" exact component={Maps} />
             </Switch>
+            
           </div>
         </CSSTransition>
       </TransitionGroup>
