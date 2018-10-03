@@ -10,11 +10,11 @@ class Image extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { url, height } = this.props;
+    const { url, height, light } = this.props;
     let className = 'image ';
     return (
       <div className={className}>
-        <LazyLoad height={height || 400} debounce={200} placeholder={<Placeholder height={height || 400} />}>
+        <LazyLoad height={height || 400} debounce={200} placeholder={<Placeholder light={light} height={height || 400} />}>
           <img src={url} alt=""/>
         </LazyLoad>
       </div>

@@ -13,6 +13,8 @@ import Cooking from '../ProjectsItems/Cooking/index.js';
 import Maps from '../ProjectsItems/Maps/index.js';
 
 function PageContainer({ location }) {
+
+
   return (
     <div>
       <TransitionGroup className="transition-group">
@@ -27,10 +29,18 @@ function PageContainer({ location }) {
 
             setTimeout(function() {
               var locationTo = this.location.href;
+              var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
               if (locationTo.indexOf("/projects/") > 0){
-                animateScrollTo(145, {speed:200,  minDuration: 400,  maxDuration: 1200,});
+                if((locationTo.length - locationTo.indexOf("/projects/"))  > 10) {
+                  console.log(topbar);
+                  animateScrollTo(topbar, {speed:200,  minDuration: 400,  maxDuration: 1200,});
+                }else {
+                  console.log(topbar);
+                  animateScrollTo(topbar, {speed:200,  minDuration: 400,  maxDuration: 1200,});
+                }
               }else {
-                animateScrollTo(0, {speed:200,  minDuration: 400,  maxDuration: 1200,});
+                console.log(topbar);
+                animateScrollTo(topbar, {speed:200,  minDuration: 400,  maxDuration: 1200,});
               }
             }, 50);
 

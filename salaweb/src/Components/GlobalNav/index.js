@@ -23,9 +23,9 @@ class GlobalNav extends React.Component {
             Salatino.
           </Link>
         </div>
-        
+
         <Link
-          to="/info"
+          to="/info/"
           className= {
             'global-nav__link' +
             (active === "info" ? ' global-nav__link-active' : '')
@@ -34,22 +34,15 @@ class GlobalNav extends React.Component {
           info
         </Link>
         <Link
-          to="/projects"
+          to="/projects/"
           className= {
             'global-nav__link' +
             (active === "projects" ? ' global-nav__link-active' : '')
           }
         >
-          currently working
+          work
         </Link>
-        <a
-          href="https://www.behance.net/EzequielSalatino"
-          target="_blank"
-          rel="noopener noreferrer"
-          className= {'global-nav__link'}
-        >
-          old work
-        </a>
+
       </div>
     );
   }

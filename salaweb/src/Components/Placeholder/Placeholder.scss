@@ -1,5 +1,36 @@
+@import 'app/resources/scss/_foundation.scss';
 .placeholder {
   width: 100%;
   position: relative;
+  text-align: center;
+  .placeholder__loader {
+    width: spacing(36);
+    height: spacing(36);
+    border-radius: spacing(18);
+    background-color: color(black);
+    opacity: .5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: - spacing(18);
+    margin-top: - spacing(18);
+    animation: pulse 1s infinite;
+    animation-direction: alternate;
+  }
+  &.placeholder-light {
+    .placeholder__loader {
+      background-color: color(white);
+    }
+  }
+}
 
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: scale(.5);
+  }
+  100% {
+    opacity: .5;
+    transform: scale(1);
+  }
 }

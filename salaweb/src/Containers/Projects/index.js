@@ -44,7 +44,7 @@ class Projects extends React.Component {
                       <h2>Psychopharmacology<br/>Institute</h2>
                     </Desktop>
                     <Mobile>
-                      <h2>Psychopharma- cology Institute</h2>
+                      <h2>Psychophar- macology Institute</h2>
                     </Mobile>
 
                     <p className="p-s">Product Design</p>

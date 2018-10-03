@@ -23,14 +23,14 @@ $heading-font-size-map: (
   h1: rem(102px),
   h2: rem(63px),
   h3: rem(39px),
-  h1_mobile: rem(32px)
+  h1_mobile: rem(44px)
 );
 
 $heading-line-height-map: (
   h1: rem($block*12),
   h2: rem($block*8),
   h3: rem($block*6),
-  h1_mobile: rem($block*4.5)
+  h1_mobile: rem($block*6)
 );
 
 

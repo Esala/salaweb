@@ -19,7 +19,7 @@
 
       //Mobile
       @media only screen and (max-width: breakpoint(tabletSD)) {
-        padding: spacing(18);
+        padding: spacing(18) spacing(36) spacing(18) spacing(45);
         min-height: 0px;
       }
 

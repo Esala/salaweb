@@ -17,21 +17,13 @@ class Home extends React.Component {
             <h1 className="page-component page-component-1">Hi, I’m Ezequiel Salatino. <span className="highlight">UI Designer</span>, living in Mendoza, Argentina.</h1>
             <p className="p-b page-component page-component-2">
               <Link to="/info/">
-                info
+                more about me
               </Link>
-              <br/>
+              {' '} / {' '}
               <Link to="/projects/"  >
-                currently working
+                things i made
               </Link>
-              <br/>
-              <a
-                href="https://www.behance.net/EzequielSalatino"
-                target="_blank"
-                rel="noopener noreferrer"
-                
-              >
-                old work
-              </a>
+
             </p>
 
           </div>
