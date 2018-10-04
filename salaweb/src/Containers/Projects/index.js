@@ -31,12 +31,12 @@ class Projects extends React.Component {
     };
     return (
       <div className="projects">
-        <TopBar className="page-component page-component-1">
+        <TopBar className="page-component  1">
           <GlobalNav active="projects" />
         </TopBar>
 
             <div className="projects__project">
-              <div className="projects__project__card page-component page-component-2" style={psychopharmacologyColor}>
+              <div className="projects__project__card page-component  2" style={psychopharmacologyColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/psychopharmacology-institute"></Link>
@@ -53,7 +53,7 @@ class Projects extends React.Component {
               </div>
             </div>
             <div className="projects__project">
-              <div className="projects__project__card projects__project__card-light page-component page-component-3"  style={yacopiniColor}>
+              <div className="projects__project__card projects__project__card-light page-component  3"  style={yacopiniColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/yacopini"></Link>
@@ -67,7 +67,7 @@ class Projects extends React.Component {
             </div>
             <div className="projects__project">
 
-              <div className="projects__project__card projects__project__card-light page-component page-component-4" style={mercadonColor}>
+              <div className="projects__project__card projects__project__card-light page-component  4" style={mercadonColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/el-mercadon"></Link>
@@ -78,7 +78,7 @@ class Projects extends React.Component {
               </div>
             </div>
             <div className="projects__project">
-              <div className="projects__project__card page-component page-component-5" style={cookingColor}>
+              <div className="projects__project__card page-component  5" style={cookingColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/cooking-app"></Link>
@@ -90,7 +90,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="projects__project">
-              <div className="projects__project__card page-component page-component-6" style={mapsColor}>
+              <div className="projects__project__card page-component  6" style={mapsColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/some-maps"></Link>

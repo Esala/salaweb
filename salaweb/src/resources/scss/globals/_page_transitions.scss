@@ -1,38 +1,41 @@
 @import 'app/resources/scss/_foundation.scss';
 .fade-enter {
     opacity: 0.01;
+
     .page-component {
-      opacity: 0.01;
-      transform: translateY(-18px);
+
+      transform: translate3d(0, -18px, -336px );
     }
 
   }
 
   .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: transition();
+    transition: transition(basic, out);
+
     .page-component {
-      opacity: 1;
-      transform: translateY(0px);
+
+      transform: translate3d(0, 0, 0 );
     }
 
   }
 
   .fade-exit {
     opacity: 1;
+
     .page-component {
-      opacity: 1;
-      transform: translateY(0px);
+
+      transform: translate3d(0, 0, 0 );
     }
 
   }
 
   .fade-exit.fade-exit-active {
     opacity: 0.01;
+
     transition: transition(basic, in);
     .page-component {
-      opacity: 0.01;
-      transform: translateY(-36px);
+      transform: translate3d(0, -18px, -336px );
     }
 
   }
@@ -52,26 +55,7 @@
 .page-component {
   transition: transition(slow, in);
   transition-delay: 0ms;
+  perspective: 3000;
   position: relative;
-  &.page-component-1 {
-    transition-delay: 100ms;
-  }
-  &.page-component-2 {
-    transition-delay: 200ms;
-  }
-  &.page-component-3 {
-    transition-delay: 300ms;
-  }
-  &.page-component-4 {
-    transition-delay: 400ms;
-  }
-  &.page-component-5 {
-    transition-delay: 500ms;
-  }
-  &.page-component-6 {
-    transition-delay: 600ms;
-  }
-  &.page-component-7 {
-    transition-delay: 700ms;
-  }
+  display: block;
 }

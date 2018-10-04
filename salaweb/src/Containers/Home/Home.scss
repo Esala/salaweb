@@ -1,4 +1,7 @@
 @import 'app/resources/scss/_foundation.scss';
 .home {
-
+  min-height: 1400px;
+  &.scrolled {
+    min-height: 0;
+  }
 }

@@ -20,27 +20,28 @@ class Info extends React.Component {
     return (
 
       <div className="info">
-        <TopBar className="page-component page-component-1">
+        <TopBar className="page-component ">
           <GlobalNav active="info" />
         </TopBar>
-        <div className="container page-component page-component-2">
-          <div className="col col-12">
+        <div className="container ">
+          <div className="col col-12 page-component">
               <Mobile>
                 <br/><br/><br/>
               </Mobile>
-            <h1>I’m a designer interested in user interfaces, design systems, maps & data visualizations.</h1>
+            <h1 >I’m a designer interested in user interfaces, design systems, maps & data visualizations.</h1>
           </div>
         </div>
 
-        <div className="container page-component page-component-3">
+        <div className="container page-component ">
           <Desktop>
             <div className="col col-9 col-m-12">
               <p className="p-b">
-                I start designing and bulding website in 2004. Studied graphic design in Mendoza, Argentina. I worked in a few local an international companies and now I worked as a freelance designer mainly focused in UI, but also working as a product, UX and brand designer.
+                I start designing and building websites in 2003. Studied graphic design in Mendoza, Argentina. I worked as a freelance but also in a few local an international companies. </p>
+              <p className="p-b"> Today I work as a freelance designer mainly focused in UI, but also working as a product, UX and brand designer. Also now I'm working as a design partner in <a href="https://pannonica.design" target="_blank" rel="noopener noreferrer">pannonica.design</a>.
               </p>
 
             </div>
-            <div className="col col-3 page-component page-component-4">
+            <div className="col col-3 info__get-in-touch">
               <h3>Get in touch</h3>
               <p>
 
@@ -79,7 +80,7 @@ class Info extends React.Component {
               <div className="col col-12">
                 <h3>Bio</h3>
                 <p className="p-b">
-                  I start designing and bulding website in 2004. Studied graphic design in Mendoza, Argentina. I worked in a few local an international companies and now I worked as a freelance designer mainly focused in UI, but also working as a product, UX and brand designer.
+                  I start designing and building websites in 2003. Studied graphic design in Mendoza, Argentina. I worked as a freelance but also in a few local an international companies. Today I work as a freelance designer mainly focused in UI, but also working as a product, UX and brand designer. Also now I'm working as a design partner in <a href="https://pannonica.design" target="_blank" rel="noopener noreferrer">pannonica.design</a>
                 </p>
 
               </div>

@@ -1,0 +1,4 @@
+.home {
+  min-height: 1400px; }
+  .home.scrolled {
+    min-height: 0; }

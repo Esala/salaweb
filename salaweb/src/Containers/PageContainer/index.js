@@ -14,13 +14,12 @@ import Maps from '../ProjectsItems/Maps/index.js';
 
 function PageContainer({ location }) {
 
-
   return (
     <div>
       <TransitionGroup className="transition-group">
         <CSSTransition
           key={location.key}
-          timeout={{ enter: 400, exit: 400 }}
+          timeout={{ enter: 800, exit: 400 }}
           classNames={'fade'}
           mountOnEnter
           unmountOnExit
@@ -32,15 +31,19 @@ function PageContainer({ location }) {
               var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
               if (locationTo.indexOf("/projects/") > 0){
                 if((locationTo.length - locationTo.indexOf("/projects/"))  > 10) {
-                  console.log(topbar);
+
                   animateScrollTo(topbar, {speed:200,  minDuration: 400,  maxDuration: 1200,});
                 }else {
-                  console.log(topbar);
+
                   animateScrollTo(topbar, {speed:200,  minDuration: 400,  maxDuration: 1200,});
                 }
               }else {
-                console.log(topbar);
-                animateScrollTo(topbar, {speed:200,  minDuration: 400,  maxDuration: 1200,});
+
+                if (locationTo.indexOf("/info/") > 0){
+                  animateScrollTo(topbar, {speed:200,  minDuration: 400,  maxDuration: 1200,});
+                }else{
+                  animateScrollTo(0, {speed:200,  minDuration: 400,  maxDuration: 1200,});
+                }
               }
             }, 50);
 
