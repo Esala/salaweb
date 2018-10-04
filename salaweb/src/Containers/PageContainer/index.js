@@ -32,7 +32,7 @@ function PageContainer({ location }) {
               if (locationTo.indexOf("/projects/") > 0){
                 if((locationTo.length - locationTo.indexOf("/projects/"))  > 10) {
 
-                  animateScrollTo(topbar, {speed:200,  minDuration: 400,  maxDuration: 1200,});
+                  animateScrollTo(topbar, {speed:1,  minDuration: 1200});
                 }else {
 
                   animateScrollTo(topbar, {speed:200,  minDuration: 400,  maxDuration: 1200,});
