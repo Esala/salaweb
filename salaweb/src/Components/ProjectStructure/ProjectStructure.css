@@ -19,7 +19,8 @@
   .project-structure .project-structure__next {
     padding: 72px 0;
     font-size: 1.625rem;
-    line-height: 2.25rem; }
+    line-height: 2.25rem;
+    text-align: center; }
     @media only screen and (max-width: 768px) {
       .project-structure .project-structure__next {
         font-size: 1rem;

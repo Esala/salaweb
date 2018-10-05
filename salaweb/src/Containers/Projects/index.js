@@ -41,13 +41,13 @@ class Projects extends React.Component {
                   <div className="col col-12">
                     <Link to="/projects/psychopharmacology-institute"></Link>
                     <Desktop>
-                      <h2>Psychopharmacology<br/>Institute</h2>
+                      <h1>Psychopharmacology<br/>Institute</h1>
                     </Desktop>
                     <Mobile>
-                      <h2>Psychophar- macology Institute</h2>
+                      <h1>Psychophar- macology Institute</h1>
                     </Mobile>
 
-                    <p className="p-s">Product Design</p>
+                    <p className="p-b">Product Design</p>
                   </div>
                 </div>
               </div>
@@ -57,8 +57,8 @@ class Projects extends React.Component {
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/yacopini"></Link>
-                    <h2>Yacopini</h2>
-                    <p className="p-s">Web/UI Design</p>
+                    <h1>Yacopini</h1>
+                    <p className="p-b">Web/UI Design</p>
                   </div>
                 </div>
               </div>
@@ -71,8 +71,8 @@ class Projects extends React.Component {
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/el-mercadon"></Link>
-                    <h2>El Mercadón</h2>
-                    <p className="p-s">Web/UI/UX Design</p>
+                    <h1>El Mercadón</h1>
+                    <p className="p-b">Web/UI/UX Design</p>
                   </div>
                 </div>
               </div>
@@ -82,8 +82,8 @@ class Projects extends React.Component {
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/cooking-app"></Link>
-                    <h2>Cooking App Ideas</h2>
-                    <p className="p-s">UI/UX Design</p>
+                    <h1>Cooking App Ideas</h1>
+                    <p className="p-b">UI/UX Design</p>
                   </div>
                 </div>
               </div>
@@ -94,8 +94,8 @@ class Projects extends React.Component {
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/some-maps"></Link>
-                    <h2>Some Maps</h2>
-                    <p className="p-s">UI Design</p>
+                    <h1>Some Maps</h1>
+                    <p className="p-b">UI Design</p>
                   </div>
                 </div>
               </div>
