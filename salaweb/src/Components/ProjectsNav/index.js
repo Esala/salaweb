@@ -21,7 +21,7 @@ class ProjectsNav extends React.Component {
             (active === "psychopharmacology" ? ' projects-nav__link-active' : '')
           }
         >
-          psychopharmacology institute
+          Psychopharmacology Institute
         </Link>
         <Link
           to="/projects/yacopini"
@@ -30,7 +30,7 @@ class ProjectsNav extends React.Component {
             (active === "yacopini" ? ' projects-nav__link-active' : '')
           }
         >
-          yacopini
+          Yacopini
         </Link>
         <Link
           to="/projects/el-mercadon"
@@ -39,7 +39,7 @@ class ProjectsNav extends React.Component {
             (active === "mercadon" ? ' projects-nav__link-active' : '')
           }
         >
-          el mercadón
+          El Mercadón
         </Link>
         <Link
           to="/projects/cooking-app"
@@ -48,7 +48,7 @@ class ProjectsNav extends React.Component {
             (active === "cooking" ? ' projects-nav__link-active' : '')
           }
         >
-          cooking app
+          Cooking App
         </Link>
         <Link
           to="/projects/some-maps"
@@ -57,7 +57,7 @@ class ProjectsNav extends React.Component {
             (active === "maps" ? ' projects-nav__link-active' : '')
           }
         >
-          some maps
+          Some Maps
         </Link>
       </div>
     );

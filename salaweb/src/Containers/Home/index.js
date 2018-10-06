@@ -15,7 +15,7 @@ class Home extends React.Component {
    }
 
   componentDidMount() {
-    document.title = "Hi, I'm Ezequiel Salatino";
+    document.title = "Hi, I'm Ezequiel";
     this.setState({ statusClass: 'scrolled' });
   }
 
@@ -28,12 +28,17 @@ class Home extends React.Component {
             <h1 className="page-component  1">Hi, I’m Ezequiel Salatino. <span className="highlight">UI Designer</span>, living in Mendoza, Argentina.</h1>
             <p className="p-b page-component  2">
               <Link to="/info/">
-                about me
+                About me
               </Link>
               {' '} / {' '}
               <Link to="/projects/"  >
-                things i made
+                Things I made
               </Link>
+                {' '} / {' '}
+              <a href="mailto:ezequiel.salatino@gmail.com">
+                Get in touch.
+              </a>
+
 
             </p>
 

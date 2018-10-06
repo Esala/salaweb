@@ -9,7 +9,7 @@
 
 
     .projects__project__card {
-      padding: spacing(63);
+      padding: spacing(144) 0;
 
       position: relative;
       min-height: 340px;
@@ -67,7 +67,7 @@
         position: absolute;
         right: spacing(72);
         bottom: - spacing(72);
-        content: ".";
+        content: "";
         font-family: font-family(display);
         font-size: 1832px;
         line-height: 1;

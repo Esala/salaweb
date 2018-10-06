@@ -1,15 +1,15 @@
 
 
 $transition-speed-map: (
-  basic: .6s,
-  slow: 1.2s,
-  fast: .1s
+  basic: .8s,
+  slow: 1.4s,
+  fast: .3s
 );
 
 $transition-easing-map: (
   basic: cubic-bezier(.58,-0.19,.54,1.05),
   out: cubic-bezier(.91,-0.22,.76,.91),
-  in: cubic-bezier(.23,-0.24,.25,1.01)
+  in: cubic-bezier(.21,0,.35,1.29)
 );
 
 

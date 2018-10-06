@@ -31,7 +31,7 @@ class GlobalNav extends React.Component {
             (active === "info" ? ' global-nav__link-active' : '')
           }
         >
-          info
+          Info
         </Link>
         <Link
           to="/projects/"
@@ -40,7 +40,7 @@ class GlobalNav extends React.Component {
             (active === "projects" ? ' global-nav__link-active' : '')
           }
         >
-          work
+          Work
         </Link>
 
       </div>
