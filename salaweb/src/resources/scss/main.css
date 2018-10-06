@@ -322,7 +322,8 @@ p {
     @media only screen and (max-width: 768px) {
       p.p-b {
         font-size: 1rem;
-        line-height: 1.5rem; } }
+        line-height: 1.5rem;
+        padding-bottom: 1.5rem; } }
   p.p-s {
     font-size: 0.75rem;
     line-height: 1.125rem;
@@ -395,25 +396,17 @@ h3 {
 
 .fade-enter {
   opacity: 0.01; }
-  .fade-enter .page-component {
-    transform: translate3d(0, -18px, -336px); }
 
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: all 0.8s cubic-bezier(0.91, -0.22, 0.76, 0.91); }
-  .fade-enter.fade-enter-active .page-component {
-    transform: translate3d(0, 0, 0); }
 
 .fade-exit {
   opacity: 1; }
-  .fade-exit .page-component {
-    transform: translate3d(0, 0, 0); }
 
 .fade-exit.fade-exit-active {
   opacity: 0.01;
   transition: all 0.8s cubic-bezier(0.21, 0, 0.35, 1.29); }
-  .fade-exit.fade-exit-active .page-component {
-    transform: translate3d(0, -18px, -336px); }
 
 div.transition-group {
   position: relative; }
@@ -423,10 +416,3 @@ div.transition-group {
   width: 100%;
   top: 0;
   left: 0; }
-
-.page-component {
-  transition: all 1.4s cubic-bezier(0.21, 0, 0.35, 1.29);
-  transition-delay: 0ms;
-  perspective: 3000;
-  position: relative;
-  display: block; }

@@ -25,7 +25,7 @@ function PageContainer({ location }) {
           unmountOnExit
           addEndListener={(n, done) => {
 
-
+            /*
             setTimeout(function() {
               var locationTo = this.location.href;
               var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
@@ -45,7 +45,7 @@ function PageContainer({ location }) {
                   animateScrollTo(0, {speed:200,  minDuration: 400,  maxDuration: 1200,});
                 }
               }
-            }, 50);
+            }, 50);*/
 
           }}
         >

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Responsive from 'react-responsive';
+import animateScrollTo from 'animated-scroll-to';
 import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
 import ProjectsNav from 'app/Components/ProjectsNav/index.js';
@@ -14,7 +15,8 @@ import './Psychopharmacology.css';
 class Psychopharmacology extends React.Component {
   componentDidMount() {
     document.title = "Psychopharmacology Institute - Ezequiel Salatino";
-
+    var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
+    animateScrollTo(topbar, {speed:1,  minDuration: 1200});
   }
 
   render() {

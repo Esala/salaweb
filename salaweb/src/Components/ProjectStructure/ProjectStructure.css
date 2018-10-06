@@ -34,15 +34,17 @@
     .project-structure .project-structure__info h1 {
       padding-top: 72px;
       margin: 0; }
-      @media only screen and (max-width: 768px) {
-        .project-structure .project-structure__info h1 {
-          font-size: 2.625rem;
-          line-height: 3rem;
-          margin-bottom: 36px;
-          word-break: normal;
-          padding-right: 36px; } }
     .project-structure .project-structure__info .project-structure__info__description {
       vertical-align: bottom; }
       .project-structure .project-structure__info .project-structure__info__description p {
         margin: 0;
         padding: 0 0 9px; }
+    @media only screen and (max-width: 768px) {
+      .project-structure .project-structure__info {
+        text-align: center; }
+        .project-structure .project-structure__info h1 {
+          font-size: 2.625rem;
+          line-height: 3rem;
+          margin-bottom: 36px;
+          word-break: normal;
+          max-width: 100%; } }

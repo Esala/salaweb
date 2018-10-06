@@ -1,61 +1,30 @@
 @import 'app/resources/scss/_foundation.scss';
 .fade-enter {
-    opacity: 0.01;
+  opacity: 0.01;
+}
 
-    .page-component {
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: transition(basic, out);
+}
 
-      transform: translate3d(0, -18px, -336px );
-    }
+.fade-exit {
+  opacity: 1;
 
-  }
+}
 
-  .fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: transition(basic, out);
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: transition(basic, in);
+}
 
-    .page-component {
-
-      transform: translate3d(0, 0, 0 );
-    }
-
-  }
-
-  .fade-exit {
-    opacity: 1;
-
-    .page-component {
-
-      transform: translate3d(0, 0, 0 );
-    }
-
-  }
-
-  .fade-exit.fade-exit-active {
-    opacity: 0.01;
-
-    transition: transition(basic, in);
-    .page-component {
-      transform: translate3d(0, -18px, -336px );
-    }
-
-  }
-
-  div.transition-group {
-    position: relative;
-  }
-
-  .page-container {
-   position: absolute;
-   width: 100%;
-   top: 0;
-   left: 0;
- }
-
-
-.page-component {
-  transition: transition(slow, in);
-  transition-delay: 0ms;
-  perspective: 3000;
+div.transition-group {
   position: relative;
-  display: block;
+}
+
+.page-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }

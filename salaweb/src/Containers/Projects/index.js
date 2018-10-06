@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import animateScrollTo from 'animated-scroll-to';
 import Responsive from 'react-responsive';
 import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
@@ -9,7 +10,11 @@ import GlobalNav from 'app/Components/GlobalNav/index.js';
 import './Projects.css';
 
 class Projects extends React.Component {
-  componentDidMount() {document.title = "Currently Working - Ezequiel Salatino";}
+  componentDidMount() {
+    document.title = "Currently Working - Ezequiel Salatino";
+    var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
+    animateScrollTo(topbar, {speed:1,  minDuration: 1200});
+  }
 
   render() {
     const Desktop = props => <Responsive {...props} minWidth={1280} />;
@@ -31,12 +36,12 @@ class Projects extends React.Component {
     };
     return (
       <div className="projects">
-        <TopBar className="page-component  1">
+        <TopBar className="   1">
           <GlobalNav active="projects" />
         </TopBar>
 
             <div className="projects__project">
-              <div className="projects__project__card page-component  2" style={psychopharmacologyColor}>
+              <div className="projects__project__card " style={psychopharmacologyColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/psychopharmacology-institute"></Link>
@@ -53,7 +58,7 @@ class Projects extends React.Component {
               </div>
             </div>
             <div className="projects__project">
-              <div className="projects__project__card projects__project__card-light page-component  3"  style={yacopiniColor}>
+              <div className="projects__project__card projects__project__card-light "  style={yacopiniColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/yacopini"></Link>
@@ -67,7 +72,7 @@ class Projects extends React.Component {
             </div>
             <div className="projects__project">
 
-              <div className="projects__project__card projects__project__card-light page-component  4" style={mercadonColor}>
+              <div className="projects__project__card projects__project__card-light  " style={mercadonColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/el-mercadon"></Link>
@@ -78,7 +83,7 @@ class Projects extends React.Component {
               </div>
             </div>
             <div className="projects__project">
-              <div className="projects__project__card page-component  5" style={cookingColor}>
+              <div className="projects__project__card " style={cookingColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/cooking-app"></Link>
@@ -90,7 +95,7 @@ class Projects extends React.Component {
             </div>
 
             <div className="projects__project">
-              <div className="projects__project__card page-component  6" style={mapsColor}>
+              <div className="projects__project__card " style={mapsColor}>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/some-maps"></Link>

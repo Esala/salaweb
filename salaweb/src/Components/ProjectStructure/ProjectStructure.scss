@@ -51,14 +51,7 @@
     h1 {
       padding-top: spacing(72);
       margin: 0;
-      //Mobile
-      @media only screen and (max-width: breakpoint(tabletSD)) {
-          font-size: heading-font-size(h2);
-          line-height: heading-line-height(h2);
-          margin-bottom: spacing(36);
-          word-break:normal;
-          padding-right: spacing(36);
-      }
+
     }
     .project-structure__info__description {
       vertical-align: bottom;
@@ -66,6 +59,19 @@
         margin: 0;
         padding: 0 0 spacing(9);
       }
+    }
+
+    //Mobile
+    @media only screen and (max-width: breakpoint(tabletSD)) {
+      text-align: center;
+        h1 {
+          font-size: heading-font-size(h2);
+          line-height: heading-line-height(h2);
+          margin-bottom: spacing(36);
+          word-break:normal;
+          max-width: 100%;
+        }
+
     }
   }
 }

@@ -8,6 +8,7 @@
     margin: 0;
 
 
+
     .projects__project__card {
       padding: spacing(144) 0;
 
@@ -19,7 +20,7 @@
 
       //Mobile
       @media only screen and (max-width: breakpoint(tabletSD)) {
-        padding: spacing(27) spacing(36) spacing(27) spacing(45);
+        padding: spacing(45) spacing(36) spacing(45) spacing(45);
         min-height: 0px;
       }
 

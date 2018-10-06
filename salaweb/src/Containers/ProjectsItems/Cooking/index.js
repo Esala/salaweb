@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import animateScrollTo from 'animated-scroll-to';
 import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
 import ProjectsNav from 'app/Components/ProjectsNav/index.js';
@@ -11,7 +12,8 @@ import './Cooking.css';
 class Cooking extends React.Component {
   componentDidMount() {
     document.title = "Cooking App Ideas - Ezequiel Salatino";
-    
+    var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
+    animateScrollTo(topbar, {speed:1,  minDuration: 1200});
 }
 
   render() {

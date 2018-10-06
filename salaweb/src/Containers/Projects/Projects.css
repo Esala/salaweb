@@ -12,7 +12,7 @@
       margin: 0; }
       @media only screen and (max-width: 768px) {
         .projects .projects__project .projects__project__card {
-          padding: 27px 36px 27px 45px;
+          padding: 45px 36px 45px 45px;
           min-height: 0px; } }
       .projects .projects__project .projects__project__card.projects__project__card-light h1, .projects .projects__project .projects__project__card.projects__project__card-light p, .projects .projects__project .projects__project__card.projects__project__card-light a {
         color: #FAFAFA; }
