@@ -23,11 +23,22 @@
     padding-bottom: spacing(72);
     p:first-child {
       margin-top: spacing(63);
+      margin-bottom: spacing(63);
+    }
+    a {
+      &:hover {
+        color: color(black);
+        opacity: .5;
+      }
     }
     //Mobile
     @media only screen and (max-width: breakpoint(tabletSD)) {
       padding-top: spacing(36);
       padding-bottom: spacing(36);
+      p:first-child {
+        margin-top: spacing(18);
+        margin-bottom: spacing(36);
+      }
     }
   }
   .project-structure__next {

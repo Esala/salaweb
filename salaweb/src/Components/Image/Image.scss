@@ -3,6 +3,9 @@
   width: 100%;
   position: relative;
   display: inline-block;
+  min-height: 297px;
+  transition: transition();
+  margin-bottom: spacing(162);
   img {
     width: 100%;
   }
@@ -31,10 +34,10 @@
        background-size: 100% 100%;
        height: spacing(162);
        background-image: url("../../resources/img/image_device_shadow.png");
+       opacity: .5;
      }
      &.image-mobile {
        max-width: 411px;
-
      }
 
      &.image-tablet {
@@ -44,4 +47,5 @@
        max-width: 100%;
      }
   }
+
 }

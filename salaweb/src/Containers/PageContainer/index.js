@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import animateScrollTo from 'animated-scroll-to';
+//import animateScrollTo from 'animated-scroll-to';
 import Home from '../Home/index.js';
 import Info from '../Info/index.js';
 import Projects from '../Projects/index.js';

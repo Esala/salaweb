@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Responsive from 'react-responsive';
 import { Link } from 'react-router-dom';
 
 
@@ -9,19 +10,50 @@ class GlobalNav extends React.Component {
   componentDidMount() { }
 
   render() {
-    const { active } = this.props;
+    const Desktop = props => <Responsive {...props} minWidth={1280} />;
+    const Mobile = props => <Responsive {...props} maxWidth={1279} />;
 
-    let className = 'global-nav ';
+    const { active, inProject } = this.props;
+
+    let className = 'global-nav ' +
+      (inProject ? ' global-nav-in-project' : '') ;
+
+    let mobileNav;
+
+    if(inProject){
+      mobileNav = (
+        <Link
+          to="/projects/"
+          className="global-nav__home-link"
+        >
+          Back.
+        </Link>
+      )
+    }else {
+      mobileNav = (
+        <Link
+          to="/"
+          className="global-nav__home-link"
+        >
+          Salatino.
+        </Link>
+      )
+    }
 
     return (
       <div className={className}>
         <div className="global-nav__home-link-container">
-          <Link
-            to="/"
-            className="global-nav__home-link"
-          >
-            Salatino.
-          </Link>
+          <Desktop>
+            <Link
+              to="/"
+              className="global-nav__home-link"
+            >
+              Salatino.
+            </Link>
+          </Desktop>
+          <Mobile>
+            {mobileNav}
+          </Mobile>
         </div>
 
         <Link

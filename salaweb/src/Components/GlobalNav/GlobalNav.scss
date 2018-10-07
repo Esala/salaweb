@@ -7,26 +7,38 @@
 
   .global-nav__home-link-container {
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 9999;
-
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    left:spacing(9);
+    top: spacing(117);
+    //Mobile
+    @media only screen and (max-width: breakpoint(tabletSD)) {
+      top:126px;
+      left: 0;
+    }
+  }
+  &.global-nav-in-project {
+    .global-nav__home-link-container {
+      @media only screen and (max-width: breakpoint(tabletSD)) {
+        top:99px;
+        left: 0;
+      }
+    }
   }
   .global-nav__home-link {
     font-family: font-family(display);
     margin-right: spacing(9);
     text-decoration: none;
     position: absolute;
-    left: - spacing(18);
-    top: spacing(45);
-    transform: rotate(-90deg);
+
+
     font-size: font-size();
     line-height: line-height();
-    -webkit-perspective: 900000px;
-    perspective: 900000px;
+
     &:hover {
       color: color(black);
-      transform: rotate(-93deg);
+
     }
     //Mobile
     @media only screen and (max-width: breakpoint(tabletSD)) {
@@ -34,8 +46,7 @@
       background-color: color(white, lighten);
       padding: spacing(9) spacing(27) spacing(9) spacing(18);
       margin-right: 0;
-      left: - spacing(45) ;
-      top: spacing(27) ;
+      top: 0;
     }
 
   }

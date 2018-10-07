@@ -25,38 +25,32 @@ class Psychopharmacology extends React.Component {
     return (
       <div className="psychopharmacology">
         <TopBar>
-          <GlobalNav active="projects" />
+          <GlobalNav active="projects" inProject />
           <ProjectsNav active="psychopharmacology"/>
         </TopBar>
         <Desktop>
           <ProjectStructure title="Psychopharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. Web / UI design. Educational platform." next="/projects/yacopini" >
-          <div className="col col-6 col-m-12">
-            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
+
+          <div className="col col-12 col-center">
+            <Image device tablet url={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/audio_tablet.png'} />
           </div>
-          <div className="col col-6 col-m-12">
-            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/limon.png'} />
+          <div className="col col-6  col-center col-m-12">
+            <Image device mobile url={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/lecture_mobile.png'} />
           </div>
-          <div className="col col-6 col-m-12">
-            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />
+          <div className="col col-6  col-center col-m-12">
+              <p className="p-b">To work our way towards a shared language once again, we must first learn how to discover patterns which are deep, and capable of generating life.</p>
+            <Image device mobile url={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/account_mobile.png'} />
           </div>
-          <div className="col col-6 col-m-12">
-            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/tomate.png'} />
-          </div>
+
           </ProjectStructure>
         </Desktop>
         <Mobile>
           <ProjectStructure  title="Psycho- pharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. Web / UI design. Educational platform." next="/projects/yacopini" >
-          <div className="col col-6 col-m-12">
-            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
+          <div className="col col-12  col-center ">
+            <Image device mobile url={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/lecture_mobile.png'} />
           </div>
-          <div className="col col-6 col-m-12">
-            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/limon.png'} />
-          </div>
-          <div className="col col-6 col-m-12">
-            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />
-          </div>
-          <div className="col col-6 col-m-12">
-            <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/tomate.png'} />
+          <div className="col col-12 col-center ">
+            <Image device mobile url={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/account_mobile.png'} />
           </div>
           </ProjectStructure>
         </Mobile>

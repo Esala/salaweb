@@ -5,31 +5,34 @@
   z-index: 8888; }
   .global-nav .global-nav__home-link-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999; }
+    z-index: 9999;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    left: 9px;
+    top: 117px; }
+    @media only screen and (max-width: 768px) {
+      .global-nav .global-nav__home-link-container {
+        top: 126px;
+        left: 0; } }
+  @media only screen and (max-width: 768px) {
+    .global-nav.global-nav-in-project .global-nav__home-link-container {
+      top: 99px;
+      left: 0; } }
   .global-nav .global-nav__home-link {
     font-family: es-display, sans-serif;
     margin-right: 9px;
     text-decoration: none;
     position: absolute;
-    left: -18px;
-    top: 45px;
-    transform: rotate(-90deg);
     font-size: 1rem;
-    line-height: 1.5rem;
-    -webkit-perspective: 900000px;
-    perspective: 900000px; }
+    line-height: 1.5rem; }
     .global-nav .global-nav__home-link:hover {
-      color: #1C2F4D;
-      transform: rotate(-93deg); }
+      color: #1C2F4D; }
     @media only screen and (max-width: 768px) {
       .global-nav .global-nav__home-link {
         background-color: #FFF;
         padding: 9px 27px 9px 18px;
         margin-right: 0;
-        left: -45px;
-        top: 27px; } }
+        top: 0; } }
   .global-nav .global-nav__link {
     margin-right: 18px; }
     .global-nav .global-nav__link.global-nav__link-active {

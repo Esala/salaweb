@@ -13,11 +13,18 @@
     padding-top: 144px;
     padding-bottom: 72px; }
     .project-structure .project-structure__content p:first-child {
-      margin-top: 63px; }
+      margin-top: 63px;
+      margin-bottom: 63px; }
+    .project-structure .project-structure__content a:hover {
+      color: #1C2F4D;
+      opacity: .5; }
     @media only screen and (max-width: 768px) {
       .project-structure .project-structure__content {
         padding-top: 36px;
-        padding-bottom: 36px; } }
+        padding-bottom: 36px; }
+        .project-structure .project-structure__content p:first-child {
+          margin-top: 18px;
+          margin-bottom: 36px; } }
   .project-structure .project-structure__next {
     padding: 72px 0;
     font-size: 1.625rem;

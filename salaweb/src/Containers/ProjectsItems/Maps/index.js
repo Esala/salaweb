@@ -22,7 +22,7 @@ class Maps extends React.Component {
     return (
       <div className="maps">
         <TopBar>
-          <GlobalNav active="projects" />
+          <GlobalNav active="projects" inProject />
           <ProjectsNav active="maps"/>
         </TopBar>
         <ProjectStructure title="Some Maps" color="#F8ECF0" description="Some maps created for a couple of websites." next="/projects/psychopharmacology-institute" >

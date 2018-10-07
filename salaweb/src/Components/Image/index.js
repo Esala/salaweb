@@ -17,10 +17,21 @@ class Image extends React.Component {
       (mobile ? ' image-mobile'  : '') +
       (tablet ? ' image-tablet'  : '') +
       (desktop ? ' image-desktop'  : '') ;
+
+    let lightPlaceholder;
+    if (device) {
+      lightPlaceholder=true;
+    }else {
+      if(light){
+        lightPlaceholder=true;
+      }else {
+        lightPlaceholder=false;
+      }
+    }
     return (
       <div className={className}>
-        <LazyLoad height={height || 400} debounce={200} placeholder={<Placeholder light={light} height={height || 400} />}>
-          <img src={url} alt=""/>
+        <LazyLoad height={height || 400} debounce={200} placeholder={<Placeholder light={lightPlaceholder} height={height || 400} />}>
+              <img src={url} alt=""/>
         </LazyLoad>
       </div>
     );

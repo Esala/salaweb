@@ -21,23 +21,21 @@ class Cooking extends React.Component {
     return (
       <div className="cooking">
         <TopBar>
-          <GlobalNav active="projects" />
+          <GlobalNav active="projects" inProject />
           <ProjectsNav active="cooking"/>
         </TopBar>
         <ProjectStructure title="Cooking App Ideas" color="#FFF8F0" description="Nov 2018. UI design. iOS Application."  next="/projects/some-maps" >
           <div className="col col-12">
-            <div className="col col-6 col-m-12">
-              <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
+            <div className="col col-6 col-center col-m-12">
+              <Image height="703" device mobile url={process.env.PUBLIC_URL + '/resources/img/cooking/cook_mobile.png'} />
             </div>
-            <div className="col col-6 col-m-12">
-              <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/limon.png'} />
+            <div className="col col-6 col-center col-m-12">
+              <Image url={process.env.PUBLIC_URL + '/resources/img/cooking/acelga.png'} />
+              <p className="p-b">
+                Ilustrations by <br/> <a href="asd">Elías Rodriguez</a>
+              </p>
             </div>
-            <div className="col col-6 col-m-12">
-              <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />
-            </div>
-            <div className="col col-6 col-m-12">
-              <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/tomate.png'} />
-            </div>
+          
           </div>
         </ProjectStructure>
       </div>
