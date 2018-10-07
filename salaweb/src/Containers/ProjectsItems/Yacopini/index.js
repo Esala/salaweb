@@ -26,11 +26,15 @@ class Yacopini extends React.Component {
           <ProjectsNav active="yacopini"/>
         </TopBar>
         <ProjectStructure  title="Yacopini" color="#FE5620" description="Apr 2015. Web / UI design. Volkswagen, Chevrolet & Nissan authorized car dealer." light next="/projects/el-mercadon" >
-        <div className="col col-6 col-m-12">
-          <Image light url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
+        <div className="col col-3 col-m-12">
         </div>
-        <div className="col col-6 col-m-12">
-          <Image light url={process.env.PUBLIC_URL + '/resources/img/mercadon/limon.png'} />
+        <div className="col col-6 col-center col-m-12">
+          <Image light device mobile height="703" url={process.env.PUBLIC_URL + '/resources/img/yacopini/operarios_dashboard_mobile.png'} />
+        </div>
+        <div className="col col-3 col-m-12">
+        </div>
+        <div className="col col-12 col-m-12 col-center">
+          <Image light device tablet height="1024" url={process.env.PUBLIC_URL + '/resources/img/yacopini/operarios_tablet.png'} />
         </div>
         <div className="col col-6 col-m-12">
           <Image light url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />

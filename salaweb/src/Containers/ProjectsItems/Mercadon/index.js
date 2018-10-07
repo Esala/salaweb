@@ -33,16 +33,20 @@ class Mercadon extends React.Component {
             <Image light url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
           </div>
           <div className="col col-12 col-m-12">
+            <Image light height="634" device desktop url={process.env.PUBLIC_URL + '/resources/img/mercadon/login_desktop.png'} />
+
+          </div>
+          <div className="col col-6 col-m-12 col-center">
+            <Image light height="703" device mobile url={process.env.PUBLIC_URL + '/resources/img/mercadon/home_mobile.png'} />
+
+          </div>
+          <div className="col col-6 col-m-12">
+            <p className="p-b">
+              The structure of life I have described in buildings is deeply and inextricably connected with the human person, and with the innermost nature of human feeling.
+            </p>
+          </div>
+          <div className="col col-6 col-m-12">
             <Image light url={process.env.PUBLIC_URL + '/resources/img/mercadon/limon.png'} />
-          </div>
-          <div className="col col-6 col-m-12">
-            <Image light url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />
-          </div>
-          <div className="col col-6 col-m-12">
-            <Image light url={process.env.PUBLIC_URL + '/resources/img/mercadon/tomate.png'} />
-          </div>
-          <div className="col col-6 col-m-12">
-            <Image light url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />
           </div>
           <div className="col col-6 col-m-12">
             <Image light url={process.env.PUBLIC_URL + '/resources/img/mercadon/tomate.png'} />

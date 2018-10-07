@@ -12,6 +12,8 @@
   .project-structure .project-structure__content {
     padding-top: 144px;
     padding-bottom: 72px; }
+    .project-structure .project-structure__content p:first-child {
+      margin-top: 63px; }
     @media only screen and (max-width: 768px) {
       .project-structure .project-structure__content {
         padding-top: 36px;

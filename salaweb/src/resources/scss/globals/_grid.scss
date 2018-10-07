@@ -63,6 +63,9 @@
 
 }
 .col {
+  &.col-center {
+    text-align: center;
+  }
   &.col-1 {
     @include col(1, 12, $align: top);
   }

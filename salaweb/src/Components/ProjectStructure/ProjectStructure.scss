@@ -21,6 +21,9 @@
   .project-structure__content {
     padding-top: spacing(144);
     padding-bottom: spacing(72);
+    p:first-child {
+      margin-top: spacing(63);
+    }
     //Mobile
     @media only screen and (max-width: breakpoint(tabletSD)) {
       padding-top: spacing(36);

@@ -72,6 +72,9 @@ a {
   .row.fluid {
     max-width: 100%; }
 
+.col.col-center {
+  text-align: center; }
+
 .col.col-1 {
   width: 8.33333%;
   display: inline-block;
