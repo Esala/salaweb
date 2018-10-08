@@ -29,7 +29,9 @@ p {
     color: color(black);
 
   }
-
+  &.p-center {
+    margin: 0 auto;
+  }
 }
 
 .highlight {

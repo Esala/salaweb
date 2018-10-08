@@ -333,6 +333,8 @@ p {
     max-width: 648px;
     padding-bottom: 1.125rem;
     color: #1C2F4D; }
+  p.p-center {
+    margin: 0 auto; }
 
 .highlight {
   color: #448CFF;

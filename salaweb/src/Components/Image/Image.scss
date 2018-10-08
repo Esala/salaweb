@@ -9,6 +9,9 @@
   img {
     width: 100%;
   }
+  &.image-nopadding {
+    margin-bottom: 0;
+  }
   &.image-device {
      padding: spacing(18);
      border-radius: spacing(36);

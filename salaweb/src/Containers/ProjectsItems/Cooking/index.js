@@ -30,12 +30,12 @@ class Cooking extends React.Component {
               <Image height="703" device mobile url={process.env.PUBLIC_URL + '/resources/img/cooking/cook_mobile.png'} />
             </div>
             <div className="col col-6 col-center col-m-12">
-              <Image url={process.env.PUBLIC_URL + '/resources/img/cooking/acelga.png'} />
+              <Image nopadding url={process.env.PUBLIC_URL + '/resources/img/cooking/acelga.png'} />
               <p className="p-b">
-                Ilustrations by <br/> <a href="asd">Elías Rodriguez</a>
+                Ilustrations by<br/> <a href="asd">Elías Rodriguez</a>
               </p>
             </div>
-          
+
           </div>
         </ProjectStructure>
       </div>
