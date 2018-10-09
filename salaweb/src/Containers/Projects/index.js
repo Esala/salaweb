@@ -43,7 +43,7 @@ class Projects extends React.Component {
             <div className="projects__project">
               <div className="projects__project__card " style={psychopharmacologyColor}>
                 <div className="projects__project__card__image">
-                  {/* <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/operarios_tablet.png'} alt=""/> */}
+                  <img src={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/psy_cover.png'} alt=""/>
                 </div>
                 <div className="container">
                   <div className="col col-12">

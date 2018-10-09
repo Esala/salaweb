@@ -9,8 +9,17 @@
       position: relative;
       min-height: 340px;
       overflow: hidden;
-      margin: 0;
-      filter: grayscale(100%); }
+      margin: 0; }
+      .projects .projects__project .projects__project__card:before {
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FAFAFA;
+        content: '';
+        opacity: .75; }
       @media only screen and (max-width: 768px) {
         .projects .projects__project .projects__project__card {
           padding: 45px 36px 45px 45px;
@@ -22,7 +31,7 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
-        filter: grayscale(100%) contrast(10%) brightness(150%);
+        filter: grayscale(100%) contrast(30%) brightness(150%);
         z-index: 2;
         transition: all 0.3s cubic-bezier(0.58, -0.19, 0.54, 1.05); }
         .projects .projects__project .projects__project__card .projects__project__card__image img {
@@ -35,7 +44,7 @@
       .projects .projects__project .projects__project__card.projects__project__card-light h1, .projects .projects__project .projects__project__card.projects__project__card-light p, .projects .projects__project .projects__project__card.projects__project__card-light a {
         color: #FAFAFA; }
       .projects .projects__project .projects__project__card.projects__project__card-light:before {
-        color: #FAFAFA; }
+        background-color: #1C2F4D; }
       .projects .projects__project .projects__project__card.projects__project__card-light .projects__project__card__image {
         filter: grayscale(100%) contrast(20%); }
       .projects .projects__project .projects__project__card h1 {
@@ -55,10 +64,10 @@
         width: 100%;
         height: 100%;
         z-index: 10; }
-      .projects .projects__project .projects__project__card:hover {
-        filter: grayscale(0%); }
-        .projects .projects__project .projects__project__card:hover h1, .projects .projects__project .projects__project__card:hover p {
-          z-index: 2; }
-        .projects .projects__project .projects__project__card:hover .projects__project__card__image {
-          z-index: 9;
-          filter: none; }
+      .projects .projects__project .projects__project__card:hover h1, .projects .projects__project .projects__project__card:hover p {
+        z-index: 2; }
+      .projects .projects__project .projects__project__card:hover:before {
+        opacity: 0; }
+      .projects .projects__project .projects__project__card:hover .projects__project__card__image {
+        z-index: 9;
+        filter: none; }
