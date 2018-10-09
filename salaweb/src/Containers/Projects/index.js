@@ -11,7 +11,7 @@ import './Projects.css';
 
 class Projects extends React.Component {
   componentDidMount() {
-    document.title = "Currently Working - Ezequiel Salatino";
+    document.title = "Work - Ezequiel Salatino";
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
   }
@@ -42,6 +42,9 @@ class Projects extends React.Component {
 
             <div className="projects__project">
               <div className="projects__project__card " style={psychopharmacologyColor}>
+                <div className="projects__project__card__image">
+                  {/* <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/operarios_tablet.png'} alt=""/> */}
+                </div>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/psychopharmacology-institute"></Link>
@@ -58,7 +61,25 @@ class Projects extends React.Component {
               </div>
             </div>
             <div className="projects__project">
+
+              <div className="projects__project__card projects__project__card-light  " style={mercadonColor}>
+                <div className="projects__project__card__image">
+                  <img src={process.env.PUBLIC_URL + '/resources/img/mercadon/mercadon_cover.png'} alt=""/>
+                </div>
+                <div className="container">
+                  <div className="col col-12">
+                    <Link to="/projects/el-mercadon"></Link>
+                    <h1>El Mercadón</h1>
+                    <p className="p-b">Web/UI/UX Design</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="projects__project">
               <div className="projects__project__card projects__project__card-light "  style={yacopiniColor}>
+                <div className="projects__project__card__image">
+                  <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
+                </div>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/yacopini"></Link>
@@ -70,20 +91,12 @@ class Projects extends React.Component {
 
 
             </div>
-            <div className="projects__project">
 
-              <div className="projects__project__card projects__project__card-light  " style={mercadonColor}>
-                <div className="container">
-                  <div className="col col-12">
-                    <Link to="/projects/el-mercadon"></Link>
-                    <h1>El Mercadón</h1>
-                    <p className="p-b">Web/UI/UX Design</p>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div className="projects__project">
               <div className="projects__project__card " style={cookingColor}>
+                <div className="projects__project__card__image">
+                  <img src={process.env.PUBLIC_URL + '/resources/img/cooking/cooking_cover2.png'} alt=""/>
+                </div>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/cooking-app"></Link>
@@ -96,6 +109,9 @@ class Projects extends React.Component {
 
             <div className="projects__project">
               <div className="projects__project__card " style={mapsColor}>
+                <div className="projects__project__card__image">
+                  <img src={process.env.PUBLIC_URL + '/resources/img/maps/maps_cover.png'} alt=""/>
+                </div>
                 <div className="container">
                   <div className="col col-12">
                     <Link to="/projects/some-maps"></Link>

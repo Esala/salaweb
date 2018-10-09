@@ -14,17 +14,38 @@
         .projects .projects__project .projects__project__card {
           padding: 45px 36px 45px 45px;
           min-height: 0px; } }
+      .projects .projects__project .projects__project__card .projects__project__card__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        filter: grayscale(100%) contrast(10%) brightness(150%);
+        z-index: 2;
+        transition: all 0.3s cubic-bezier(0.58, -0.19, 0.54, 1.05); }
+        .projects .projects__project .projects__project__card .projects__project__card__image img {
+          position: absolute;
+          display: block;
+          height: 102%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
       .projects .projects__project .projects__project__card.projects__project__card-light h1, .projects .projects__project .projects__project__card.projects__project__card-light p, .projects .projects__project .projects__project__card.projects__project__card-light a {
         color: #FAFAFA; }
       .projects .projects__project .projects__project__card.projects__project__card-light:before {
         color: #FAFAFA; }
+      .projects .projects__project .projects__project__card.projects__project__card-light .projects__project__card__image {
+        filter: grayscale(100%) contrast(20%); }
       .projects .projects__project .projects__project__card h1 {
         margin-top: 0;
         margin-bottom: 18px;
-        transition: all 0.3s cubic-bezier(0.58, -0.19, 0.54, 1.05); }
+        position: relative;
+        z-index: 5; }
       .projects .projects__project .projects__project__card p {
         padding: 0 0 9px;
-        transition: all 0.3s cubic-bezier(0.58, -0.19, 0.54, 1.05); }
+        position: relative;
+        z-index: 5; }
       .projects .projects__project .projects__project__card a {
         display: block;
         position: absolute;
@@ -32,27 +53,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 10;
-        transition: all 0.3s cubic-bezier(0.58, -0.19, 0.54, 1.05); }
-      .projects .projects__project .projects__project__card:hover h1, .projects .projects__project .projects__project__card:hover p, .projects .projects__project .projects__project__card:hover a {
-        opacity: .5; }
-        @media only screen and (max-width: 768px) {
-          .projects .projects__project .projects__project__card:hover h1, .projects .projects__project .projects__project__card:hover p, .projects .projects__project .projects__project__card:hover a {
-            opacity: 1; } }
-      .projects .projects__project .projects__project__card:hover:before {
-        opacity: 1;
-        bottom: -30%; }
-      .projects .projects__project .projects__project__card:before {
-        position: absolute;
-        right: 72px;
-        bottom: -72px;
-        content: "";
-        font-family: es-display, sans-serif;
-        font-size: 1832px;
-        line-height: 1;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.8s cubic-bezier(0.58, -0.19, 0.54, 1.05); }
-        @media only screen and (max-width: 768px) {
-          .projects .projects__project .projects__project__card:before {
-            display: none; } }
+        z-index: 10; }
+      .projects .projects__project .projects__project__card:hover h1, .projects .projects__project .projects__project__card:hover p {
+        z-index: 2; }
+      .projects .projects__project .projects__project__card:hover .projects__project__card__image {
+        z-index: 9;
+        filter: none; }
