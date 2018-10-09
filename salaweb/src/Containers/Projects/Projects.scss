@@ -16,6 +16,7 @@
       min-height: 340px;
       overflow: hidden;
       margin: 0;
+      filter: grayscale(100%);
 
 
       //Mobile
@@ -81,6 +82,7 @@
 
       }
       &:hover {
+        filter: grayscale(0%);
         h1, p {
           z-index: 2;
         }

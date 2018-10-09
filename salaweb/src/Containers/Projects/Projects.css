@@ -9,7 +9,8 @@
       position: relative;
       min-height: 340px;
       overflow: hidden;
-      margin: 0; }
+      margin: 0;
+      filter: grayscale(100%); }
       @media only screen and (max-width: 768px) {
         .projects .projects__project .projects__project__card {
           padding: 45px 36px 45px 45px;
@@ -54,8 +55,10 @@
         width: 100%;
         height: 100%;
         z-index: 10; }
-      .projects .projects__project .projects__project__card:hover h1, .projects .projects__project .projects__project__card:hover p {
-        z-index: 2; }
-      .projects .projects__project .projects__project__card:hover .projects__project__card__image {
-        z-index: 9;
-        filter: none; }
+      .projects .projects__project .projects__project__card:hover {
+        filter: grayscale(0%); }
+        .projects .projects__project .projects__project__card:hover h1, .projects .projects__project .projects__project__card:hover p {
+          z-index: 2; }
+        .projects .projects__project .projects__project__card:hover .projects__project__card__image {
+          z-index: 9;
+          filter: none; }
