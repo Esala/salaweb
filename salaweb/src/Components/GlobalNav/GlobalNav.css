@@ -3,6 +3,9 @@
   line-height: 1.125rem;
   position: relative;
   z-index: 8888; }
+  @media only screen and (max-width: 768px) {
+    .global-nav {
+      margin-left: 63px; } }
   .global-nav .global-nav__home-link-container {
     position: fixed;
     z-index: 9999;

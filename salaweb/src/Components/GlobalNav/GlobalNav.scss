@@ -4,6 +4,11 @@
   line-height: line-height(s);
   position: relative;
   z-index: 8888;
+  //Mobile
+  @media only screen and (max-width: breakpoint(tabletSD)) {
+
+    margin-left: spacing(63);
+  }
 
   .global-nav__home-link-container {
     position: fixed;

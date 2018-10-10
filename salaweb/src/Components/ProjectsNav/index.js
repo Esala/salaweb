@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 import './ProjectsNav.css';
 
 class ProjectsNav extends React.Component {
-  componentDidMount() {}
+  componentDidMount() {
+    console.log(this.props.active);
+  }
 
   render() {
     const { active } = this.props;

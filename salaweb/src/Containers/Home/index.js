@@ -37,14 +37,14 @@ class Home extends React.Component {
 
             <p className="p-b ">
               <Link to="/info/">
-                About me
+                Info
               </Link>
               {' '} / {' '}
               <Link to="/projects/"  >
-                Things I made
+                Work
               </Link>
                 {' '} / {' '}
-              <a href="mailto:ezequiel.salatino@gmail.com">
+              <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
                 Get in touch.
               </a>
 

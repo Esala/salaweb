@@ -8,8 +8,10 @@
   @media only screen and (max-width: breakpoint(tabletSD)) {
     white-space: nowrap;
     overflow-x: auto;
-      padding-top: spacing(18);
+    padding-top: spacing(18);
+    margin-left: spacing(63);
   }
+
 
   .projects-nav__link {
     margin-right: spacing(18);

@@ -75,6 +75,10 @@ class GlobalNav extends React.Component {
           Work
         </Link>
 
+        <a href="mailto:ezequiel.salatino@gmail.com" className="global-nav__email-link">
+          Get in touch.
+        </a>
+
       </div>
     );
   }

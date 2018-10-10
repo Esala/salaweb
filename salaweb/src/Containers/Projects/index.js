@@ -122,6 +122,14 @@ class Projects extends React.Component {
               </div>
             </div>
 
+            <div className="container projects__more">
+              <div className="col col-12">
+                <p className="p-b">
+                  Check out my behance page for more.
+                </p>
+              </div>
+            </div>
+
       </div>
     );
   }

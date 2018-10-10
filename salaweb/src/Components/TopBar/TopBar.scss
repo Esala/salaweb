@@ -6,8 +6,12 @@
   line-height: line-height(s);
   //Mobile
   @media only screen and (max-width: breakpoint(tabletSD)) {
-    padding-left: spacing(45);
+    padding-left: 0;
     padding-top: spacing(9);
     padding-bottom: spacing(9);
+    .container, .col.col-12 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
   }
 }

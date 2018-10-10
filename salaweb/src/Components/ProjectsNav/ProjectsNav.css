@@ -7,7 +7,8 @@
     .projects-nav {
       white-space: nowrap;
       overflow-x: auto;
-      padding-top: 18px; } }
+      padding-top: 18px;
+      margin-left: 63px; } }
   .projects-nav .projects-nav__link {
     margin-right: 18px; }
     .projects-nav .projects-nav__link.projects-nav__link-active {

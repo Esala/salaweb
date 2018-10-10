@@ -5,6 +5,9 @@
   line-height: 1.125rem; }
   @media only screen and (max-width: 768px) {
     .top-bar {
-      padding-left: 45px;
+      padding-left: 0;
       padding-top: 9px;
-      padding-bottom: 9px; } }
+      padding-bottom: 9px; }
+      .top-bar .container, .top-bar .col.col-12 {
+        padding-left: 0 !important;
+        padding-right: 0 !important; } }
