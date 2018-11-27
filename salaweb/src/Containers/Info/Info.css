@@ -4,3 +4,11 @@
     margin-right: 18px; }
   .info .info__get-in-touch h3 {
     margin-top: 0; }
+  .info .anim-container {
+    position: fixed;
+    width: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%; }
