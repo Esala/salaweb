@@ -28,6 +28,15 @@ class Projects extends React.Component {
     const mercadonColor =  {
       backgroundColor: '#1C42A1'
     };
+    const bebotColor =  {
+      backgroundColor: '#0082E5'
+    };
+    const amgColor =  {
+      backgroundColor: '#510B36'
+    };
+    const subiratsColor =  {
+      backgroundColor: '#EDE5E2'
+    };
     const cookingColor =  {
       backgroundColor: '#FFF8F0'
     };
@@ -91,8 +100,24 @@ class Projects extends React.Component {
 
 
             </div>
-
             <div className="projects__project">
+              <div className="projects__project__card projects__project__card-light "  style={subiratsColor}>
+                <div className="projects__project__card__image">
+                  <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
+                </div>
+                <div className="container">
+                  <div className="col col-12">
+                    <Link to="/projects/subirats"></Link>
+                    <h1>Ramón Subirats</h1>
+                    <p className="p-b">Brand / Web Design</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            {/* <div className="projects__project">
               <div className="projects__project__card " style={cookingColor}>
                 <div className="projects__project__card__image">
                   <img src={process.env.PUBLIC_URL + '/resources/img/cooking/cooking_cover.png'} alt=""/>
@@ -121,7 +146,7 @@ class Projects extends React.Component {
                 </div>
               </div>
             </div>
-
+            */}
             <div className="container projects__more">
               <div className="col col-12">
                 <h3>If you have a cool project, let’s talk!</h3>
