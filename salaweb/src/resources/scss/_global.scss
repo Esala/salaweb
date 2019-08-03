@@ -42,6 +42,11 @@ a {
     }
   }
 }
+
+.force-space {
+  display: inline-block;
+  width: spacing(27);
+}
 @import "globals/_grid.scss";
 @import "globals/_paragraphs.scss";
 @import "globals/_headings.scss";

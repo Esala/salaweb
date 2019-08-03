@@ -14,6 +14,7 @@
     .projects-nav .projects-nav__link.projects-nav__link-active {
       color: #1C2F4D;
       opacity: .5;
+      pointer-events: none;
       text-decoration: line-through; }
       .projects-nav .projects-nav__link.projects-nav__link-active:hover {
         color: #1C2F4D; }

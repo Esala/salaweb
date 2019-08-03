@@ -15,14 +15,28 @@ h1 {
   font-size: heading-font-size(h1);
   line-height: heading-line-height(h1);
   max-width: $block*140;
-  margin-top: heading-line-height(h1);
+  margin-top: heading-line-height(h1)/2;
   margin-bottom: heading-line-height(h1)/2;
+  //Tablet
+  @media only screen and (max-width: breakpoint(desktopSD)) {
+    font-size: heading-font-size(h2);
+    line-height: heading-line-height(h2);
+    margin-top: heading-line-height(h2)/2;
+    margin-bottom: heading-line-height(h2)/2;
+  }
   //Mobile
   @media only screen and (max-width: breakpoint(tabletSD)) {
-    font-size: heading-font-size(h1_mobile);
-    line-height: heading-line-height(h1_mobile);
-    margin-top: heading-line-height(h1_mobile);
-    margin-bottom: heading-line-height(h1_mobile)/2;
+    font-size: heading-font-size(h3);
+    line-height: heading-line-height(h3);
+    margin-top: heading-line-height(h3)/2;
+    margin-bottom: heading-line-height(h3)/2;
+  }
+  //Mobile Small
+  @media only screen and (max-width: breakpoint(mobileHD)) {
+    font-size: heading-font-size(h4);
+    line-height: heading-line-height(h4);
+    margin-top: heading-line-height(h4)/2;
+    margin-bottom: heading-line-height(h4)/2;
   }
 }
 h2 {
@@ -31,13 +45,14 @@ h2 {
   max-width: $block*122;
   margin-top: heading-line-height(h2);
   margin-bottom: heading-line-height(h2)/2;
-  //Mobile
-  @media only screen and (max-width: breakpoint(tabletSD)) {
-    font-size: heading-font-size(h1_mobile);
-    line-height: heading-line-height(h1_mobile);
-    margin-top: heading-line-height(h1_mobile);
-    margin-bottom: heading-line-height(h1_mobile)/2;
+  //Tablet
+  @media only screen and (max-width: breakpoint(desktopSD)) {
+    font-size: heading-font-size(h3);
+    line-height: heading-line-height(h3);
+    margin-top: heading-line-height(h3);
+    margin-bottom: heading-line-height(h3)/2;
   }
+
 }
 h3 {
   font-size: heading-font-size(h3);
@@ -47,10 +62,7 @@ h3 {
   margin-bottom: heading-line-height(h3)/2;
   //Mobile
   @media only screen and (max-width: breakpoint(tabletSD)) {
-    font-size: heading-font-size(h1_mobile);
-    line-height: heading-line-height(h1_mobile);
-    margin-top: heading-line-height(h1_mobile);
-    margin-bottom: heading-line-height(h1_mobile)/2;
+
   }
 }
 

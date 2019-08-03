@@ -37,23 +37,23 @@ class Info extends React.Component {
     return (
 
       <div className="info">
-        <div className="anim-container">
+        {/* <div className="anim-container">
           <Lottie  options={defaultOptions}
           height={400}
           width={400}
           isStopped={this.state.isStopped}
           isPaused={this.state.isPaused}
          />
-       </div>
+       </div>*/}
         <TopBar className="  ">
           <GlobalNav active="info" />
         </TopBar>
-        <div className="container ">
+        <div className="container info__content">
           <div className="col col-12  ">
               <Mobile>
                 <br/><br/><br/>
               </Mobile>
-            <h1 >I’m a designer interested in user interfaces, design systems, maps & data visualizations.</h1>
+            <h1 >Hello! I’m Ezequiel Salatino. <br/> Freelance designer interested in interfaces, design systems, maps & data visualizations.</h1>
           </div>
         </div>
 
@@ -61,7 +61,7 @@ class Info extends React.Component {
 
             <div className="col col-9 col-m-12">
 
-        
+
               <p className="p-b">
                 I studied graphic design in Argentina and start designing and building websites in 2003. I have <a href="https://www.linkedin.com/in/ezequielsalatino/" target="_blank" rel="noopener noreferrer" >experience</a> as freelancer but also in a few design and develop companies. </p>
               <p className="p-b"> Today I work as a freelance designer, mainly focused in UI, but also working as a product, UX and brand designer. Currently I'm also part of <a href="https://pannonica.design" target="_blank" rel="noopener noreferrer">pannonica.design</a>  as a design partner.

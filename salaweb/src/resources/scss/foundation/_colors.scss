@@ -24,7 +24,17 @@ $color-map: (
     lighten: (
       1: #99B8E9
     )
-  )
+  ),
+
+  pink: (
+    base: #E39AC8,
+    darken: (
+      1: #345B93
+    ),
+    lighten: (
+      1: #99B8E9
+    )
+  ),
 
 );
 

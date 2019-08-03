@@ -20,17 +20,17 @@ $line-height-map: (
 );
 
 $heading-font-size-map: (
-  h1: rem(102px),
+  h1: rem(86px),
   h2: rem(63px),
   h3: rem(39px),
-  h1_mobile: rem(44px)
+  h4: rem(30px)
 );
 
 $heading-line-height-map: (
-  h1: rem($block*12),
+  h1: rem($block*11),
   h2: rem($block*8),
-  h3: rem($block*6),
-  h1_mobile: rem($block*6)
+  h3: rem($block*5),
+  h4: rem($block*4)
 );
 
 

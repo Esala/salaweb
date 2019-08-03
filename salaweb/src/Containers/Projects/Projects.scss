@@ -3,7 +3,8 @@
 .projects {
   line-height: 0;
   .projects__more {
-    padding: spacing(144) 0 spacing(90);
+    padding-top: spacing(144) ;
+    padding-bottom: spacing(144);
     //Mobile
     @media only screen and (max-width: breakpoint(tabletSD)) {
       padding: spacing(90) spacing(36) spacing(45) spacing(36);

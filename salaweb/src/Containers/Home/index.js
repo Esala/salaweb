@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Responsive from 'react-responsive';
 import { Link } from 'react-router-dom';
-
+import Avatar from 'app/Components/Avatar/index.js'
 
 import './Home.css';
 
@@ -28,25 +28,32 @@ class Home extends React.Component {
         <div className="container">
           <div className="col col-12">
             <Desktop>
-              <h1 className="   1">Hi, I’m Ezequiel Salatino. <span className="highlight">UI Designer</span>, living in Mendoza, Argentina.</h1>
+              <Avatar />
+              <h1 className="1">I’m Ezequiel, a freelance  designer interested  in interfaces, design systems, maps and data visualizations. <span className="highlight">Currently living in Barcelona.</span> </h1>
             </Desktop>
 
             <Mobile>
-              <h1 className="   1">Hello,<br/> I’m Ezequiel Salatino.<span className="highlight">UI Designer</span> from Argentina.</h1>
+              <Avatar />
+              <h1 className="1">I’m Ezequiel, a freelance  designer interested  in interfaces, design systems, maps and data visualizations. <span className="highlight">Currently living in Barcelona.</span> </h1>
             </Mobile>
 
             <p className="p-b ">
+
               <Link to="/info/">
                 Info
               </Link>
-              {' '} / {' '}
+              <span className="force-space"></span>
               <Link to="/projects/"  >
                 Work
               </Link>
-                {' '} / {' '}
+                <br/>
               <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
-                Get in touch.
+                ezequiel.salatino@gmail.com
               </a>
+              <br/>
+            <a href="linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
+              linkedin.com/in/ezequielsalatino/
+            </a>
 
 
             </p>

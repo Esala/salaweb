@@ -1,7 +1,8 @@
 .projects {
   line-height: 0; }
   .projects .projects__more {
-    padding: 144px 0 90px; }
+    padding-top: 144px;
+    padding-bottom: 144px; }
     @media only screen and (max-width: 768px) {
       .projects .projects__more {
         padding: 90px 36px 45px 36px;

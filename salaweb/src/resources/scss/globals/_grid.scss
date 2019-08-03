@@ -50,9 +50,12 @@
 
 .container {
   margin: 0 auto;
-  padding: spacing(18);
-  max-width: $containerDesktop + (spacing(18)*2) ;
-
+  padding: spacing(18) spacing(45);
+  max-width: $containerDesktop + (spacing(45)*2) ;
+  &.fluid {
+    max-width: 100%;
+    padding: spacing(90);
+  }
   //Mobile
   @media only screen and (max-width: breakpoint(tabletSD)) {
     padding: spacing(9) spacing(9);

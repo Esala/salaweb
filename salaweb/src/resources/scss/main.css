@@ -49,10 +49,17 @@ a {
       a:hover {
         color: #1C2F4D; } }
 
+.force-space {
+  display: inline-block;
+  width: 27px; }
+
 .container {
   margin: 0 auto;
-  padding: 18px;
-  max-width: 1233px; }
+  padding: 18px 45px;
+  max-width: 1287px; }
+  .container.fluid {
+    max-width: 100%;
+    padding: 90px; }
   @media only screen and (max-width: 768px) {
     .container {
       padding: 9px 9px; } }
@@ -63,9 +70,9 @@ a {
   font-size: 0;
   position: relative;
   z-index: 1; }
-  @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 1024px) {
     .row {
-      max-width: 760px; } }
+      max-width: 660px; } }
   @media only screen and (max-width: 768px) {
     .row {
       max-width: 100%; } }
@@ -337,7 +344,7 @@ p {
     margin: 0 auto; }
 
 .highlight {
-  color: #448CFF;
+  color: #E39AC8;
   position: relative;
   z-index: 0;
   /*&:after {
@@ -361,17 +368,29 @@ h1, h2, h3 {
 
 h1 {
   letter-spacing: -0.02em;
-  font-size: 4.25rem;
-  line-height: 4.5rem;
+  font-size: 3.58333rem;
+  line-height: 4.125rem;
   max-width: 1260px;
-  margin-top: 4.5rem;
-  margin-bottom: 2.25rem; }
+  margin-top: 2.0625rem;
+  margin-bottom: 2.0625rem; }
+  @media only screen and (max-width: 1024px) {
+    h1 {
+      font-size: 2.625rem;
+      line-height: 3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem; } }
   @media only screen and (max-width: 768px) {
     h1 {
-      font-size: 1.83333rem;
-      line-height: 2.25rem;
-      margin-top: 2.25rem;
-      margin-bottom: 1.125rem; } }
+      font-size: 1.625rem;
+      line-height: 1.875rem;
+      margin-top: 0.9375rem;
+      margin-bottom: 0.9375rem; } }
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem; } }
 
 h2 {
   font-size: 2.625rem;
@@ -379,25 +398,19 @@ h2 {
   max-width: 1098px;
   margin-top: 3rem;
   margin-bottom: 1.5rem; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     h2 {
-      font-size: 1.83333rem;
-      line-height: 2.25rem;
-      margin-top: 2.25rem;
-      margin-bottom: 1.125rem; } }
+      font-size: 1.625rem;
+      line-height: 1.875rem;
+      margin-top: 1.875rem;
+      margin-bottom: 0.9375rem; } }
 
 h3 {
   font-size: 1.625rem;
-  line-height: 2.25rem;
+  line-height: 1.875rem;
   max-width: 882px;
-  margin-top: 2.25rem;
-  margin-bottom: 1.125rem; }
-  @media only screen and (max-width: 768px) {
-    h3 {
-      font-size: 1.83333rem;
-      line-height: 2.25rem;
-      margin-top: 2.25rem;
-      margin-bottom: 1.125rem; } }
+  margin-top: 1.875rem;
+  margin-bottom: 0.9375rem; }
 
 .fade-enter {
   opacity: 0.01; }

@@ -124,8 +124,16 @@ class Projects extends React.Component {
 
             <div className="container projects__more">
               <div className="col col-12">
-                <p className="p-b">
-                  Check out my behance page for more.
+                <h3>If you have a cool project, let’s talk!</h3>
+                <p className="p">
+                  You can write me at:{' '}
+                  <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
+                    ezequiel.salatino@gmail.com
+                  </a>
+                  <br/>
+                <a href="linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
+                  linkedin.com/in/ezequielsalatino/
+                </a>
                 </p>
               </div>
             </div>

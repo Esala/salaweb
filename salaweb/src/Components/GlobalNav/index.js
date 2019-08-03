@@ -35,7 +35,7 @@ class GlobalNav extends React.Component {
           to="/"
           className="global-nav__home-link"
         >
-          Salatino.
+          Home.
         </Link>
       )
     }
@@ -48,7 +48,7 @@ class GlobalNav extends React.Component {
               to="/"
               className="global-nav__home-link"
             >
-              Salatino.
+              Home.
             </Link>
           </Desktop>
           <Mobile>
