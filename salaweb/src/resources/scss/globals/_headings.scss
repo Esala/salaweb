@@ -7,6 +7,9 @@ h1,h2,h3 {
   font-weight: bold;
   max-width: 90%;
   font-feature-settings: "kern", "liga", "pnum", "ss04";
+  -moz-font-feature-settings: "salt" 2;
+  -webkit-font-feature-settings: "salt" 2;
+  font-feature-settings: "salt" 2;
 }
 
 

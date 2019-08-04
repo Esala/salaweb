@@ -16,7 +16,7 @@
     transform-origin: top left;
     transform: rotate(-90deg);
     left:spacing(9);
-    top: spacing(117);
+    top: spacing(72) + spacing(18);
     //Mobile
     @media only screen and (max-width: breakpoint(tabletSD)) {
       top:126px;
@@ -25,6 +25,7 @@
   }
   &.global-nav-in-project {
     .global-nav__home-link-container {
+      top: spacing(72) ;
       @media only screen and (max-width: breakpoint(tabletSD)) {
         top:99px;
         left: 0;
@@ -36,6 +37,7 @@
     margin-right: spacing(9);
     text-decoration: none;
     position: absolute;
+
 
 
     font-size: font-size();

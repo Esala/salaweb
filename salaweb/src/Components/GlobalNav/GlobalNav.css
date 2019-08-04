@@ -12,15 +12,17 @@
     transform-origin: top left;
     transform: rotate(-90deg);
     left: 9px;
-    top: 117px; }
+    top: 90px; }
     @media only screen and (max-width: 768px) {
       .global-nav .global-nav__home-link-container {
         top: 126px;
         left: 0; } }
-  @media only screen and (max-width: 768px) {
-    .global-nav.global-nav-in-project .global-nav__home-link-container {
-      top: 99px;
-      left: 0; } }
+  .global-nav.global-nav-in-project .global-nav__home-link-container {
+    top: 72px; }
+    @media only screen and (max-width: 768px) {
+      .global-nav.global-nav-in-project .global-nav__home-link-container {
+        top: 99px;
+        left: 0; } }
   .global-nav .global-nav__home-link {
     font-family: es-display, sans-serif;
     margin-right: 9px;

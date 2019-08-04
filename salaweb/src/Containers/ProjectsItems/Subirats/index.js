@@ -7,34 +7,27 @@ import ProjectsNav from 'app/Components/ProjectsNav/index.js';
 import ProjectStructure from 'app/Components/ProjectStructure/index.js';
 import Image from 'app/Components/Image/index.js';
 
+import './Subirats.css';
 
-import './Yacopini.css';
-
-class Yacopini extends React.Component {
+class Subirats extends React.Component {
   componentDidMount() {
-    document.title = "Yacopini - Ezequiel Salatino";
+    document.title = "Ramón Subirats - Ezequiel Salatino";
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
+
 }
 
   render() {
 
     return (
-      <div className="yacopini">
+      <div className="subirats">
         <TopBar>
           <GlobalNav active="projects" inProject />
-          <ProjectsNav active="yacopini"/>
+          <ProjectsNav active="subirats"/>
         </TopBar>
-        <ProjectStructure  title="Yacopini" color="#FE5620" description="Apr 2015. Web / UI design. Volkswagen, Chevrolet & Nissan authorized car dealer." light next="/projects/bebot" >
-        <div className="col col-3 col-m-12">
-        </div>
-        <div className="col col-6 col-center col-m-12">
-          <Image light device mobile height="703" url={process.env.PUBLIC_URL + '/resources/img/yacopini/operarios_dashboard_mobile.png'} />
-        </div>
-        <div className="col col-3 col-m-12">
-        </div>
-        <div className="col col-12 col-m-12 col-center">
-          <Image light device tablet height="1024" url={process.env.PUBLIC_URL + '/resources/img/yacopini/operarios_tablet.png'} />
+        <ProjectStructure title="Ramón Subirats" color="#EDE5E2" description="Some maps created for a couple of websites." next="/projects/amg" >
+        <div className="col col-6 col-m-12">
+          asd
         </div>
 
         </ProjectStructure>
@@ -54,4 +47,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Yacopini);
+)(Subirats);

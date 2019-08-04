@@ -5,8 +5,8 @@ import animateScrollTo from 'animated-scroll-to';
 import Responsive from 'react-responsive';
 import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
-import Lottie from 'react-lottie';
-import * as animationData from 'app/resources/js/deep_loading.json'
+//import Lottie from 'react-lottie';
+//import * as animationData from 'app/resources/js/deep_loading.json'
 
 
 import './Info.css';
@@ -25,6 +25,7 @@ class Info extends React.Component {
   render() {
 
     const Mobile = props => <Responsive {...props} maxWidth={1279} />;
+    /*
     const defaultOptions = {
       loop: true,
       autoplay: true,
@@ -32,7 +33,7 @@ class Info extends React.Component {
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
       }
-    };
+    }; */
 
     return (
 

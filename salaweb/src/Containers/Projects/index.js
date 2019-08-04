@@ -37,85 +37,118 @@ class Projects extends React.Component {
     const subiratsColor =  {
       backgroundColor: '#EDE5E2'
     };
-    const cookingColor =  {
-      backgroundColor: '#FFF8F0'
-    };
-    const mapsColor =  {
-      backgroundColor: '#F8ECF0'
-    };
+
     return (
       <div className="projects">
         <TopBar className="   1">
           <GlobalNav active="projects" />
         </TopBar>
 
-            <div className="projects__project">
-              <div className="projects__project__card " style={psychopharmacologyColor}>
-                <div className="projects__project__card__image">
-                  <img src={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/psy_cover.png'} alt=""/>
-                </div>
-                <div className="container">
-                  <div className="col col-12">
-                    <Link to="/projects/psychopharmacology-institute"></Link>
-                    <Desktop>
-                      <h1>Psychopharmacology<br/>Institute</h1>
-                    </Desktop>
-                    <Mobile>
-                      <h1>Psychophar- macology Institute</h1>
-                    </Mobile>
-
-                    <p className="p-b">Product Design</p>
-                  </div>
+          {/* YACOPINI */}
+          <div className="projects__project">
+            <div className="projects__project__card projects__project__card-light "  style={yacopiniColor}>
+              <div className="projects__project__card__image">
+                <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
+              </div>
+              <div className="container">
+                <div className="col col-12">
+                  <Link to="/projects/yacopini"></Link>
+                  <h1>Yacopini</h1>
+                  <p className="p-b">UI/UX. Design System. Web design.</p>
                 </div>
               </div>
             </div>
-            <div className="projects__project">
+          </div>
 
-              <div className="projects__project__card projects__project__card-light  " style={mercadonColor}>
-                <div className="projects__project__card__image">
-                  <img src={process.env.PUBLIC_URL + '/resources/img/mercadon/mercadon_cover.png'} alt=""/>
-                </div>
-                <div className="container">
-                  <div className="col col-12">
-                    <Link to="/projects/el-mercadon"></Link>
-                    <h1>El Mercadón</h1>
-                    <p className="p-b">Web/UI/UX Design</p>
-                  </div>
+          {/* BEBOT */}
+          <div className="projects__project">
+            <div className="projects__project__card  "  style={bebotColor}>
+              <div className="projects__project__card__image">
+                <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
+              </div>
+              <div className="container">
+                <div className="col col-12">
+                  <Link to="/projects/subirats"></Link>
+                  <h1>BeBot.</h1>
+                  <p className="p-b">UI/UX. Brand. Web design.</p>
                 </div>
               </div>
             </div>
-            <div className="projects__project">
-              <div className="projects__project__card projects__project__card-light "  style={yacopiniColor}>
-                <div className="projects__project__card__image">
-                  <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
-                </div>
-                <div className="container">
-                  <div className="col col-12">
-                    <Link to="/projects/yacopini"></Link>
-                    <h1>Yacopini</h1>
-                    <p className="p-b">Web/UI Design</p>
-                  </div>
+          </div>
+
+          {/* SUBIRATS */}
+          <div className="projects__project">
+            <div className="projects__project__card "  style={subiratsColor}>
+              <div className="projects__project__card__image">
+                <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
+              </div>
+              <div className="container">
+                <div className="col col-12">
+                  <Link to="/projects/subirats"></Link>
+                  <h1>Ramón Subirats</h1>
+                  <p className="p-b">Brand. Web design.</p>
                 </div>
               </div>
-
-
             </div>
-            <div className="projects__project">
-              <div className="projects__project__card projects__project__card-light "  style={subiratsColor}>
-                <div className="projects__project__card__image">
-                  <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
-                </div>
-                <div className="container">
-                  <div className="col col-12">
-                    <Link to="/projects/subirats"></Link>
-                    <h1>Ramón Subirats</h1>
-                    <p className="p-b">Brand / Web Design</p>
-                  </div>
+          </div>
+
+          {/* AMG */}
+          <div className="projects__project">
+            <div className="projects__project__card projects__project__card-light "  style={amgColor}>
+              <div className="projects__project__card__image">
+                <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
+              </div>
+              <div className="container">
+                <div className="col col-12">
+                  <Link to="/projects/subirats"></Link>
+                  <h1>AMG</h1>
+                  <p className="p-b">UI/UX. Web Design.</p>
                 </div>
               </div>
-
-
             </div>
+          </div>
+
+
+          {/* MERCADON */}
+
+          <div className="projects__project">
+
+            <div className="projects__project__card projects__project__card-light  " style={mercadonColor}>
+              <div className="projects__project__card__image">
+                <img src={process.env.PUBLIC_URL + '/resources/img/mercadon/mercadon_cover.png'} alt=""/>
+              </div>
+              <div className="container">
+                <div className="col col-12">
+                  <Link to="/projects/el-mercadon"></Link>
+                  <h1>El Mercadón</h1>
+                  <p className="p-b">Brand. UI/UX. Web Design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          {/* PI */}
+          <div className="projects__project">
+            <div className="projects__project__card " style={psychopharmacologyColor}>
+              <div className="projects__project__card__image">
+                <img src={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/psy_cover.png'} alt=""/>
+              </div>
+              <div className="container">
+                <div className="col col-12">
+                  <Link to="/projects/psychopharmacology-institute"></Link>
+                  <Desktop>
+                    <h1>Psychopharmacology<br/>Institute</h1>
+                  </Desktop>
+                  <Mobile>
+                    <h1>Psychophar- macology Institute</h1>
+                  </Mobile>
+
+                  <p className="p-b">Product Design. UI/UX. Web Design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
             {/* <div className="projects__project">
               <div className="projects__project__card " style={cookingColor}>

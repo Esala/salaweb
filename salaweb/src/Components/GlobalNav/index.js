@@ -19,6 +19,7 @@ class GlobalNav extends React.Component {
       (inProject ? ' global-nav-in-project' : '') ;
 
     let mobileNav;
+    let desktopNav;
 
     if(inProject){
       mobileNav = (
@@ -26,30 +27,41 @@ class GlobalNav extends React.Component {
           to="/projects/"
           className="global-nav__home-link"
         >
-          Back.
+          Back
         </Link>
-      )
+      );
+      desktopNav = (
+        <Link
+          to="/projects"
+          className="global-nav__home-link"
+        >
+          Back
+        </Link>
+      );
     }else {
       mobileNav = (
         <Link
           to="/"
           className="global-nav__home-link"
         >
-          Home.
+          Home
         </Link>
-      )
+      );
+      desktopNav = (
+        <Link
+          to="/"
+          className="global-nav__home-link"
+        >
+          Home
+        </Link>
+      );
     }
 
     return (
       <div className={className}>
         <div className="global-nav__home-link-container">
           <Desktop>
-            <Link
-              to="/"
-              className="global-nav__home-link"
-            >
-              Home.
-            </Link>
+            {desktopNav}
           </Desktop>
           <Mobile>
             {mobileNav}

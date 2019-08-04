@@ -7,11 +7,11 @@ import ProjectsNav from 'app/Components/ProjectsNav/index.js';
 import ProjectStructure from 'app/Components/ProjectStructure/index.js';
 import Image from 'app/Components/Image/index.js';
 
-import './Maps.css';
+import './Bebot.css';
 
-class Maps extends React.Component {
+class Bebot extends React.Component {
   componentDidMount() {
-    document.title = "Some Maps - Ezequiel Salatino";
+    document.title = "BeBot - Ezequiel Salatino";
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
 
@@ -20,24 +20,16 @@ class Maps extends React.Component {
   render() {
 
     return (
-      <div className="maps">
+      <div className="bebot">
         <TopBar>
           <GlobalNav active="projects" inProject />
-          <ProjectsNav active="maps"/>
+          <ProjectsNav active="bebot"/>
         </TopBar>
-        <ProjectStructure title="Some Maps" color="#F8ECF0" description="Some maps created for a couple of websites." next="/projects/psychopharmacology-institute" >
+        <ProjectStructure title="BeBot" color="#0082E5" description="Some maps created for a couple of websites." next="/projects/subirats" >
         <div className="col col-6 col-m-12">
-          <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
+          asd
         </div>
-        <div className="col col-6 col-m-12">
-          <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/limon.png'} />
-        </div>
-        <div className="col col-6 col-m-12">
-          <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/palta.png'} />
-        </div>
-        <div className="col col-6 col-m-12">
-          <Image url={process.env.PUBLIC_URL + '/resources/img/mercadon/tomate.png'} />
-        </div>
+
         </ProjectStructure>
       </div>
     );
@@ -55,4 +47,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Maps);
+)(Bebot);

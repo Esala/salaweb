@@ -7,11 +7,11 @@ import ProjectsNav from 'app/Components/ProjectsNav/index.js';
 import ProjectStructure from 'app/Components/ProjectStructure/index.js';
 import Image from 'app/Components/Image/index.js';
 
-import './Cooking.css';
+import './Amg.css';
 
-class Cooking extends React.Component {
+class Amg extends React.Component {
   componentDidMount() {
-    document.title = "Cooking App Ideas - Ezequiel Salatino";
+    document.title = "AMG - Ezequiel Salatino";
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
 }
@@ -19,18 +19,18 @@ class Cooking extends React.Component {
   render() {
 
     return (
-      <div className="cooking">
+      <div className="amg">
         <TopBar>
           <GlobalNav active="projects" inProject />
-          <ProjectsNav active="cooking"/>
+          <ProjectsNav active="amg"/>
         </TopBar>
-        <ProjectStructure title="Cooking App Ideas" color="#FFF8F0" description="Nov 2018. UI design. iOS Application."  next="/projects/some-maps" >
+        <ProjectStructure title="AMG.la " color="#510B36" description="Nov 2018. UI design. iOS Application."  light next="/projects/el-mercadon" >
           <div className="col col-12">
             <div className="col col-6 col-center col-m-12">
-              <Image height="703" device mobile url={process.env.PUBLIC_URL + '/resources/img/cooking/cook_mobile.png'} />
+              <Image height="703" device mobile url={process.env.PUBLIC_URL + '/resources/img/amg/cook_mobile.png'} />
             </div>
             <div className="col col-6 col-center col-m-12">
-              <Image nopadding url={process.env.PUBLIC_URL + '/resources/img/cooking/acelga.png'} />
+              <Image nopadding url={process.env.PUBLIC_URL + '/resources/img/amg/acelga.png'} />
               <p className="p-b">
                 Ilustrations by<br/> <a href="asd">Elías Rodriguez</a>
               </p>
@@ -54,4 +54,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Cooking);
+)(Amg);

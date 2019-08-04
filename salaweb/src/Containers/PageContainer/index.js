@@ -9,8 +9,9 @@ import Projects from '../Projects/index.js';
 import Psychopharmacology from '../ProjectsItems/Psychopharmacology/index.js';
 import Yacopini from '../ProjectsItems/Yacopini/index.js';
 import Mercadon from '../ProjectsItems/Mercadon/index.js';
-import Cooking from '../ProjectsItems/Cooking/index.js';
-import Maps from '../ProjectsItems/Maps/index.js';
+import Amg from '../ProjectsItems/Amg/index.js';
+import Subirats from '../ProjectsItems/Subirats/index.js';
+import Bebot from '../ProjectsItems/Bebot/index.js';
 
 function PageContainer({ location }) {
 
@@ -58,8 +59,9 @@ function PageContainer({ location }) {
               <Route  path="/projects/psychopharmacology-institute" exact component={Psychopharmacology} />
               <Route  path="/projects/yacopini" exact component={Yacopini} />
               <Route  path="/projects/el-mercadon" exact component={Mercadon} />
-              <Route  path="/projects/cooking-app" exact component={Cooking} />
-              <Route  path="/projects/some-maps" exact component={Maps} />
+              <Route  path="/projects/subirats" exact component={Subirats} />
+              <Route  path="/projects/amg" exact component={Amg} />
+              <Route  path="/projects/bebot" exact component={Bebot} />
             </Switch>
 
           </div>

@@ -16,15 +16,7 @@ class ProjectsNav extends React.Component {
 
     return (
       <div className={className}>
-        <Link
-          to="/projects/psychopharmacology-institute"
-          className={
-            'projects-nav__link' +
-            (active === "psychopharmacology" ? ' projects-nav__link-active' : '')
-          }
-        >
-          Psychopharmacology Institute
-        </Link>
+
         <Link
           to="/projects/yacopini"
           className={
@@ -35,6 +27,34 @@ class ProjectsNav extends React.Component {
           Yacopini
         </Link>
         <Link
+          to="/projects/bebot"
+          className={
+            'projects-nav__link' +
+            (active === "bebot" ? ' projects-nav__link-active' : '')
+          }
+        >
+          BeBot
+        </Link>
+        <Link
+          to="/projects/subirats"
+          className={
+            'projects-nav__link' +
+            (active === "subirats" ? ' projects-nav__link-active' : '')
+          }
+        >
+          Ramón Subirats
+        </Link>
+        <Link
+          to="/projects/amg"
+          className={
+            'projects-nav__link' +
+            (active === "amg" ? ' projects-nav__link-active' : '')
+          }
+        >
+          AMG
+        </Link>
+
+        <Link
           to="/projects/el-mercadon"
           className={
             'projects-nav__link' +
@@ -44,23 +64,15 @@ class ProjectsNav extends React.Component {
           El Mercadón
         </Link>
         <Link
-          to="/projects/cooking-app"
+          to="/projects/psychopharmacology-institute"
           className={
             'projects-nav__link' +
-            (active === "cooking" ? ' projects-nav__link-active' : '')
+            (active === "psychopharmacology" ? ' projects-nav__link-active' : '')
           }
         >
-          Cooking App
+          Psychopharmacology Institute
         </Link>
-        <Link
-          to="/projects/some-maps"
-          className={
-            'projects-nav__link' +
-            (active === "maps" ? ' projects-nav__link-active' : '')
-          }
-        >
-          Some Maps
-        </Link>
+
       </div>
     );
   }

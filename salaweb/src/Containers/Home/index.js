@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Responsive from 'react-responsive';
+import animateScrollTo from 'animated-scroll-to';
 import { Link } from 'react-router-dom';
 import Avatar from 'app/Components/Avatar/index.js'
 
@@ -17,6 +18,9 @@ class Home extends React.Component {
 
   componentDidMount() {
     document.title = "Hi, I'm Ezequiel";
+    var homeElement = 0 ;
+    console.log("----" + homeElement);
+    animateScrollTo(homeElement, {speed:1,  minDuration: 1200});
     this.setState({ statusClass: 'scrolled' });
   }
 
