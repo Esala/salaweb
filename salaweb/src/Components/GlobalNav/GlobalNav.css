@@ -13,31 +13,20 @@
     transform: rotate(-90deg);
     left: 9px;
     top: 90px; }
-    @media only screen and (max-width: 768px) {
-      .global-nav .global-nav__home-link-container {
-        top: 126px;
-        left: 0; } }
   .global-nav.global-nav-in-project .global-nav__home-link-container {
-    top: 72px; }
-    @media only screen and (max-width: 768px) {
-      .global-nav.global-nav-in-project .global-nav__home-link-container {
-        top: 99px;
-        left: 0; } }
+    top: 77px; }
   .global-nav .global-nav__home-link {
     font-family: es-display, sans-serif;
-    margin-right: 9px;
     text-decoration: none;
     position: absolute;
+    background-color: #FFF;
+    padding: 9px 14px 9px 14px;
+    top: -9px;
+    left: -4px;
     font-size: 1rem;
     line-height: 1.5rem; }
     .global-nav .global-nav__home-link:hover {
       color: #1C2F4D; }
-    @media only screen and (max-width: 768px) {
-      .global-nav .global-nav__home-link {
-        background-color: #FFF;
-        padding: 9px 27px 9px 18px;
-        margin-right: 0;
-        top: 0; } }
   .global-nav .global-nav__link {
     margin-right: 18px; }
     .global-nav .global-nav__link.global-nav__link-active {

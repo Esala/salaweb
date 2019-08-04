@@ -1,5 +1,5 @@
-$desktopHD: 1486px;
-$desktopSD: 1024px;
+$desktopHD: 1440px;
+$desktopSD: 1280px;
 $tabletHD: 1024px;
 $tabletSD: 768px;
 $mobileHD: 480px;
@@ -7,7 +7,9 @@ $mobileSD: 320px;
 
 //container responsive widths
 $containerDesktop: 1197px;
-$containerTablet: 660px;
+$containerDesktopSD: 1000px;
+$containerTablet: 800px;
+$containerTabletSD: 100%;
 $containerMobile: 100%;
 
 $breakpoints-map: (

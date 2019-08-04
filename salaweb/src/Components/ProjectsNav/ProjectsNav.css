@@ -3,6 +3,10 @@
   line-height: 1.125rem;
   position: relative;
   padding-top: 9px; }
+  @media only screen and (max-width: 1024px) {
+    .projects-nav {
+      white-space: nowrap;
+      overflow-x: auto; } }
   @media only screen and (max-width: 768px) {
     .projects-nav {
       white-space: nowrap;

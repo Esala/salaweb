@@ -4,3 +4,9 @@
   padding-top: 144px; }
   .home.scrolled {
     min-height: 0; }
+  @media only screen and (max-width: 1280px) {
+    .home {
+      padding-top: 90px; } }
+  @media only screen and (max-width: 480px) {
+    .home {
+      padding-top: 45px; } }

@@ -25,10 +25,10 @@ class ProjectStructure extends React.Component {
       <div className={className} style={projectColor}>
         <div className="project-structure__info">
           <div className="container">
-            <div className="col col-8">
-              <h1 className="   5">{title}</h1>
+            <div className="col col-8 col-t-6">
+              <h1 className="5">{title}</h1>
             </div>
-            <div className="col col-4 project-structure__info__description    6">
+            <div className="col col-4 col-t-6 project-structure__info__description 6">
               <p>{description}</p>
             </div>
           </div>

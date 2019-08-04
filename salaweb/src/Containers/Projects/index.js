@@ -18,7 +18,8 @@ class Projects extends React.Component {
 
   render() {
     const Desktop = props => <Responsive {...props} minWidth={1280} />;
-    const Mobile = props => <Responsive {...props} maxWidth={1279} />;
+    const Mobile = props => <Responsive {...props} maxWidth={1279} minWidth={421} />;
+    const MobileXS = props => <Responsive {...props} maxWidth={420} />;
     const psychopharmacologyColor =  {
       backgroundColor: '#7FDBE3'
     };
@@ -60,54 +61,22 @@ class Projects extends React.Component {
             </div>
           </div>
 
+
           {/* BEBOT */}
           <div className="projects__project">
             <div className="projects__project__card  "  style={bebotColor}>
               <div className="projects__project__card__image">
-                <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
+                <img src={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_cover.png'} alt=""/>
               </div>
               <div className="container">
                 <div className="col col-12">
-                  <Link to="/projects/subirats"></Link>
+                  <Link to="/projects/bebot"></Link>
                   <h1>BeBot.</h1>
-                  <p className="p-b">UI/UX. Brand. Web design.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* SUBIRATS */}
-          <div className="projects__project">
-            <div className="projects__project__card "  style={subiratsColor}>
-              <div className="projects__project__card__image">
-                <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
-              </div>
-              <div className="container">
-                <div className="col col-12">
-                  <Link to="/projects/subirats"></Link>
-                  <h1>Ramón Subirats</h1>
                   <p className="p-b">Brand. Web design.</p>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* AMG */}
-          <div className="projects__project">
-            <div className="projects__project__card projects__project__card-light "  style={amgColor}>
-              <div className="projects__project__card__image">
-                <img src={process.env.PUBLIC_URL + '/resources/img/yacopini/yacopini_cover.png'} alt=""/>
-              </div>
-              <div className="container">
-                <div className="col col-12">
-                  <Link to="/projects/subirats"></Link>
-                  <h1>AMG</h1>
-                  <p className="p-b">UI/UX. Web Design.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
 
           {/* MERCADON */}
 
@@ -127,6 +96,40 @@ class Projects extends React.Component {
             </div>
           </div>
 
+          {/* SUBIRATS */}
+          <div className="projects__project">
+            <div className="projects__project__card "  style={subiratsColor}>
+              <div className="projects__project__card__image">
+                <img src={process.env.PUBLIC_URL + '/resources/img/subirats/subirats_cover.png'} alt=""/>
+              </div>
+              <div className="container">
+                <div className="col col-12">
+                  <Link to="/projects/subirats"></Link>
+                  <h1>Ramón Subirats</h1>
+                  <p className="p-b">Brand. Web design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* AMG */}
+          <div className="projects__project">
+            <div className="projects__project__card projects__project__card-light "  style={amgColor}>
+              <div className="projects__project__card__image">
+                <img src={process.env.PUBLIC_URL + '/resources/img/amg/amg_cover.png'} alt=""/>
+              </div>
+              <div className="container">
+                <div className="col col-12">
+                  <Link to="/projects/amg"></Link>
+                  <h1>AMG</h1>
+                  <p className="p-b">UI/UX. Web Design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
 
           {/* PI */}
           <div className="projects__project">
@@ -141,8 +144,11 @@ class Projects extends React.Component {
                     <h1>Psychopharmacology<br/>Institute</h1>
                   </Desktop>
                   <Mobile>
-                    <h1>Psychophar- macology Institute</h1>
+                    <h1>Psychopharm Institute</h1>
                   </Mobile>
+                  <MobileXS>
+                    <h1>Psychopharm Institute</h1>
+                  </MobileXS>
 
                   <p className="p-b">Product Design. UI/UX. Web Design.</p>
                 </div>
@@ -183,16 +189,42 @@ class Projects extends React.Component {
             <div className="container projects__more">
               <div className="col col-12">
                 <h3>If you have a cool project, let’s talk!</h3>
-                <p className="p">
-                  You can write me at:{' '}
-                  <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
-                    ezequiel.salatino@gmail.com
+                <Desktop>
+                  <p className="p">
+                    You can write me at:{' '}
+                    <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
+                      ezequiel.salatino@gmail.com
+                    </a>
+                    <br/>
+                  <a href="linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
+                    linkedin.com/in/ezequielsalatino/
                   </a>
-                  <br/>
-                <a href="linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
-                  linkedin.com/in/ezequielsalatino/
-                </a>
-                </p>
+                  </p>
+                </Desktop>
+                <Mobile>
+                  <p className="p">
+                    You can write me at:{' '}
+                    <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
+                      ezequiel.salatino@gmail.com
+                    </a>
+                    <br/>
+                  <a href="linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
+                    linkedin.com/in/ezequielsalatino/
+                  </a>
+                  </p>
+                </Mobile>
+                <MobileXS>
+                  <p className="p p-s">
+                    You can write me at:{' '}
+                    <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
+                      ezequiel.salatino@gmail.com
+                    </a>
+
+                  <a href="linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
+                    linkedin.com/in/ezequielsalatino/
+                  </a>
+                  </p>
+                </MobileXS>
               </div>
             </div>
 

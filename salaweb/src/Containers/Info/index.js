@@ -51,16 +51,14 @@ class Info extends React.Component {
         </TopBar>
         <div className="container info__content">
           <div className="col col-12  ">
-              <Mobile>
-                <br/><br/><br/>
-              </Mobile>
+            
             <h1 >Hello! I’m Ezequiel Salatino. <br/> Freelance designer interested in interfaces, design systems, maps & data visualizations.</h1>
           </div>
         </div>
 
         <div className="container">
 
-            <div className="col col-9 col-m-12">
+            <div className="col col-9 col-t-12 col-m-12">
 
 
               <p className="p-b">

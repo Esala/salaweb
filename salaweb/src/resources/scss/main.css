@@ -60,9 +60,19 @@ a {
   .container.fluid {
     max-width: 100%;
     padding: 90px; }
+  @media only screen and (max-width: 1280px) {
+    .container {
+      max-width: 1000px; } }
+  @media only screen and (max-width: 1024px) {
+    .container {
+      max-width: 800px; } }
   @media only screen and (max-width: 768px) {
     .container {
-      padding: 9px 9px; } }
+      max-width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 9px 9px;
+      max-width: 100%; } }
 
 .row {
   margin: 0 auto;
@@ -70,9 +80,9 @@ a {
   font-size: 0;
   position: relative;
   z-index: 1; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1280px) {
     .row {
-      max-width: 660px; } }
+      max-width: 800px; } }
   @media only screen and (max-width: 768px) {
     .row {
       max-width: 100%; } }
@@ -262,6 +272,60 @@ a {
   .col.col-12.fluid {
     width: 100%; }
 
+@media only screen and (max-width: 1280px) {
+  .col.col-t-3 {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+    vertical-align: top; } }
+  @media only screen and (max-width: 1280px) and (max-width: 768px) {
+    .col.col-t-3 {
+      width: 100% !important;
+      padding-left: 18px !important;
+      padding-right: 18px !important; } }
+
+@media only screen and (max-width: 1280px) {
+    .col.col-t-3.fluid {
+      width: 25%; } }
+
+@media only screen and (max-width: 1280px) {
+  .col.col-t-6 {
+    width: 50%;
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+    vertical-align: top; } }
+  @media only screen and (max-width: 1280px) and (max-width: 768px) {
+    .col.col-t-6 {
+      width: 100% !important;
+      padding-left: 18px !important;
+      padding-right: 18px !important; } }
+
+@media only screen and (max-width: 1280px) {
+    .col.col-t-6.fluid {
+      width: 50%; } }
+
+@media only screen and (max-width: 1280px) {
+  .col.col-t-12 {
+    width: 100%;
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+    vertical-align: top; } }
+  @media only screen and (max-width: 1280px) and (max-width: 768px) {
+    .col.col-t-12 {
+      width: 100% !important;
+      padding-left: 18px !important;
+      padding-right: 18px !important; } }
+
+@media only screen and (max-width: 1280px) {
+    .col.col-t-12.fluid {
+      width: 100%; } }
+
 @media only screen and (max-width: 768px) {
   .col.col-m-3 {
     width: 25%;
@@ -376,7 +440,7 @@ h1 {
   max-width: 1260px;
   margin-top: 2.0625rem;
   margin-bottom: 2.0625rem; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1280px) {
     h1 {
       font-size: 2.625rem;
       line-height: 3rem;
@@ -401,7 +465,7 @@ h2 {
   max-width: 1098px;
   margin-top: 3rem;
   margin-bottom: 1.5rem; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1280px) {
     h2 {
       font-size: 1.625rem;
       line-height: 1.875rem;

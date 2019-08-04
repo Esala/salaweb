@@ -6,6 +6,15 @@
   }
   .info__content {
     padding-top: spacing(90);
+    //Tablet
+    @media only screen and (max-width: breakpoint(desktopSD)) {
+      
+      h1 {
+        br {
+          display: none;
+        }
+      }
+    }
   }
   .info__get-in-touch {
     h3 {

@@ -5,11 +5,22 @@
   .projects__more {
     padding-top: spacing(144) ;
     padding-bottom: spacing(144);
+
     //Mobile
     @media only screen and (max-width: breakpoint(tabletSD)) {
       padding: spacing(90) spacing(36) spacing(45) spacing(36);
       text-align: center;
+      a {
+        display: block;
+max-width: 100%;
+overflow: hidden;
+text-overflow: ellipsis;
+      }
+      a + br {
+        display: none;
+      }
     }
+
   }
   .projects__project {
     display: inline-block;
@@ -33,7 +44,7 @@
         height: 100%;
         background-color: color(white);
         content: '';
-        opacity: .95;
+        opacity: .75;
       }
 
 
@@ -49,15 +60,15 @@
           position: absolute;
           display: block;
 
-          height: 102%;
+          height: 104%;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
         }
-      //  filter: grayscale(100%) contrast(30%) brightness(80%);
+        filter: grayscale(100%) contrast(30%) brightness(80%);
 
         z-index: 2;
-        transition: transition(fast);
+      //  transition: transition(fast);
       }
 
       &.projects__project__card-light {
@@ -69,7 +80,7 @@
             background-color: color(black);
           }
           .projects__project__card__image {
-          //  filter: grayscale(100%) contrast(20%);
+            filter: grayscale(100%) contrast(20%);
           }
       }
       h1{
@@ -78,7 +89,7 @@
 
         position: relative;
         z-index: 5;
-        
+
       }
       p {
         padding: 0 0 spacing(9);
@@ -101,6 +112,10 @@
 
         h1, p {
           z-index: 2;
+
+        }
+        h1 {
+
         }
           &:before {
             opacity: 0;
@@ -108,6 +123,7 @@
 
         .projects__project__card__image {
           z-index: 9;
+          filter: none;
 
 
         }

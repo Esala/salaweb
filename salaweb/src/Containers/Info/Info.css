@@ -4,6 +4,9 @@
     margin-right: 18px; }
   .info .info__content {
     padding-top: 90px; }
+    @media only screen and (max-width: 1280px) {
+      .info .info__content h1 br {
+        display: none; } }
   .info .info__get-in-touch h3 {
     margin-top: 0; }
   .info .anim-container {

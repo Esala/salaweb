@@ -13,6 +13,7 @@
   position: relative;
   z-index: 1;
 
+
   //Tablet
   @media only screen and (max-width: breakpoint(desktopSD)) {
       max-width: $containerTablet;
@@ -51,14 +52,29 @@
 .container {
   margin: 0 auto;
   padding: spacing(18) spacing(45);
-  max-width: $containerDesktop + (spacing(45)*2) ;
+  max-width: $containerDesktop + spacing(45)*2;
   &.fluid {
     max-width: 100%;
     padding: spacing(90);
   }
+
+  //DesktopSD
+  @media only screen and (max-width: breakpoint(desktopSD)) {
+      max-width: $containerDesktopSD;
+  }
+  //Tablet
+  @media only screen and (max-width: breakpoint(tabletHD)) {
+      max-width: $containerTablet;
+  }
+  //Tablet SD
+  @media only screen and (max-width: breakpoint(tabletSD)) {
+      max-width: $containerTabletSD;
+  }
+
   //Mobile
   @media only screen and (max-width: breakpoint(tabletSD)) {
     padding: spacing(9) spacing(9);
+    max-width: $containerMobile;
   }
 }
 .row {
@@ -105,7 +121,21 @@
   &.col-12 {
     @include col(12, 12, $align: top);
   }
-
+  &.col-t-3 {
+    @media only screen and (max-width: breakpoint(desktopSD)) {
+      @include col(3, 12, $align: top);
+    }
+  }
+  &.col-t-6 {
+    @media only screen and (max-width: breakpoint(desktopSD)) {
+      @include col(6, 12, $align: top);
+    }
+  }
+  &.col-t-12 {
+    @media only screen and (max-width: breakpoint(desktopSD)) {
+      @include col(12, 12, $align: top);
+    }
+  }
   &.col-m-3 {
     @media only screen and (max-width: breakpoint(tabletSD)) {
       @include col(3, 12, $align: top);
