@@ -25,9 +25,20 @@ class Bebot extends React.Component {
           <GlobalNav active="projects" inProject />
           <ProjectsNav active="bebot"/>
         </TopBar>
-        <ProjectStructure title="BeBot" color="#0082E5" description="Some maps created for a couple of websites." next="/projects/subirats" >
-        <div className="col col-6 col-m-12">
-          asd
+        <ProjectStructure title="BeBot." light color="#0082E5" description="Feb 2019. Brand / Web Design. Conversational design agency." next="/projects/subirats" >
+        <div className="col col-12 col-center col-m-12">
+          <Image light device height="800" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_website-desktop.jpg'} />
+        </div>
+
+        <div className="col col-12 col-center">
+          <p className="p-b p-center">
+            Chatbots without personality are just machines! BeBot is a conversational design agency focus in designing chatbots that are unique and unrepeatable. As a co-founder and design manager, I'm working in the visual identity, the website and business presentations.
+          </p>
+          <p className="p-b p-center">
+            Check the website here: <a href="http:bebot.design" target="_blank">bebot.design</a>
+          </p>
+          <br/>
+          <br/>
         </div>
 
         </ProjectStructure>
