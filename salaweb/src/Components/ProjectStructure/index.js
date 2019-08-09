@@ -9,16 +9,37 @@ class ProjectStructure extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { color, title, description, light, next } = this.props;
+    const { color, title, description, light, next, full } = this.props;
 
     let className = 'project-structure '+
-      (light ? ' project-structure-light' : '');
+      (light ? ' project-structure-light' : '')+
+        (full ? ' project-structure-full' : '');
 
     //PROJECT background Color
     if (color) {
       var projectColor = {
           backgroundColor:  color
       };
+    }
+
+    var containerElement;
+
+    if(full){
+      containerElement = (
+        <div className=" project-structure__content">
+
+            {this.props.children}
+
+        </div>
+      );
+    }else {
+      containerElement = (
+        <div className="container project-structure__content">
+
+            {this.props.children}
+
+        </div>
+      );
     }
 
     return (
@@ -28,19 +49,20 @@ class ProjectStructure extends React.Component {
             <div className="col col-8 col-t-6">
               <h1 className="5">{title}</h1>
             </div>
-            <div className="col col-4 col-t-6 project-structure__info__description 6">
+            <div className="col col-4 col-t-6 project-structure__info__description">
               <p>{description}</p>
             </div>
           </div>
         </div>
-        <div className="container project-structure__content    7">
+        {containerElement}
+        {/* <div className="container project-structure__content">
 
             {this.props.children}
 
-        </div>
+        </div> */}
         <div className="container">
           <div className="col col-12">
-            <div className="project-structure__next   ">
+            <div className="project-structure__next">
               <Link to={next}>Next project</Link>
             </div>
           </div>

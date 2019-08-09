@@ -5,6 +5,8 @@
   min-height: 162px;
   transition: all 0.8s cubic-bezier(0.58, -0.19, 0.54, 1.05);
   margin-bottom: 162px; }
+  .image.image-right {
+    text-align: right; }
   @media only screen and (max-width: 1024px) {
     .image {
       margin-bottom: 90px; } }
@@ -15,6 +17,13 @@
     width: 100%; }
   .image.image-nopadding {
     margin-bottom: 0; }
+  @media only screen and (max-width: 768px) {
+    .image.image-full img {
+      min-width: 1440px;
+      margin-left: 50%;
+      transform: translateX(-50%); } }
+  .image.image-full.image-maxed img {
+    max-width: 1440px; }
   .image.image-device {
     padding: 18px;
     border-radius: 36px;

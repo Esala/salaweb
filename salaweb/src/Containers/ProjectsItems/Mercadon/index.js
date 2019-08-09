@@ -28,7 +28,7 @@ class Mercadon extends React.Component {
           <GlobalNav active="projects" inProject/>
           <ProjectsNav active="mercadon"/>
         </TopBar>
-        <ProjectStructure title="El Mercadón" color="#1C42A1" description="Nov 2017. Branding. Web / UI / UX design. E-commerce." light next="/projects/psychopharmacology-institute" >
+        <ProjectStructure title="El Mercadón" color="#1C42A1" description="Nov 2017. Branding. Web / UI / UX design. E-commerce." light next="/projects/subirats" >
           <div className="col col-12 col-m-12">
             <Image nopadding light height="1000" url={process.env.PUBLIC_URL + '/resources/img/mercadon/sandia.png'} />
           </div>

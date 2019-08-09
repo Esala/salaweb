@@ -36,6 +36,15 @@ class ProjectsNav extends React.Component {
           BeBot
         </Link>
         <Link
+          to="/projects/el-mercadon"
+          className={
+            'projects-nav__link' +
+            (active === "mercadon" ? ' projects-nav__link-active' : '')
+          }
+        >
+          El Mercadón
+        </Link>
+        <Link
           to="/projects/subirats"
           className={
             'projects-nav__link' +
@@ -54,15 +63,7 @@ class ProjectsNav extends React.Component {
           AMG
         </Link>
 
-        <Link
-          to="/projects/el-mercadon"
-          className={
-            'projects-nav__link' +
-            (active === "mercadon" ? ' projects-nav__link-active' : '')
-          }
-        >
-          El Mercadón
-        </Link>
+
         <Link
           to="/projects/psychopharmacology-institute"
           className={

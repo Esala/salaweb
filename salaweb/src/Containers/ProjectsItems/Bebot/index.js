@@ -25,7 +25,7 @@ class Bebot extends React.Component {
           <GlobalNav active="projects" inProject />
           <ProjectsNav active="bebot"/>
         </TopBar>
-        <ProjectStructure title="BeBot." light color="#0082E5" description="Feb 2019. Brand / Web Design. Conversational design agency." next="/projects/subirats" >
+        <ProjectStructure title="BeBot." light color="#0082E5" description="Feb 2019. Brand / Web Design. Conversational design agency." next="/projects/el-mercadon" >
         <div className="col col-4 col-center col-m-12">
           <Image light mobile device height="768" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_website_mobile_1.jpg'} />
         </div>

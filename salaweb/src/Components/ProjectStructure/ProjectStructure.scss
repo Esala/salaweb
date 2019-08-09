@@ -3,6 +3,10 @@
   height: 100%;
   position: relative;
   padding: spacing(72) 0;
+  &.project-structure-full {
+    width: 100%;
+    overflow-x: hidden;
+  }
   &.project-structure-light {
     color: color(white);
     h1, h2, p {

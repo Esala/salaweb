@@ -24,7 +24,7 @@ class Amg extends React.Component {
           <GlobalNav active="projects" inProject />
           <ProjectsNav active="amg"/>
         </TopBar>
-        <ProjectStructure title="AMG.la " color="#510B36" description="Nov 2018. UI design. iOS Application."  light next="/projects/el-mercadon" >
+        <ProjectStructure title="AMG.la " color="#510B36" description="Nov 2018. UI design. iOS Application."  light next="/projects/psychopharmacology-institute" >
           <div className="col col-12">
             <div className="col col-6 col-center col-m-12">
               <Image height="703" device mobile url={process.env.PUBLIC_URL + '/resources/img/amg/cook_mobile.png'} />

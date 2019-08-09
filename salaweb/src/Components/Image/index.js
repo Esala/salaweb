@@ -11,12 +11,15 @@ class Image extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { url, height, light, device, mobile, tablet, desktop, nopadding } = this.props;
+    const { url, height, light, device, mobile, tablet, desktop, nopadding, full, maxed, right } = this.props;
     let className = 'image '+
       (device ? ' image-device' : '') +
       (mobile ? ' image-mobile'  : '') +
       (tablet ? ' image-tablet'  : '') +
       (desktop ? ' image-desktop'  : '') +
+      (full ? ' image-full'  : '') +
+      (maxed ? ' image-maxed'  : '') +
+      (right ? ' image-right'  : '') +
       (nopadding ? ' image-nopadding'  : '');
 
     let lightPlaceholder;

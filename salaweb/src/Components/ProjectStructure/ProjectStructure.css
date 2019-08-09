@@ -2,6 +2,9 @@
   height: 100%;
   position: relative;
   padding: 72px 0; }
+  .project-structure.project-structure-full {
+    width: 100%;
+    overflow-x: hidden; }
   .project-structure.project-structure-light {
     color: #FAFAFA; }
     .project-structure.project-structure-light h1, .project-structure.project-structure-light h2, .project-structure.project-structure-light p {
