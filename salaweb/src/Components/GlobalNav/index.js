@@ -75,7 +75,7 @@ class GlobalNav extends React.Component {
             (active === "info" ? ' global-nav__link-active' : '')
           }
         >
-          Info
+          About Me
         </Link>
         <Link
           to="/projects/"
@@ -88,7 +88,7 @@ class GlobalNav extends React.Component {
         </Link>
 
         <a href="mailto:ezequiel.salatino@gmail.com" className="global-nav__email-link">
-          Get in touch.
+          Let’s Talk!
         </a>
 
       </div>

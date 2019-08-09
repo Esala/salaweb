@@ -1,6 +1,6 @@
 @import 'app/resources/scss/_foundation.scss';
 //Headings
-h1,h2,h3 {
+h1,h2,h3, h4 {
   font-family: font-family(display);
   margin: 0;
   padding: 0;
@@ -66,6 +66,24 @@ h3 {
   //Mobile
   @media only screen and (max-width: breakpoint(tabletSD)) {
 
+  }
+}
+h4 {
+  font-size: font-size();
+  line-height: line-height();
+  max-width: $block*98;
+  margin-top: line-height();
+  margin-bottom: line-height()/2;
+  text-transform: uppercase;
+  //Mobile
+  @media only screen and (max-width: breakpoint(tabletSD)) {
+
+  }
+}
+
+.headline {
+  &.headline-center {
+    max-width: 100% !important;
   }
 }
 

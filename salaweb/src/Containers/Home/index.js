@@ -50,7 +50,7 @@ class Home extends React.Component {
             <p className="p-b ">
 
               <Link to="/info/">
-                Info
+                About Me
               </Link>
               <span className="force-space"></span>
               <Link to="/projects/" >
