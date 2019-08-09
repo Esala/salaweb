@@ -5,8 +5,15 @@
   padding: spacing(72) 0;
   &.project-structure-light {
     color: color(white);
-    h1, h2, p, a {
+    h1, h2, p {
       color: color(white);
+    }
+    a {
+      color: color(white);
+      &:hover {
+        color: color(white) !important;
+        opacity: .5;
+      }
     }
     .project-structure__next {
       a {

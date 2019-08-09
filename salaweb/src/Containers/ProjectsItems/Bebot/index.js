@@ -26,19 +26,51 @@ class Bebot extends React.Component {
           <ProjectsNav active="bebot"/>
         </TopBar>
         <ProjectStructure title="BeBot." light color="#0082E5" description="Feb 2019. Brand / Web Design. Conversational design agency." next="/projects/subirats" >
-        <div className="col col-12 col-center col-m-12">
-          <Image light device height="800" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_website-desktop.jpg'} />
+        <div className="col col-4 col-center col-m-12">
+          <Image light mobile device height="768" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_website_mobile_1.jpg'} />
         </div>
-
+        <div className="col col-4 col-center col-m-12">
+          <Image light mobile device height="768" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_website_mobile_2.jpg'} />
+        </div>
+        <div className="col col-4 col-center col-m-12">
+          <Image light mobile device height="768" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_website_mobile_3.jpg'} />
+        </div>
         <div className="col col-12 col-center">
           <p className="p-b p-center">
             Chatbots without personality are just machines! BeBot is a conversational design agency focus in designing chatbots that are unique and unrepeatable. As a co-founder and design manager, I'm working in the visual identity, the website and business presentations.
           </p>
+
+          <br/>
+          <br/>
+        </div>
+        <div className="col col-12 col-center col-m-12">
+          <p className="p-s p-center">
+            Mobile & Desktop Website.
+          </p>
+          <Image light device desktop height="900" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_website_desktop_1.jpg'} />
+        </div>
+        <div className="col col-12 col-center col-m-12">
+          <Image light device desktop height="900" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_website_desktop_2.jpg'} />
+        </div>
+
+
+
+        <div className="col col-12 col-center col-m-12">
+          <p className="p-s p-center">
+            Business Presentation Screens.
+          </p>
+          <Image light device desktop height="633" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_presentations-4.jpg'} />
+          <Image light device desktop height="633" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_presentations_5.jpg'} />
+          <Image light device desktop height="633" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_presentations-3.jpg'} />
+
+        </div>
+
+        <div className="col col-12 col-center">
+
           <p className="p-b p-center">
             Check the website here: <a href="http:bebot.design" target="_blank">bebot.design</a>
           </p>
-          <br/>
-          <br/>
+
         </div>
 
         </ProjectStructure>

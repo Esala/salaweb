@@ -3,9 +3,17 @@
   width: 100%;
   position: relative;
   display: inline-block;
-  min-height: 297px;
+  min-height: spacing(162);
   transition: transition();
   margin-bottom: spacing(162);
+  //tabletHD
+  @media only screen and (max-width: breakpoint(tabletHD)) {
+    margin-bottom: spacing(90);
+  }
+  //Mobile
+  @media only screen and (max-width: breakpoint(tabletSD)) {
+    margin-bottom: spacing(36);
+  }
   img {
     width: 100%;
   }
@@ -45,9 +53,35 @@
 
      &.image-tablet {
        max-width: 768px;
+       //Mobile
+       @media only screen and (max-width: breakpoint(tabletSD)) {
+         padding: spacing(9);
+         border-radius: spacing(18);
+            img {
+              border-radius: spacing(9);
+            }
+       }
      }
      &.image-desktop {
        max-width: 100%;
+       //Mobile
+       @media only screen and (max-width: breakpoint(tabletSD)) {
+         padding: spacing(9);
+         border-radius: spacing(18);
+            img {
+              border-radius: spacing(9);
+            }
+       }
+     }
+
+     //tabletHD
+     @media only screen and (max-width: breakpoint(tabletHD)) {
+       margin-bottom: spacing(90);
+
+     }
+     //Mobile
+     @media only screen and (max-width: breakpoint(tabletSD)) {
+       margin-bottom: spacing(36);
      }
   }
 

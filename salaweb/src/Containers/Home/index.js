@@ -33,7 +33,9 @@ class Home extends React.Component {
           <div className="col col-12">
             <Desktop>
               <Avatar />
-              <h1 className="1">I’m Ezequiel, a freelance  designer interested  in interfaces, design systems, maps and data visualizations. <span className="highlight">Currently living in Barcelona.</span> </h1>
+              <h1 className="1">I’m Ezequiel, a freelance  designer interested  in interfaces, design systems, maps and data visualizations. <span className="highlight">Currently living in Barcelona.</span>
+
+              </h1>
             </Desktop>
 
             <Mobile>
@@ -51,8 +53,8 @@ class Home extends React.Component {
                 Info
               </Link>
               <span className="force-space"></span>
-              <Link to="/projects/"  >
-                Work
+              <Link to="/projects/" >
+                Projects
               </Link>
                 <br/>
               <Desktop>

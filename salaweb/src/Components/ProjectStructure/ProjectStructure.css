@@ -4,8 +4,13 @@
   padding: 72px 0; }
   .project-structure.project-structure-light {
     color: #FAFAFA; }
-    .project-structure.project-structure-light h1, .project-structure.project-structure-light h2, .project-structure.project-structure-light p, .project-structure.project-structure-light a {
+    .project-structure.project-structure-light h1, .project-structure.project-structure-light h2, .project-structure.project-structure-light p {
       color: #FAFAFA; }
+    .project-structure.project-structure-light a {
+      color: #FAFAFA; }
+      .project-structure.project-structure-light a:hover {
+        color: #FAFAFA !important;
+        opacity: .5; }
     .project-structure.project-structure-light .project-structure__next a:hover {
       color: #FAFAFA;
       opacity: .5; }
