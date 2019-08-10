@@ -24,7 +24,7 @@ class Amg extends React.Component {
           <GlobalNav active="projects" inProject />
           <ProjectsNav active="amg"/>
         </TopBar>
-        <ProjectStructure title="AMG " full color="#510B36" description="Nov 2018. UI/UX. Web design."  light next="/projects/psychopharmacology-institute" >
+        <ProjectStructure title="AMG Latin America" full color="#510B36" description="Nov 2018. UI/UX. Web design."  light next="/projects/psychopharmacology-institute" >
           <div className="container">
             <div className="col col-12 col-center col-m-12">
 

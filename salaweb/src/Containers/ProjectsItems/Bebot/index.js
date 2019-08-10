@@ -68,7 +68,7 @@ class Bebot extends React.Component {
         <div className="col col-12 col-center">
 
           <p className="p-b p-center">
-            Check the website: <a href="http:bebot.design" target="_blank">bebot.design</a>
+            Check the website: <a href="https://bebot.design" target="_blank">bebot.design</a>
           </p>
 
         </div>
