@@ -51,9 +51,15 @@
       opacity: .5; }
     .image.image-device.image-mobile {
       max-width: 411px; }
+      @media only screen and (max-width: 1024px) {
+        .image.image-device.image-mobile {
+          padding: 9px;
+          border-radius: 18px; }
+          .image.image-device.image-mobile img {
+            border-radius: 9px; } }
     .image.image-device.image-tablet {
       max-width: 768px; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 1024px) {
         .image.image-device.image-tablet {
           padding: 9px;
           border-radius: 18px; }
@@ -61,7 +67,7 @@
             border-radius: 9px; } }
     .image.image-device.image-desktop {
       max-width: 100%; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 1024px) {
         .image.image-device.image-desktop {
           padding: 9px;
           border-radius: 18px; }
@@ -73,3 +79,8 @@
     @media only screen and (max-width: 768px) {
       .image.image-device {
         margin-bottom: 36px; } }
+  .image + .p-s {
+    margin-top: -90px; }
+    @media only screen and (max-width: 768px) {
+      .image + .p-s {
+        margin-top: -18px; } }

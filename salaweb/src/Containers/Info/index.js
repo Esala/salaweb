@@ -51,7 +51,7 @@ class Info extends React.Component {
         </TopBar>
         <div className="container info__content">
           <div className="col col-12  ">
-            
+
             <h1 >Hello! I’m Ezequiel Salatino. <br/> Freelance designer interested in interfaces, design systems, maps & data visualizations.</h1>
           </div>
         </div>
@@ -63,10 +63,16 @@ class Info extends React.Component {
 
               <p className="p-b">
                 I studied graphic design in Argentina and start designing and building websites in 2003. I have <a href="https://www.linkedin.com/in/ezequielsalatino/" target="_blank" rel="noopener noreferrer" >experience</a> as freelancer but also in a few design and develop companies. </p>
-              <p className="p-b"> Today I work as a freelance designer, mainly focused in UI, but also working as a product, UX and brand designer. Currently I'm also part of <a href="https://pannonica.design" target="_blank" rel="noopener noreferrer">pannonica.design</a>  as a design partner.
+              <p className="p-b"> Today I work as a freelance designer, mainly focused in UI, but also working as a product, UX and brand designer. Currently I'm part of <a href="https://pannonica.design" target="_blank" rel="noopener noreferrer">pannonica.design</a> as a design partner and a design manager and co-founder of <a href="https://bebot.design" target="_blank" rel="noopener noreferrer">bebot.design</a> a conversational design agency.
               </p>
-              <p className="p-b"> Check out my <Link to="/projects/"  >work</Link> or my <a href="https://www.behance.net/EzequielSalatino" target="_blank" rel="noopener noreferrer">behance</a> page. If you have a cool project, feel free to  <a href="mailto:ezequiel.salatino@gmail.com">write me an email</a>. I will be happy to help.
+              <p className="p-b"> Check out my <Link to="/projects/"  >work</Link>. If you have a cool project, feel free to  <a href="mailto:ezequiel.salatino@gmail.com">write me an email</a>. I will be happy to help.
               </p>
+              <p className="p-b">
+                <a href="http://bit.ly/32828v2" target="_blank" rel="noopener noreferrer" >Resume (PDF)</a>
+                <br/>
+                <a href="http://bit.ly/2XqBiiN" target="_blank" rel="noopener noreferrer" >Portfolio (PDF)</a>
+              </p>
+
 
             </div>
 

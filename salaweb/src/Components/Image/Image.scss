@@ -69,12 +69,20 @@
      }
      &.image-mobile {
        max-width: 411px;
+       //Mobile
+       @media only screen and (max-width: breakpoint(tabletHD)) {
+         padding: spacing(9);
+         border-radius: spacing(18);
+            img {
+              border-radius: spacing(9);
+            }
+       }
      }
 
      &.image-tablet {
        max-width: 768px;
        //Mobile
-       @media only screen and (max-width: breakpoint(tabletSD)) {
+       @media only screen and (max-width: breakpoint(tabletHD)) {
          padding: spacing(9);
          border-radius: spacing(18);
             img {
@@ -85,7 +93,7 @@
      &.image-desktop {
        max-width: 100%;
        //Mobile
-       @media only screen and (max-width: breakpoint(tabletSD)) {
+       @media only screen and (max-width: breakpoint(tabletHD)) {
          padding: spacing(9);
          border-radius: spacing(18);
             img {
@@ -107,5 +115,11 @@
        margin-bottom: spacing(36);
      }
   }
-
+  & + .p-s {
+    margin-top: - spacing(90);
+    //Mobile
+    @media only screen and (max-width: breakpoint(tabletSD)) {
+      margin-top: - spacing(18);
+    }
+  }
 }

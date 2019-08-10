@@ -47,6 +47,7 @@ class Home extends React.Component {
               <h1 className="1">I’m Ezequiel, a freelance  designer interested  in interfaces, design systems, maps and data visualizations. <span className="highlight">Currently living in Barcelona.</span> </h1>
             </MobileXS>
 
+            <br/>
             <p className="p-b ">
 
               <Link to="/info/">
@@ -94,7 +95,7 @@ class Home extends React.Component {
 
 
             </p>
-
+            <br/>
           </div>
         </div>
 

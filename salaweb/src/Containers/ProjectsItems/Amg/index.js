@@ -24,19 +24,46 @@ class Amg extends React.Component {
           <GlobalNav active="projects" inProject />
           <ProjectsNav active="amg"/>
         </TopBar>
-        <ProjectStructure title="AMG.la " color="#510B36" description="Nov 2018. UI design. iOS Application."  light next="/projects/psychopharmacology-institute" >
-          <div className="col col-12">
-            <div className="col col-6 col-center col-m-12">
-              <Image height="703" device mobile url={process.env.PUBLIC_URL + '/resources/img/amg/cook_mobile.png'} />
-            </div>
-            <div className="col col-6 col-center col-m-12">
-              <Image nopadding url={process.env.PUBLIC_URL + '/resources/img/amg/acelga.png'} />
-              <p className="p-b">
-                Ilustrations by<br/> <a href="asd">Elías Rodriguez</a>
+        <ProjectStructure title="AMG " full color="#510B36" description="Nov 2018. UI/UX. Web design."  light next="/projects/psychopharmacology-institute" >
+          <div className="container">
+            <div className="col col-12 col-center col-m-12">
+
+              <Image height="703" light device desktop url={process.env.PUBLIC_URL + '/resources/img/amg/amg_website_2.jpg'} />
+              <p className="p-s p-center">
+                Illustration by <a href="https://dribbble.com/ivcoti" target="_blank">Alejandro Ramirez</a>.
               </p>
             </div>
 
+            <div className="col col-12 col-center">
+              <p className="p-b p-center">
+                AMG is a consulting company founded in 1993 that work with companies in all across Latin America and lead their transformation processes to help them grow.
+              </p>
+              <br/>
+              <br/>
+              <br/>
+            </div>
+
+
           </div>
+
+          <Image url={process.env.PUBLIC_URL + '/resources/img/amg/amg_wheel.jpg'} full />
+          <div className="container">
+            <div className="col col-12 col-center">
+              <p className="p-b p-center">
+                I was involved in the design of a web application that allows their clients understand where are the problems inside their organization, and get valuable insights.
+              </p>
+              <br/>
+              <br/>
+            </div>
+            <div className="col col-12 col-center col-m-12">
+              <Image height="703" light device desktop url={process.env.PUBLIC_URL + '/resources/img/amg/amg_website_4.jpg'}  />
+              <Image height="703" light device desktop url={process.env.PUBLIC_URL + '/resources/img/amg/amg_website_1.jpg'}  />
+
+              <Image height="703" light device desktop url={process.env.PUBLIC_URL + '/resources/img/amg/amg_website_3.jpg'}  />
+
+            </div>
+          </div>
+          <Image url={process.env.PUBLIC_URL + '/resources/img/amg/amg_ui.png'} full />
         </ProjectStructure>
       </div>
     );
