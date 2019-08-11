@@ -57,7 +57,7 @@
     &.global-nav__link-active {
       color: color(black);
       opacity: .5;
-      pointer-events: none;
+      
       &:hover {
         color: color(black);
       }

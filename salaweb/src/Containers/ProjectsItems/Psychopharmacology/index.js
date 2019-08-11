@@ -53,7 +53,7 @@ class Psychopharmacology extends React.Component {
             <div className="container">
               <div className="col col-12 col-center">
                 <p className="p-b p-center">
-                  Check the website:<br/><a href="https://psychopharmacologyinstitute.com" target="_blank">psychopharmacologyinstitute.com</a>
+                  Check the website:<br/><a href="https://psychopharmacologyinstitute.com" rel="noopener noreferrer" target="_blank">psychopharmacologyinstitute.com</a>
                 </p>
               </div>
             </div>
@@ -86,7 +86,7 @@ class Psychopharmacology extends React.Component {
             <div className="container">
               <div className="col col-12 col-center">
                 <p className="p-b p-center">
-                  <a href="https://psychopharmacologyinstitute.com" target="_blank">Check the website</a>
+                  <a href="https://psychopharmacologyinstitute.com" rel="noopener noreferrer" target="_blank">Check the website</a>
                 </p>
               </div>
             </div>

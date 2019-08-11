@@ -45,7 +45,7 @@ class Subirats extends React.Component {
           <div className="col col-12 col-m-12 col-center">
             <br/><br/><br/><br/>
             <p className="p-b p-center">
-              For more images check the <a href="https://www.behance.net/gallery/30901359/Ramon-Subirats" target="_blank"> behance post</a>.
+              For more images check the <a href="https://www.behance.net/gallery/30901359/Ramon-Subirats" rel="noopener noreferrer" target="_blank"> behance post</a>.
             </p>
             <br/><br/>
           </div>

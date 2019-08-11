@@ -72,23 +72,21 @@ class Home extends React.Component {
               </Mobile>
 
               <Desktop>
-                <a href="http://linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
+                <a href="http://linkedin.com/in/ezequielsalatino/" target="_blank" rel="noopener noreferrer" className="home__email-link">
                   linkedin.com/in/ezequielsalatino/
                 </a>
               </Desktop>
               <Mobile>
-                <a href="http://linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
-                  linkedin.com/in/ezequielsalatino/
-                </a>
+                <a href="http://linkedin.com/in/ezequielsalatino/" target="_blank" rel="noopener noreferrer" className="home__email-link"> linkedin.com/in/ezequielsalatino/  </a>
               </Mobile>
               <MobileXS>
-                <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
+                <a href="mailto:ezequiel.salatino@gmail.com" rel="noopener noreferrer" className="home__email-link">
                   Write me an email
                 </a>
                 <br/>
               </MobileXS>
               <MobileXS>
-                <a href="http://linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
+                <a href="http://linkedin.com/in/ezequielsalatino/" rel="noopener noreferrer" target="_blank" className="home__email-link">
                   Linkedin profile
                 </a>
               </MobileXS>

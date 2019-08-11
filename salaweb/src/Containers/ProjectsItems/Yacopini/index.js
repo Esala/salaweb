@@ -25,7 +25,7 @@ class Yacopini extends React.Component {
           <GlobalNav active="projects" inProject />
           <ProjectsNav active="yacopini"/>
         </TopBar>
-        <ProjectStructure full title="Yacopini" color="#FE5620" description="Apr 2015. Web / UI design. Volkswagen, Chevrolet & Nissan authorized car dealer." light next="/projects/bebot" >
+        <ProjectStructure full title="Yacopini" color="#FE5620" description="Apr 2015. Web / UI design. Authorized car dealer." light next="/projects/bebot" >
         <div className="container">
           <div className="col col-12 col-m-12">
             <Image light device desktop height="800" url={process.env.PUBLIC_URL + '/resources/img/yacopini/website_desktop_1.jpg'} />

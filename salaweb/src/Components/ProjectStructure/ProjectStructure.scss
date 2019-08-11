@@ -76,10 +76,18 @@
     h1 {
       padding-top: spacing(72);
       margin: 0;
-
+      //ONLY DESKTOP HD
+      @media only screen and (min-width: breakpoint(desktopHD)) {
+        font-size: 16vw;
+        line-height: 0.9;
+      }
     }
     .project-structure__info__description {
       vertical-align: bottom;
+      //ONLY DESKTOP HD
+      @media only screen and (min-width: breakpoint(desktopHD)) {
+        vertical-align: top;
+      }
       p {
         margin: 0;
         padding: 0 0 spacing(9);

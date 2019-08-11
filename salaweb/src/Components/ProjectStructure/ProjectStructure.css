@@ -51,8 +51,15 @@
     .project-structure .project-structure__info h1 {
       padding-top: 72px;
       margin: 0; }
+      @media only screen and (min-width: 1440px) {
+        .project-structure .project-structure__info h1 {
+          font-size: 16vw;
+          line-height: 0.9; } }
     .project-structure .project-structure__info .project-structure__info__description {
       vertical-align: bottom; }
+      @media only screen and (min-width: 1440px) {
+        .project-structure .project-structure__info .project-structure__info__description {
+          vertical-align: top; } }
       .project-structure .project-structure__info .project-structure__info__description p {
         margin: 0;
         padding: 0 0 9px; }

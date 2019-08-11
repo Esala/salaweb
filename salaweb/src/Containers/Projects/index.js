@@ -204,11 +204,11 @@ class Projects extends React.Component {
                 <Mobile>
                   <p className="p">
                     You can write me at:{' '}
-                    <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
+                    <a href="mailto:ezequiel.salatino@gmail.com" rel="noopener noreferrer" target="_blank"  className="home__email-link">
                       ezequiel.salatino@gmail.com
                     </a>
                     <br/>
-                  <a href="linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
+                  <a href="http://linkedin.com/in/ezequielsalatino/" rel="noopener noreferrer" target="_blank" className="home__email-link">
                     linkedin.com/in/ezequielsalatino/
                   </a>
                   </p>
@@ -216,11 +216,11 @@ class Projects extends React.Component {
                 <MobileXS>
                   <p className="p p-s">
                     You can write me at:{' '}
-                    <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">
+                    <a href="mailto:ezequiel.salatino@gmail.com" rel="noopener noreferrer" target="_blank"  className="home__email-link">
                       ezequiel.salatino@gmail.com
                     </a>
 
-                  <a href="linkedin.com/in/ezequielsalatino/" target="_blank" className="home__email-link">
+                  <a href="http://linkedin.com/in/ezequielsalatino/" rel="noopener noreferrer" target="_blank" className="home__email-link">
                     linkedin.com/in/ezequielsalatino/
                   </a>
                   </p>

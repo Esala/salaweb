@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import animateScrollTo from 'animated-scroll-to';
-import Responsive from 'react-responsive';
+//import Responsive from 'react-responsive';
 import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
 //import Lottie from 'react-lottie';
@@ -24,7 +24,7 @@ class Info extends React.Component {
 
   render() {
 
-    const Mobile = props => <Responsive {...props} maxWidth={1279} />;
+  //  const Mobile = props => <Responsive {...props} maxWidth={1279} />;
     /*
     const defaultOptions = {
       loop: true,
@@ -58,14 +58,16 @@ class Info extends React.Component {
 
         <div className="container">
 
-            <div className="col col-9 col-t-12 col-m-12">
+            <div className="col col-10 col-t-12 col-m-12">
 
 
               <p className="p-b">
-                I studied graphic design in Argentina and start designing and building websites in 2003. I have <a href="https://www.linkedin.com/in/ezequielsalatino/" target="_blank" rel="noopener noreferrer" >experience</a> as freelancer but also in a few design and develop companies. </p>
-              <p className="p-b"> Today I work as a freelance designer, mainly focused in UI, but also working as a product, UX and brand designer. Currently I'm part of <a href="https://pannonica.design" target="_blank" rel="noopener noreferrer">pannonica.design</a> as a design partner and a design manager and co-founder of <a href="https://bebot.design" target="_blank" rel="noopener noreferrer">bebot.design</a> a conversational design agency.
+                I studied graphic design in Argentina and start designing and building websites in 2003. I have <a href="https://www.linkedin.com/in/ezequielsalatino/" target="_blank" rel="noopener noreferrer" >experience</a> as <br className="only-desktop"/>a freelancer but also in a few design and IT companies. </p>
+              <p className="p-b"> I mainly work as a UI designer but I'm also working<br className="only-desktop"/> as a product, UX and brand designer. I love creating design systems, and now I'm focused on information design and data visualizations.
               </p>
-              <p className="p-b"> Check out my <Link to="/projects/"  >work</Link>. If you have a cool project, feel free to  <a href="mailto:ezequiel.salatino@gmail.com">write me an email</a>. I will be happy to help.
+              <p className="p-b"> I'm part of <a href="https://pannonica.design" target="_blank" rel="noopener noreferrer">pannonica.design</a> as a design partner. Also, I'm a design manager and co-founder of <a href="https://bebot.design" target="_blank" rel="noopener noreferrer">bebot.design</a> <br className="only-desktop"/> a conversational design agency.
+              </p>
+              <p className="p-b">Check out my <Link to="/projects/"  >work</Link>. If you have a cool project, feel free to  <a href="mailto:ezequiel.salatino@gmail.com" >write me an email</a>. I will be happy to help.  Currently living in Barcelona.
               </p>
               <p className="p-b">
                 <a href="http://bit.ly/32828v2" target="_blank" rel="noopener noreferrer" >Resume (PDF)</a>

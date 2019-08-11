@@ -47,6 +47,13 @@ a {
   display: inline-block;
   width: spacing(27);
 }
+
+.only-desktop {
+  //Mobile
+  @media only screen and (max-width: breakpoint(desktopSD)) {
+    display: none;
+  }
+}
 @import "globals/_grid.scss";
 @import "globals/_paragraphs.scss";
 @import "globals/_headings.scss";

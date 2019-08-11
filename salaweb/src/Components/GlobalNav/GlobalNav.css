@@ -32,7 +32,6 @@
     .global-nav .global-nav__link.global-nav__link-active {
       color: #1C2F4D;
       opacity: .5;
-      pointer-events: none;
       text-decoration: line-through; }
       .global-nav .global-nav__link.global-nav__link-active:hover {
         color: #1C2F4D; }

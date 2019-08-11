@@ -30,7 +30,7 @@ class Amg extends React.Component {
 
               <Image height="703" light device desktop url={process.env.PUBLIC_URL + '/resources/img/amg/amg_website_2.jpg'} />
               <p className="p-s p-center">
-                Illustration by <a href="https://dribbble.com/ivcoti" target="_blank">Alejandro Ramirez</a>.
+                Illustration by <a href="https://dribbble.com/ivcoti" rel="noopener noreferrer" target="_blank">Alejandro Ramirez</a>.
               </p>
             </div>
 
