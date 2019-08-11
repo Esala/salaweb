@@ -33,8 +33,11 @@ class Subirats extends React.Component {
               Ramón Subirats was an artist from Barcelona who traveled through Latin America portraying natives with his charcoal pencils. I designed the brand, the website and a map to show
   his incredible journey.
             </p>
-            <br/><br/><br/>
+            <br className="only-desktop"/><br className="only-desktop" /><br className="only-desktop"/>
           </div>
+        </div>
+        <div className="only-desktop">
+          <Image url={process.env.PUBLIC_URL + '/resources/img/subirats/web-4.jpg'} full  nopadding />
         </div>
         <Image url={process.env.PUBLIC_URL + '/resources/img/subirats/map.jpg'} full  nopadding/>
         <Image url={process.env.PUBLIC_URL + '/resources/img/subirats/web-1.jpg'} full  nopadding />
