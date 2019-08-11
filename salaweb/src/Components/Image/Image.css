@@ -80,7 +80,10 @@
       .image.image-device {
         margin-bottom: 36px; } }
   .image + .p-s {
-    margin-top: -90px; }
+    margin-top: -90px;
+    z-index: 10;
+    position: relative;
+    opacity: .5; }
     @media only screen and (max-width: 768px) {
       .image + .p-s {
         margin-top: -18px; } }
