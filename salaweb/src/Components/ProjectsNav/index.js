@@ -7,7 +7,7 @@ import './ProjectsNav.css';
 
 class ProjectsNav extends React.Component {
   componentDidMount() {
-    console.log(this.props.active);
+    //console.log(this.props.active);
   }
 
   render() {

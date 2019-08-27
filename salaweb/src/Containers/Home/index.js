@@ -21,6 +21,7 @@ class Home extends React.Component {
     var homeElement = 0 ;
     animateScrollTo(homeElement, {speed:1,  minDuration: 1200});
     this.setState({ statusClass: 'scrolled' });
+  
   }
 
   render() {

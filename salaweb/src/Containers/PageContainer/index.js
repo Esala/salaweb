@@ -1,6 +1,8 @@
 import React from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+
+import ReactGA from 'react-ga';
 //import animateScrollTo from 'animated-scroll-to';
 import Home from '../Home/index.js';
 import Info from '../Info/index.js';
@@ -13,7 +15,10 @@ import Amg from '../ProjectsItems/Amg/index.js';
 import Subirats from '../ProjectsItems/Subirats/index.js';
 import Bebot from '../ProjectsItems/Bebot/index.js';
 
+
 function PageContainer({ location }) {
+
+  ReactGA.initialize('UA-146497322-1');
 
   return (
     <div>
@@ -24,7 +29,14 @@ function PageContainer({ location }) {
           classNames={'fade'}
           mountOnEnter
           unmountOnExit
+          onEnter={() => {
+            ReactGA.pageview(location.pathname + location.search);
+            //console.log(location.pathname + location.search);
+          }}
           addEndListener={(n, done) => {
+            //
+
+            //console.log(done)
 
             /*
             setTimeout(function() {
@@ -51,9 +63,9 @@ function PageContainer({ location }) {
           }}
         >
           <div className="page-container">
-            <Switch location={location}>
+            <Switch location={location} >
               <Route  path="/" exact component={Home} />
-              <Route  path="/salaweb" exact component={Home} />
+              {/* <Route  path="/salaweb" exact component={Home} /> */}
               <Route  path="/info" exact component={Info} />
               <Route  path="/projects" exact component={Projects} />
               <Route  path="/projects/psychopharmacology-institute" exact component={Psychopharmacology} />
