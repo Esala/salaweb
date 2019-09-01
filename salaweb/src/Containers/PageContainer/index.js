@@ -66,7 +66,7 @@ function PageContainer({ location }) {
             <Switch location={location} >
               <Route  path="/" exact component={Home} />
               {/* <Route  path="/salaweb" exact component={Home} /> */}
-              <Route  path="/info" exact component={Info} />
+              <Route  path="/about" exact component={Info} />
               <Route  path="/projects" exact component={Projects} />
               <Route  path="/projects/psychopharmacology-institute" exact component={Psychopharmacology} />
               <Route  path="/projects/yacopini" exact component={Yacopini} />

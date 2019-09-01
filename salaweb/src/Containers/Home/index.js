@@ -21,7 +21,7 @@ class Home extends React.Component {
     var homeElement = 0 ;
     animateScrollTo(homeElement, {speed:1,  minDuration: 1200});
     this.setState({ statusClass: 'scrolled' });
-  
+
   }
 
   render() {
@@ -51,8 +51,8 @@ class Home extends React.Component {
             <br/>
             <p className="p-b ">
 
-              <Link to="/info/">
-                About Me
+              <Link to="/about/">
+                About
               </Link>
               <span className="force-space"></span>
               <Link to="/projects/" >

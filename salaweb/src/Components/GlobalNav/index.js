@@ -69,13 +69,13 @@ class GlobalNav extends React.Component {
         </div>
 
         <Link
-          to="/info/"
+          to="/about/"
           className= {
             'global-nav__link' +
             (active === "info" ? ' global-nav__link-active' : '')
           }
         >
-          About Me
+          About
         </Link>
         <Link
           to="/projects/"
