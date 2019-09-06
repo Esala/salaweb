@@ -18,6 +18,7 @@ class Info extends React.Component {
   }
   componentDidMount() {
      document.title = "About me - Ezequiel Salatino";
+     document.documentElement.className='';
      var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
      animateScrollTo(topbar, {speed:1,  minDuration: 1200});
   }
@@ -52,7 +53,7 @@ class Info extends React.Component {
         <div className="container info__content">
           <div className="col col-12  ">
 
-            <h1 >Hello! I’m Ezequiel Salatino. <br/> Freelance designer interested in interfaces, design systems, maps & data visualizations.</h1>
+            <h1 >I’m Ezequiel Salatino. Freelance designer. </h1>
           </div>
         </div>
 
@@ -67,7 +68,7 @@ class Info extends React.Component {
               </p>
               <p className="p-b"> I'm part of <a href="https://pannonica.design" target="_blank" rel="noopener noreferrer">pannonica.design</a> as a design partner. Also, I'm a design manager and co-founder of <a href="https://bebot.design" target="_blank" rel="noopener noreferrer">bebot.design</a> <br className="only-desktop"/> a conversational design agency.
               </p>
-              <p className="p-b">Check out my <Link to="/projects/"  >work</Link>. If you have a cool project, feel free to  <a href="mailto:ezequiel.salatino@gmail.com" >write me an email</a>. I will be happy to help.  Currently living in Barcelona.
+              <p className="p-b">Check out my <Link to="/projects/"  >work</Link>. If you have a cool project, feel free to  <a href="mailto:ezequiel.salatino@gmail.com" >write me an email</a>. I will be happy to help.
               </p>
               <p className="p-b">
                 <a href="http://bit.ly/32828v2" target="_blank" rel="noopener noreferrer" >Resume (PDF)</a>

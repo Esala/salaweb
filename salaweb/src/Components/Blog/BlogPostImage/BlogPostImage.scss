@@ -1,0 +1,16 @@
+@import 'app/resources/scss/_foundation.scss';
+.blog-post-image {
+  margin-bottom: spacing(54);
+  .blog-post-image__image{
+    margin: spacing(27) 0;
+    img {
+      width: 100%;
+    }
+  }
+  .blog-post-image__text {
+    font-size: font-size(s);
+    line-height: line-height(s);
+    max-width: 600px;
+    opacity: .5;
+  }
+}

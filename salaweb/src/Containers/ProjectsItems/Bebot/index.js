@@ -12,6 +12,7 @@ import './Bebot.css';
 class Bebot extends React.Component {
   componentDidMount() {
     document.title = "BeBot - Ezequiel Salatino";
+    document.getElementById('body').className='';
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
 

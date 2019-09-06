@@ -1,0 +1,47 @@
+@import 'app/resources/scss/_foundation.scss';
+.blog-home {
+  background-color: color(black, darken);
+  color: color(white);
+  p, h1, h2 {
+    color: color(white);
+  }
+  min-height: 1400px;
+  
+  &.scrolled {
+    min-height: 0;
+  }
+  //Tablet
+  @media only screen and (max-width: breakpoint(desktopSD)) {
+
+  }
+
+  //Mobile
+  @media only screen and (max-width: breakpoint(mobileHD)) {
+
+  }
+
+  .blog-home__footer {
+    padding-top: spacing(144) ;
+    padding-bottom: spacing(144);
+    background-color: color(white);
+    color: color(black);
+    p, h1, h2 {
+      color: color(black);
+    }
+    //Mobile
+    @media only screen and (max-width: breakpoint(tabletSD)) {
+      padding: spacing(90) spacing(36) spacing(45) spacing(36);
+      text-align: center;
+      a {
+        display: block;
+max-width: 100%;
+overflow: hidden;
+text-overflow: ellipsis;
+      }
+      a + br {
+        display: none;
+      }
+    }
+
+  }
+}

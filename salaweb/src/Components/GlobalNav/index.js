@@ -13,13 +13,22 @@ class GlobalNav extends React.Component {
     const Desktop = props => <Responsive {...props} minWidth={1280} />;
     const Mobile = props => <Responsive {...props} maxWidth={1279} />;
 
-    const { active, inProject } = this.props;
+    const { active, inProject, inPost, postTitle } = this.props;
 
     let className = 'global-nav ' +
-      (inProject ? ' global-nav-in-project' : '') ;
+      (inProject ? ' global-nav-in-project' : '') +
+      (inPost ? ' global-nav-in-post' : '') ;
 
     let mobileNav;
     let desktopNav;
+    var postTitleElement;
+    if(inPost && postTitle){
+      postTitleElement = (
+        <div className="global-nav__post-title">
+          {postTitle}
+        </div>
+      )
+    }
 
     if(inProject){
       mobileNav = (
@@ -39,22 +48,41 @@ class GlobalNav extends React.Component {
         </Link>
       );
     }else {
-      mobileNav = (
-        <Link
-          to="/"
-          className="global-nav__home-link"
-        >
-          Home
-        </Link>
-      );
-      desktopNav = (
-        <Link
-          to="/"
-          className="global-nav__home-link"
-        >
-          Home
-        </Link>
-      );
+      if(inPost){
+        mobileNav = (
+          <Link
+            to="/blog/"
+            className="global-nav__home-link"
+          >
+            Back
+          </Link>
+        );
+        desktopNav = (
+          <Link
+            to="/blog"
+            className="global-nav__home-link"
+          >
+            Back
+          </Link>
+        );
+      }else {
+        mobileNav = (
+          <Link
+            to="/"
+            className="global-nav__home-link"
+          >
+            Home
+          </Link>
+        );
+        desktopNav = (
+          <Link
+            to="/"
+            className="global-nav__home-link"
+          >
+            Home
+          </Link>
+        );
+      }
     }
 
     return (
@@ -67,7 +95,7 @@ class GlobalNav extends React.Component {
             {mobileNav}
           </Mobile>
         </div>
-
+        {postTitleElement}
         <Link
           to="/about/"
           className= {
@@ -85,6 +113,16 @@ class GlobalNav extends React.Component {
           }
         >
           Projects
+        </Link>
+
+        <Link
+          to="/blog/"
+          className= {
+            'global-nav__link' +
+            (active === "blog" ? ' global-nav__link-active' : '')
+          }
+        >
+          Blog
         </Link>
 
         <a href="mailto:ezequiel.salatino@gmail.com" className="global-nav__email-link">

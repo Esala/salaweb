@@ -16,6 +16,7 @@ class Psychopharmacology extends React.Component {
   componentDidMount() {
     document.title = "Psychopharmacology Institute - Ezequiel Salatino";
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
+    document.getElementById('body').className='';
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
   }
 

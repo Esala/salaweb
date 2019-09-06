@@ -16,6 +16,7 @@ import './Mercadon.css';
 class Mercadon extends React.Component {
   componentDidMount() {
     document.title = "El Mercadón - Ezequiel Salatino";
+    document.getElementById('body').className='';
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
   }
@@ -48,7 +49,7 @@ class Mercadon extends React.Component {
               <Image light height="634" device desktop url={process.env.PUBLIC_URL + '/resources/img/mercadon/home_desktop.png'} />
             </div>
 
-      
+
 
             <div className="col col-12 col-m-12">
               <Image light height="634" url={process.env.PUBLIC_URL + '/resources/img/mercadon/ui.png'} />

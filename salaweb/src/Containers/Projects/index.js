@@ -12,6 +12,7 @@ import './Projects.css';
 class Projects extends React.Component {
   componentDidMount() {
     document.title = "Work - Ezequiel Salatino";
+    document.getElementById('body').className='';
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
   }

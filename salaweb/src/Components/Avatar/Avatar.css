@@ -2,6 +2,7 @@
   max-width: 180px; }
   .avatar img {
     width: 100%;
+    border-radius: 50%;
     margin-left: -9px; }
   @media only screen and (max-width: 768px) {
     .avatar {

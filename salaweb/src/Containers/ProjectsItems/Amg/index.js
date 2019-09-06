@@ -12,6 +12,7 @@ import './Amg.css';
 class Amg extends React.Component {
   componentDidMount() {
     document.title = "AMG - Ezequiel Salatino";
+    document.getElementById('body').className='';
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
 }

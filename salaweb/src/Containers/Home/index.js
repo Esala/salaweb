@@ -19,6 +19,7 @@ class Home extends React.Component {
   componentDidMount() {
     document.title = "Hi, I'm Ezequiel, freelance designer.";
     var homeElement = 0 ;
+    document.documentElement.className='';
     animateScrollTo(homeElement, {speed:1,  minDuration: 1200});
     this.setState({ statusClass: 'scrolled' });
 
@@ -34,18 +35,18 @@ class Home extends React.Component {
           <div className="col col-12">
             <Desktop>
               <Avatar />
-              <h1 className="1">I’m Ezequiel, a freelance  designer interested  in interfaces, design systems, maps and data visualizations. <span className="highlight">Currently living in Barcelona.</span>
+              <h1>Hello! I’m Ezequiel Salatino. <br/> Freelance designer interested in interfaces, design systems, maps & data visualizations. <span className="highlight">Currently living in Barcelona.</span>
 
               </h1>
             </Desktop>
 
             <Mobile>
               <Avatar />
-              <h1 className="1">I’m Ezequiel, a freelance  designer interested  in interfaces, design systems, maps and data visualizations. <span className="highlight">Currently living in Barcelona.</span> </h1>
+              <h1 >Hello! I’m Ezequiel Salatino. Freelance designer interested in interfaces, design systems, maps & data visualizations. <span className="highlight">Currently living in Barcelona.</span> </h1>
             </Mobile>
             <MobileXS>
               <Avatar />
-              <h1 className="1">I’m Ezequiel, a freelance  designer interested  in interfaces, design systems, maps and data visualizations. <span className="highlight">Currently living in Barcelona.</span> </h1>
+              <h1 >Hello! I’m Ezequiel Salatino. Freelance designer interested in interfaces, design systems, maps & data visualizations. <span className="highlight">Currently living in Barcelona.</span> </h1>
             </MobileXS>
 
             <br/>
@@ -54,10 +55,16 @@ class Home extends React.Component {
               <Link to="/about/">
                 About
               </Link>
-              <span className="force-space"></span>
+              <span className="force-space"> { "  /  " }</span>
               <Link to="/projects/" >
                 Projects
               </Link>
+
+               <span className="force-space"> { "  /  " }</span>
+                <Link to="/blog/" >
+                  Blog
+                </Link>
+
                 <br/>
               <Desktop>
                 <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">

@@ -13,8 +13,17 @@
     transform: rotate(-90deg);
     left: 9px;
     top: 90px; }
-  .global-nav.global-nav-in-project .global-nav__home-link-container {
+  .global-nav .global-nav__post-title {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: #1C2F4D; }
+    .global-nav .global-nav__post-title span {
+      font-family: es-display, sans-serif;
+      font-weight: bold; }
+  .global-nav.global-nav-in-project .global-nav__home-link-container, .global-nav.global-nav-in-post .global-nav__home-link-container {
     top: 77px; }
+  .global-nav.global-nav-in-post .global-nav__link, .global-nav.global-nav-in-post .global-nav__email-link {
+    display: none; }
   .global-nav .global-nav__home-link {
     font-family: es-display, sans-serif;
     text-decoration: none;
@@ -32,6 +41,6 @@
     .global-nav .global-nav__link.global-nav__link-active {
       color: #1C2F4D;
       opacity: .5;
-      text-decoration: line-through; }
+      text-decoration: none; }
       .global-nav .global-nav__link.global-nav__link-active:hover {
         color: #1C2F4D; }

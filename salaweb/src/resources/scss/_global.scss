@@ -27,7 +27,9 @@ html {
   font-size: $basicFontSize;
   color: color(black);
   background-color: color(white);
+
 }
+
 
 a {
   text-decoration: underline;
@@ -45,7 +47,7 @@ a {
 
 .force-space {
   display: inline-block;
-  width: spacing(18);
+  padding: 0 spacing(9)*1.5;
 }
 
 .only-desktop {

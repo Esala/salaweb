@@ -15,6 +15,7 @@ class Yacopini extends React.Component {
     document.title = "Yacopini - Ezequiel Salatino";
     var topbar = document.getElementsByClassName("top-bar")[0].offsetHeight;
     animateScrollTo(topbar, {speed:1,  minDuration: 1200});
+    document.getElementById('body').className='';
 }
 
   render() {

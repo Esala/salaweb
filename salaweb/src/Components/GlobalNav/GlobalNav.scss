@@ -23,7 +23,17 @@
 
     }
   }
-  &.global-nav-in-project {
+
+  .global-nav__post-title {
+    font-size: font-size(s);
+    line-height: line-height(s);
+    color: color(black);
+    span {
+      font-family: font-family(display);
+       font-weight: bold;
+    }
+  }
+  &.global-nav-in-project, &.global-nav-in-post {
     .global-nav__home-link-container {
       top: spacing(72)+ spacing(9) - 4;
       @media only screen and (max-width: breakpoint(tabletSD)) {
@@ -32,6 +42,13 @@
       }
     }
   }
+  &.global-nav-in-post {
+    .global-nav__link, .global-nav__email-link {
+      display: none;
+    }
+
+  }
+
   .global-nav__home-link {
     font-family: font-family(display);
     text-decoration: none;
@@ -57,11 +74,11 @@
     &.global-nav__link-active {
       color: color(black);
       opacity: .5;
-      
+
       &:hover {
         color: color(black);
       }
-      text-decoration: line-through;
+      text-decoration: none;
     }
   }
 }

@@ -14,7 +14,10 @@ import Mercadon from '../ProjectsItems/Mercadon/index.js';
 import Amg from '../ProjectsItems/Amg/index.js';
 import Subirats from '../ProjectsItems/Subirats/index.js';
 import Bebot from '../ProjectsItems/Bebot/index.js';
-
+//Blog
+import BlogHome from '../Blog/BlogHome/index.js';
+import BlogPost from '../Blog/BlogPosts/Post1/index.js';
+import BlogPost2 from '../Blog/BlogPosts/Post2/index.js';
 
 function PageContainer({ location }) {
 
@@ -74,6 +77,9 @@ function PageContainer({ location }) {
               <Route  path="/projects/subirats" exact component={Subirats} />
               <Route  path="/projects/amg" exact component={Amg} />
               <Route  path="/projects/bebot" exact component={Bebot} />
+              <Route  path="/blog/" exact component={BlogHome} />
+              <Route  path="/blog/blog-post" exact component={BlogPost} />
+              <Route  path="/blog/blog-post-2" exact component={BlogPost2} />
             </Switch>
 
           </div>

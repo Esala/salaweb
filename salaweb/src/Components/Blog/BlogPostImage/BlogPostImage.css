@@ -1,0 +1,11 @@
+.blog-post-image {
+  margin-bottom: 54px; }
+  .blog-post-image .blog-post-image__image {
+    margin: 27px 0; }
+    .blog-post-image .blog-post-image__image img {
+      width: 100%; }
+  .blog-post-image .blog-post-image__text {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    max-width: 600px;
+    opacity: .5; }

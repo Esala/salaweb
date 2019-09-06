@@ -23,11 +23,11 @@
     &.projects-nav__link-active {
       color: color(black);
       opacity: .5;
-      
+
       &:hover {
         color: color(black);
       }
-      text-decoration: line-through;
+      text-decoration: none;
     }
   }
 }
