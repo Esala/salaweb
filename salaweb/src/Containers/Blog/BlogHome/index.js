@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Responsive from 'react-responsive';
 import animateScrollTo from 'animated-scroll-to';
-import { Link } from 'react-router-dom';
+
 import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
 import BlogPostItem from 'app/Components/Blog/BlogPostItem/index.js';

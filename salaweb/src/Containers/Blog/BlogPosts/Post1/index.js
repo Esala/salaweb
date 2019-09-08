@@ -5,7 +5,6 @@ import animateScrollTo from 'animated-scroll-to';
 import { Link } from 'react-router-dom';
 import TopBar from 'app/Components/TopBar/index.js';
 import GlobalNav from 'app/Components/GlobalNav/index.js';
-import ProjectsNav from 'app/Components/ProjectsNav/index.js';
 import BlogPostHeroImage from 'app/Components/Blog/BlogPostHeroImage/index.js';
 import BlogPostImage from 'app/Components/Blog/BlogPostImage/index.js';
 

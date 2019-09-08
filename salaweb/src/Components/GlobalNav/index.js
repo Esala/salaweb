@@ -115,6 +115,7 @@ class GlobalNav extends React.Component {
           Projects
         </Link>
 
+        {/*
         <Link
           to="/blog/"
           className= {
@@ -124,6 +125,8 @@ class GlobalNav extends React.Component {
         >
           Blog
         </Link>
+
+        */}
 
         <a href="mailto:ezequiel.salatino@gmail.com" className="global-nav__email-link">
           Let’s Talk!

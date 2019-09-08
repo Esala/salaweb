@@ -60,11 +60,11 @@ class Home extends React.Component {
                 Projects
               </Link>
 
-               <span className="force-space"> { "  /  " }</span>
+          {/* <span className="force-space"> { "  /  " }</span>
                 <Link to="/blog/" >
                   Blog
                 </Link>
-
+          */}
                 <br/>
               <Desktop>
                 <a href="mailto:ezequiel.salatino@gmail.com" className="home__email-link">

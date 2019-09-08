@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Responsive from 'react-responsive';
 import { Link } from 'react-router-dom';
 
 import './BlogPostItem.css';
@@ -9,10 +8,8 @@ class BlogPostItem extends React.Component {
   componentDidMount() {}
 
   render() {
-    const Desktop = props => <Responsive {...props} minWidth={1280} />;
-    const Mobile = props => <Responsive {...props} maxWidth={1279} />;
 
-    const { title, image, description, tags, date, category, primary, link } = this.props;
+    const { title, image, tags, date, category, primary, link } = this.props;
     let className = 'blog-post-item ' +
       (primary ? ' blog-post-item-primary' : '') ;
 
