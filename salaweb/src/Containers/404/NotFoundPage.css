@@ -1,0 +1,12 @@
+.not-found-page {
+  min-height: 1400px;
+  padding-bottom: 90px;
+  padding-top: 144px; }
+  .not-found-page.scrolled {
+    min-height: 0; }
+  @media only screen and (max-width: 1280px) {
+    .not-found-page {
+      padding-top: 90px; } }
+  @media only screen and (max-width: 480px) {
+    .not-found-page {
+      padding-top: 45px; } }

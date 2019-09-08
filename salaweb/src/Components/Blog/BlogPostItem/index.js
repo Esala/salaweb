@@ -16,8 +16,8 @@ class BlogPostItem extends React.Component {
 
     let colClassName = (primary ? ' col-12' : 'col-7') ;
 
-    const tagsItems = tags.map((tag) =>
-      <span className="blog-post-item__tag" key={tag.id} >{tag}</span>
+    const tagsItems = tags.map((tag, index) =>
+      <span className="blog-post-item__tag" key={index} >{tag}</span>
     );
 
     var linkElement;

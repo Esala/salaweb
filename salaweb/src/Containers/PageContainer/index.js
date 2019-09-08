@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, withRouter } from "react-router-dom";
+import { Switch, Route, withRouter, Redirect } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import ReactGA from 'react-ga';
@@ -18,6 +18,8 @@ import Bebot from '../ProjectsItems/Bebot/index.js';
 import BlogHome from '../Blog/BlogHome/index.js';
 import BlogPost from '../Blog/BlogPosts/Post1/index.js';
 import BlogPost2 from '../Blog/BlogPosts/Post2/index.js';
+//404
+import NotFoundPage from '../404/index.js'
 
 function PageContainer({ location }) {
 
@@ -80,6 +82,8 @@ function PageContainer({ location }) {
               <Route  path="/blog/" exact component={BlogHome} />
               <Route  path="/blog/blog-post" exact component={BlogPost} />
               <Route  path="/blog/blog-post-2" exact component={BlogPost2} />
+              <Route path="/404" component={NotFoundPage} />
+              <Redirect to="/404" />
             </Switch>
 
           </div>

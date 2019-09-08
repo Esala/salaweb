@@ -60,6 +60,7 @@ class Bebot extends React.Component {
           <p className="p-s p-center">
             Business Presentation Screens.
           </p>
+        
           <Image light device desktop height="633" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_presentations-4.jpg'} />
           <Image light device desktop height="633" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_presentations_5.jpg'} />
           <Image light device desktop height="633" url={process.env.PUBLIC_URL + '/resources/img/bebot/bebot_presentations-3.jpg'} />
