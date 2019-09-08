@@ -52,7 +52,7 @@ class BlogPost extends React.Component {
 
       <div className="blog-post__body">
         <div className="container">
-          <div className="col col-3 col-m-12">
+          <div className="col col-3 col-t-12 col-m-12">
             <div className="blog-post__body__meta">
               <div className="blog-post__body__date">
               Sep 20. 2019
@@ -62,7 +62,7 @@ class BlogPost extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col col-7 blog-post__body__copy">
+          <div className="col col-7 col-t-12 blog-post__body__copy">
             <p>
               When a movie enters the marketplace, the audience is understanding it according to the channels through which it was made available, not necessarily according to what the film actually is. We promoted the film in a way that we thought would make it seem interesting, and when the campaign started going viral, it came as no surprise to me that there was some backlash. It was an interesting experience, and it made me think a lot of people don’t need art—for them, film is just a collective activity, just something to do. Art films have no status in China, but then again they don’t need status. Globally, there’s a stable network for them to exist in.
             </p>
@@ -72,17 +72,17 @@ class BlogPost extends React.Component {
           </div>
         </div>
         <div className="container">
-          <div className="col col-12 blog-post__body__quote">
+          <div className="col col-12 col-t-12 blog-post__body__quote">
             <blockquote>
               “But I was also inspired by what Hou Hsiao-Hsien did with the long take, especially in Goodbye South, Goodbye.”
             </blockquote>
           </div>
         </div>
         <div className="container">
-          <div className="col col-3 col-m-12">
+          <div className="col col-3 col-t-12 col-m-12">
 
           </div>
-          <div className="col col-7 blog-post__body__copy">
+          <div className="col col-7 col-t-12 blog-post__body__copy">
             <p>
             But if you use the word "ego'' to mean the center of a person's character, then the idea of making something egoless can sound as though you want the person to efface himself completely. That is not what the word means at all; and yet because of it, the word is not quite right.
             </p>
@@ -99,14 +99,16 @@ class BlogPost extends React.Component {
         </div>
 
         <div className="container">
-          <div className="col col-3 col-m-12 blog-post__author">
+          <Desktop>
+            <div className="col col-3 col-t-12 col-m-12 blog-post__author">
 
 
-              <div className="blog-post__author__title">About me</div>
-              <p className="p p-s"> I’m Ezequiel Salatino, a freelance designer interested in interfaces, design systems, maps and data visualizations. Currently living in Barcelona.</p>
+                <div className="blog-post__author__title">About me</div>
+                <p className="p p-s"> I’m Ezequiel Salatino, a freelance designer interested in interfaces, design systems, maps and data visualizations. Currently living in Barcelona.</p>
 
-          </div>
-          <div className="col col-7 blog-post__body__copy">
+            </div>
+          </Desktop>
+          <div className="col col-7 col-t-12 blog-post__body__copy">
             <p>
               The bigger the scale, obviously the more complicated things become. And those complications can make the final work a little clumsy. So I do prefer my earlier work. With a short, you can make something polished and exquisite. But one thing that hasn’t changed is what I’m looking for in my films. When it comes to my approach, it all feels the same, as if no time has passed between these projects. Other people might punctuate time by buying a dog or some other activity like that, but for me, my memory is completely taken over by these movies. And when I look back at the difficulties of making the features, what I admire is my courage.
             </p>
@@ -115,16 +117,34 @@ class BlogPost extends React.Component {
             </p>
             <p>
           On the funding side, things have gotten better, though I’m not sure if that will continue indefinitely. When I was making Kaili Blues, it was hard to raise even 30,000 RMB. But now there’s a lot of money, and people are looking for ways to fund movies. Interestingly enough, some of these funders don’t really know that much about movies, but if my filmmaker friends want to raise a million RMB for a project, it’s not that hard to do.  </p>
-            
+
           </div>
+          <Mobile>
+            <div className="col col-3 col-t-12 col-m-12 blog-post__author">
+
+
+                <div className="blog-post__author__title">About me</div>
+                <p className="p p-s"> I’m Ezequiel Salatino, a freelance designer interested in interfaces, design systems, maps and data visualizations. Currently living in Barcelona.</p>
+
+            </div>
+          </Mobile>
+          <MobileXS>
+            <div className="col col-3 col-t-12 col-m-12 blog-post__author">
+
+
+                <div className="blog-post__author__title">About me</div>
+                <p className="p p-s"> I’m Ezequiel Salatino, a freelance designer interested in interfaces, design systems, maps and data visualizations. Currently living in Barcelona.</p>
+
+            </div>
+          </MobileXS>
 
         </div>
 
         <div className="container">
-        <div className="col col-3 col-m-12">
+        <div className="col col-3 col-t-12 col-m-12">
 
         </div>
-            <div className="col col-7 blog-post__next">
+            <div className="col col-7 col-t-12 blog-post__next">
             <Link
               to={"/blog/blog-post"}
               className="blog-post__next__link"

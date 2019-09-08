@@ -31,7 +31,8 @@ class BlogPost extends React.Component {
 
   render() {
     const Desktop = props => <Responsive {...props} minWidth={1280} />;
-    const Mobile = props => <Responsive {...props} maxWidth={1279} minWidth={421} />;
+    const DesktopSD = props => <Responsive {...props} maxWidth={1279} minWidth={1025} />;
+    const Mobile = props => <Responsive {...props} maxWidth={1024} minWidth={421} />;
     const MobileXS = props => <Responsive {...props} maxWidth={420} />;
     return (
       <div className="blog-post ">
@@ -52,7 +53,7 @@ class BlogPost extends React.Component {
 
       <div className="blog-post__body">
         <div className="container">
-          <div className="col col-3 col-m-12">
+          <div className="col col-3 col-t-12 col-m-12">
             <div className="blog-post__body__meta">
               <div className="blog-post__body__date">
               Sep 20. 2019
@@ -62,7 +63,7 @@ class BlogPost extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col col-7 blog-post__body__copy">
+          <div className="col col-7 col-t-12 blog-post__body__copy">
             <p>
               It does not mean, for instance, that the man who made it left his own person out of it. It was part of his person that he liked the bench, and wanted to carve hearts in it. Perhaps he made it for his favorite girl.
             </p>
@@ -72,17 +73,17 @@ class BlogPost extends React.Component {
           </div>
         </div>
         <div className="container">
-          <div className="col col-12 blog-post__body__quote">
+          <div className="col col-12 col-t-12 blog-post__body__quote">
             <blockquote>
               “A last word which can helf to catch the quality without a name is the word eternal”
             </blockquote>
           </div>
         </div>
         <div className="container">
-          <div className="col col-3 col-m-12">
+          <div className="col col-3 col-t-12 col-m-12">
 
           </div>
-          <div className="col col-7 blog-post__body__copy">
+          <div className="col col-7 col-t-12 blog-post__body__copy">
             <p>
             But if you use the word "ego'' to mean the center of a person's character, then the idea of making something egoless can sound as though you want the person to efface himself completely. That is not what the word means at all; and yet because of it, the word is not quite right.
             </p>
@@ -99,14 +100,16 @@ class BlogPost extends React.Component {
         </div>
 
         <div className="container">
-          <div className="col col-3 col-m-12 blog-post__author">
+          <Desktop>
+            <div className="col col-3 col-t-12 col-m-12 blog-post__author">
 
 
-              <div className="blog-post__author__title">About me</div>
-              <p className="p p-s"> I’m Ezequiel Salatino, a freelance designer interested in interfaces, design systems, maps and data visualizations. Currently living in Barcelona.</p>
+                <div className="blog-post__author__title">About me</div>
+                <p className="p p-s"> I’m Ezequiel Salatino, a freelance designer interested in interfaces, design systems, maps and data visualizations. Currently living in Barcelona.</p>
 
-          </div>
-          <div className="col col-7 blog-post__body__copy">
+            </div>
+          </Desktop>
+          <div className="col col-7 col-t-12 blog-post__body__copy">
             <p>
               But if you use the word "ego'' to mean the center of a person's character, then the idea of making something egoless can sound as though you want the person to efface himself completely. That is not what the word means at all; and yet because of it, the word is not quite right.
             </p>
@@ -122,14 +125,41 @@ ourselves.
             <p>
             It is, for instance, the wild smile of the gypsies dancing in the road. </p>
           </div>
+          <DesktopSD>
+            <div className="col col-3 col-m-12 col-t-12 blog-post__author">
+
+
+                <div className="blog-post__author__title">About me</div>
+                <p className="p p-s"> I’m Ezequiel Salatino, a freelance designer interested in interfaces, design systems, maps and data visualizations. Currently living in Barcelona.</p>
+
+            </div>
+          </DesktopSD>
+          <Mobile>
+            <div className="col col-3 col-t-12 col-m-12 blog-post__author">
+
+
+                <div className="blog-post__author__title">About me</div>
+                <p className="p p-s"> I’m Ezequiel Salatino, a freelance designer interested in interfaces, design systems, maps and data visualizations. Currently living in Barcelona.</p>
+
+            </div>
+          </Mobile>
+          <MobileXS>
+            <div className="col col-3 col-m-12 blog-post__author">
+
+
+                <div className="blog-post__author__title">About me</div>
+                <p className="p p-s"> I’m Ezequiel Salatino, a freelance designer interested in interfaces, design systems, maps and data visualizations. Currently living in Barcelona.</p>
+
+            </div>
+          </MobileXS>
 
         </div>
 
         <div className="container">
-        <div className="col col-3 col-m-12">
+        <div className="col col-3 col-m-12 col-t-12">
 
         </div>
-            <div className="col col-7 blog-post__next">
+            <div className="col col-7 col-t-12 blog-post__next">
             <Link
               to={"/blog/blog-post-2"}
               className="blog-post__next__link"

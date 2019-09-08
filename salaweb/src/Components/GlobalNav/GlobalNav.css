@@ -16,7 +16,8 @@
   .global-nav .global-nav__post-title {
     font-size: 0.75rem;
     line-height: 1.125rem;
-    color: #1C2F4D; }
+    color: #1C2F4D;
+    max-width: 95%; }
     .global-nav .global-nav__post-title span {
       font-family: es-display, sans-serif;
       font-weight: bold; }

@@ -41,7 +41,7 @@ class BlogHome extends React.Component {
           <p>It is puzzling to realize that the elements, which seem like elementary building blocks, keep varying, and are different every time that they occur. On the geometric level, we see certain physical elements repeated endlessly, combined in an almost endless variety of combinations. It is puzzling to realize that the elements, which seem like elementary building blocks, keep varying, and are different every time that they occur.</p>
         </BlogPostItem>
 
-        <BlogPostItem link="blog-post" image={process.env.PUBLIC_URL + '/resources/img/blog/testpost/testimage4.jpg'} title={["People ", <span key="1" className="blog-highlight">don’t need art‎</span>, " for them, film is just something to do"]}  date="Sep 20. 2019" category="Personal Project" tags={["Art", "Arduino", "Technology", "UI"]}>
+        <BlogPostItem link="blog-post-2" image={process.env.PUBLIC_URL + '/resources/img/blog/testpost/testimage4.jpg'} title={["People ", <span key="1" className="blog-highlight">don’t need art‎</span>, " for them, film is just something to do"]}  date="Sep 20. 2019" category="Personal Project" tags={["Art", "Arduino", "Technology", "UI"]}>
           <p>On the geometric level, we see certain physical elements repeated endlessly, combined in an almost endless variety of combinations.</p>
 
         </BlogPostItem>

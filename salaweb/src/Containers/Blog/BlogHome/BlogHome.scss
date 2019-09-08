@@ -6,7 +6,7 @@
     color: color(white);
   }
   min-height: 1400px;
-  
+
   &.scrolled {
     min-height: 0;
   }
@@ -19,7 +19,9 @@
   @media only screen and (max-width: breakpoint(mobileHD)) {
 
   }
-
+  .blog-home__list {
+    overflow: hidden;
+  }
   .blog-home__footer {
     padding-top: spacing(144) ;
     padding-bottom: spacing(144);
