@@ -30,7 +30,7 @@ class Psychopharmacology extends React.Component {
           <ProjectsNav active="psychopharmacology"/>
         </TopBar>
         <Desktop>
-          <ProjectStructure full title="Psychopharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. UX / UI. Web design. Educational platform." next="/projects/yacopini" >
+          <ProjectStructure full title="Psychopharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. UI / UX. Web design. Educational platform." next="/projects/yacopini" >
             <div className="container">
               <div className="col col-12 col-center">
                 <Image device desktop url={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/pi_website_1.jpg'} />
@@ -45,7 +45,7 @@ class Psychopharmacology extends React.Component {
                 <Image device mobile url={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/pi_mobile_2.jpg'} />
               </div>
               <div className="col col-12 col-center">
-                  <p className="p-b p-center">I'm currently acting as a product designer, from understanding the business and product strategy to user research, UX / UX and Web design.</p>
+                  <p className="p-b p-center">I'm currently acting as a product designer, from understanding the business and product strategy to user research, UI / UX and Web design.</p>
               </div>
             </div>
 
@@ -62,7 +62,7 @@ class Psychopharmacology extends React.Component {
           </ProjectStructure>
         </Desktop>
         <Mobile>
-          <ProjectStructure full title="Psycho- pharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. UX / UI. Web design. Educational platform." next="/projects/yacopini" >
+          <ProjectStructure full title="Psycho- pharma- cology Institute" color="#7FDBE3" description="Jun 2018. Product design. UI / UX. Web design. Educational platform." next="/projects/yacopini" >
             <div className="container">
               <div className="col col-12 col-center">
                 <Image device desktop url={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/pi_website_1.jpg'} />
@@ -77,7 +77,7 @@ class Psychopharmacology extends React.Component {
                 <Image device mobile url={process.env.PUBLIC_URL + '/resources/img/psychopharmacology/pi_mobile_2.jpg'} />
               </div>
               <div className="col col-12 col-center">
-                <p className="p-b">The Psychopharmacology Institute is an educational platform for psychiatrist from the USA and the rest of the world. I'm currently acting as a product designer, from understanding the business and product strategy to user research, UX / UX and Web design.</p>
+                <p className="p-b">The Psychopharmacology Institute is an educational platform for psychiatrist from the USA and the rest of the world. I'm currently acting as a product designer, from understanding the business and product strategy to user research, UI / UX and Web design.</p>
 
               </div>
             </div>
