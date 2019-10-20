@@ -1,0 +1,28 @@
+.master {
+  background-color: #2D3035;
+  color: #FAFAFA;
+  min-height: 1400px; }
+  .master p, .master h1, .master h2 {
+    color: #FAFAFA; }
+  .master.scrolled {
+    min-height: 0; }
+  .master .master-home__list {
+    overflow: hidden; }
+  .master .master-home__footer {
+    padding-top: 144px;
+    padding-bottom: 144px;
+    background-color: #FAFAFA;
+    color: #1C2F4D; }
+    .master .master-home__footer p, .master .master-home__footer h1, .master .master-home__footer h2 {
+      color: #1C2F4D; }
+    @media only screen and (max-width: 768px) {
+      .master .master-home__footer {
+        padding: 90px 36px 45px 36px;
+        text-align: center; }
+        .master .master-home__footer a {
+          display: block;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .master .master-home__footer a + br {
+          display: none; } }

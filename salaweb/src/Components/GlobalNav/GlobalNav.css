@@ -25,6 +25,9 @@
     top: 77px; }
   .global-nav.global-nav-in-post .global-nav__link, .global-nav.global-nav-in-post .global-nav__email-link {
     display: none; }
+  @media only screen and (max-width: 768px) {
+    .global-nav.global-nav-no-nav {
+      margin-left: 27px; } }
   .global-nav .global-nav__home-link {
     font-family: es-display, sans-serif;
     text-decoration: none;

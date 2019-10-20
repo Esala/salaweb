@@ -13,11 +13,12 @@ class GlobalNav extends React.Component {
     const Desktop = props => <Responsive {...props} minWidth={1280} />;
     const Mobile = props => <Responsive {...props} maxWidth={1279} />;
 
-    const { active, inProject, inPost, postTitle } = this.props;
+    const { active, inProject, inPost, postTitle, noNav } = this.props;
 
     let className = 'global-nav ' +
       (inProject ? ' global-nav-in-project' : '') +
-      (inPost ? ' global-nav-in-post' : '') ;
+      (inPost ? ' global-nav-in-post' : '')  +
+      (noNav ? ' global-nav-no-nav' : '') ;
 
     let mobileNav;
     let desktopNav;
@@ -29,29 +30,11 @@ class GlobalNav extends React.Component {
         </div>
       )
     }
-
-    if(inProject){
-      mobileNav = (
-        <Link
-          to="/projects/"
-          className="global-nav__home-link"
-        >
-          Back
-        </Link>
-      );
-      desktopNav = (
-        <Link
-          to="/projects"
-          className="global-nav__home-link"
-        >
-          Back
-        </Link>
-      );
-    }else {
-      if(inPost){
+    if(!noNav){
+      if(inProject){
         mobileNav = (
           <Link
-            to="/blog/"
+            to="/projects/"
             className="global-nav__home-link"
           >
             Back
@@ -59,29 +42,48 @@ class GlobalNav extends React.Component {
         );
         desktopNav = (
           <Link
-            to="/blog"
+            to="/projects"
             className="global-nav__home-link"
           >
             Back
           </Link>
         );
       }else {
-        mobileNav = (
-          <Link
-            to="/"
-            className="global-nav__home-link"
-          >
-            Home
-          </Link>
-        );
-        desktopNav = (
-          <Link
-            to="/"
-            className="global-nav__home-link"
-          >
-            Home
-          </Link>
-        );
+        if(inPost){
+          mobileNav = (
+            <Link
+              to="/blog/"
+              className="global-nav__home-link"
+            >
+              Back
+            </Link>
+          );
+          desktopNav = (
+            <Link
+              to="/blog"
+              className="global-nav__home-link"
+            >
+              Back
+            </Link>
+          );
+        }else {
+          mobileNav = (
+            <Link
+              to="/"
+              className="global-nav__home-link"
+            >
+              Home
+            </Link>
+          );
+          desktopNav = (
+            <Link
+              to="/"
+              className="global-nav__home-link"
+            >
+              Home
+            </Link>
+          );
+        }
       }
     }
 

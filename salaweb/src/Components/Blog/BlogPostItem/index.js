@@ -9,7 +9,7 @@ class BlogPostItem extends React.Component {
 
   render() {
 
-    const { title, image, tags, date, category, primary, link } = this.props;
+    const { title, image, tags, date, category, primary, link, domain, inverted } = this.props;
     let className = 'blog-post-item ' +
       (primary ? ' blog-post-item-primary' : '') ;
 
@@ -20,11 +20,18 @@ class BlogPostItem extends React.Component {
       <span className="blog-post-item__tag" key={index} >{tag}</span>
     );
 
+    var domainString;
+    if(domain){
+      domainString = domain;
+    }else {
+      domainString = "/blog/"
+    }
+
     var linkElement;
     if(link){
       linkElement = (
         <Link
-          to={"/blog/"+ link}
+          to={domainString + link}
           className="blog-post-item__link"
         >
           {link}

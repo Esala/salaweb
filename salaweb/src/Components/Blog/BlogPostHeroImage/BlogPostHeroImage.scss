@@ -4,4 +4,21 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
+  position: relative;
+  .blog-post-hero-image__text {
+    position: absolute;
+    max-width: 33%;
+    background-color: color(black, darken);
+    bottom: 0;
+    left: 0;
+    padding: spacing(36) spacing(36);
+    color: color(white);
+    //Mobile
+    @media only screen and (max-width: breakpoint(mobileHD)) {
+      max-width: 100%;
+      font-size: font-size(s);
+      line-height: line-height(s);
+      padding: spacing(36) spacing(27);
+    }
+  }
 }

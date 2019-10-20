@@ -49,6 +49,13 @@
     }
 
   }
+  &.global-nav-no-nav {
+    //Mobile
+    @media only screen and (max-width: breakpoint(tabletSD)) {
+
+      margin-left: spacing(27);
+    }
+  }
 
   .global-nav__home-link {
     font-family: font-family(display);

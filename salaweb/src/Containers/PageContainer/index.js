@@ -18,6 +18,10 @@ import Bebot from '../ProjectsItems/Bebot/index.js';
 import BlogHome from '../Blog/BlogHome/index.js';
 import BlogPost from '../Blog/BlogPosts/Post1/index.js';
 import BlogPost2 from '../Blog/BlogPosts/Post2/index.js';
+//Master
+import MasterHome from '../Master/MasterHome/index.js';
+import StatisticsPresentation from '../Master/Posts/Statistics/First_Presentation/index.js';
+// import BlogPost2 from '../Blog/BlogPosts/Post2/index.js';
 //404
 import NotFoundPage from '../404/index.js'
 
@@ -82,8 +86,14 @@ function PageContainer({ location }) {
               <Route  path="/blog/" exact component={BlogHome} />
               <Route  path="/blog/blog-post" exact component={BlogPost} />
               <Route  path="/blog/blog-post-2" exact component={BlogPost2} />
+              {/* Master */}
+              <Route  path="/madd/" exact component={MasterHome} />
+              <Route  path="/madd/statistics/project_first_presentation" exact component={StatisticsPresentation} />
+
               <Route path="/404" component={NotFoundPage} />
               <Redirect to="/404" />
+
+
             </Switch>
 
           </div>

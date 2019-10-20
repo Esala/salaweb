@@ -10,7 +10,7 @@ class BlogPostHeroImage extends React.Component {
 
   render() {
 
-    const { image } = this.props;
+    const { image, text } = this.props;
     let className = 'blog-post-hero-image ';
 
 
@@ -18,9 +18,18 @@ class BlogPostHeroImage extends React.Component {
       backgroundImage: 'url(' + image + ')',
     };
 
+    var textElement;
+    if(text){
+      textElement =
+        <div className="blog-post-hero-image__text">
+          {text}
+        </div>
+
+    }
+
     return (
       <div className={className} style={imageStyle}>
-
+        {textElement}
 
       </div>
     );
