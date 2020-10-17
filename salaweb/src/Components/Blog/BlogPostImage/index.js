@@ -8,10 +8,12 @@ class BlogPostImage extends React.Component {
   componentDidMount() {}
 
   render() {
-    
 
-    const { image, text } = this.props;
-    let className = 'blog-post-image ';
+
+    const { image, text, half } = this.props;
+    let className = 'blog-post-image '
+    +
+      (half ? ' blog-post-image-half' : '') ;
 
 
 

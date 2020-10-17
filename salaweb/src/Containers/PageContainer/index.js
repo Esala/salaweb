@@ -21,6 +21,7 @@ import BlogPost2 from '../Blog/BlogPosts/Post2/index.js';
 //Master
 import MasterHome from '../Master/MasterHome/index.js';
 import StatisticsPresentation from '../Master/Posts/Statistics/First_Presentation/index.js';
+import StatisticsProject from '../Master/Posts/Statistics/Final_Presentation/index.js';
 // import BlogPost2 from '../Blog/BlogPosts/Post2/index.js';
 //404
 import NotFoundPage from '../404/index.js'
@@ -89,8 +90,13 @@ function PageContainer({ location }) {
               {/* Master */}
               <Route  path="/madd/" exact component={MasterHome} />
               <Route  path="/madd/statistics/project_first_presentation" exact component={StatisticsPresentation} />
+              <Route  path="/madd/statistics/project" exact component={StatisticsProject} />
 
               <Route path="/404" component={NotFoundPage} />
+              <Route path='/dds' component={() => {
+                   window.location.href = 'https://salatino.me/dds/webcam'; 
+                   return null;
+              }}/>
               <Redirect to="/404" />
 
 

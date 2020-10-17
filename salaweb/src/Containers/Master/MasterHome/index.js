@@ -34,7 +34,7 @@ class MasterHome extends React.Component {
 
 
       <div className="master-home__list">
-        <BlogPostItem link="project_first_presentation" domain="/madd/statistics/" image={process.env.PUBLIC_URL + '/resources/img/master/statistics/cover.jpg'} title={["How ", <span key="1" className="blog-highlight">MADD‎</span>, " is different for each designer?"]}  date="October 25. 2019" category="" tags={["Statistics"]}>
+        <BlogPostItem link="project_first_presentation" domain="/madd/statistics/" image={process.env.PUBLIC_URL + '/resources/img/master/statistics/cover.jpg'} title={["How ", <span key="1" className="blog-highlight">MADD‎</span>, " is different for each designer?"]}  date="October. 2019" category="" tags={["Statistics"]}>
 
         </BlogPostItem>
 

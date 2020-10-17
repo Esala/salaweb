@@ -9,3 +9,18 @@
     line-height: 1.125rem;
     max-width: 600px;
     opacity: .5; }
+  .blog-post-image.blog-post-image-half {
+    margin-bottom: 0;
+    display: inline-block;
+    width: 50%; }
+    @media only screen and (max-width: 1024px) {
+      .blog-post-image.blog-post-image-half {
+        width: 100%; } }
+    .blog-post-image.blog-post-image-half .blog-post-image__image {
+      margin: 0; }
+      .blog-post-image.blog-post-image-half .blog-post-image__image img {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        padding: 0;
+        line-height: 0; }

@@ -56,16 +56,16 @@ class BlogPost extends React.Component {
             <div className="blog-post__body__meta">
               <div className="blog-post__body__date">
                 <Desktop>
-                <h1>25</h1> October<br/> 2019
+                October<br/> 2019
                 </Desktop>
                 <DesktopSD>
-                <h1>25</h1> October<br/> 2019
+                October<br/> 2019
                 </DesktopSD>
                 <Mobile>
-                  25 October. 2019.
+                  October. 2019.
                 </Mobile>
                 <MobileXS>
-                  25 October. 2019.
+                  October. 2019.
                 </MobileXS>
               </div>
 
@@ -78,11 +78,11 @@ class BlogPost extends React.Component {
             </p>
             <p>
 
-Also, I think is important to understand more about the experience, not only in how is related to a profile but also the daily and work-life of each student. For that, I will be also interested in data like location, travel time, weather, work habits, etc.
+I think is important to understand more about the experience, not only in how is related to a profile but also the daily and work-life of each student. For that, I will be collect data like location, travel time, weather, work habits, etc.
 </p>
 <p>
 
-I believe that each designer has different skills related to their field of expertise or personal interest, and being this Master very multidisciplinary and with no previous information (projects, testimonies, etc), with this research, I expect to find how different profiles of designers and students create their own path based on their personal and professional interests.
+I believe that each designer has different skills related to their field of expertise, and being this Master very multidisciplinary and with no previous information (projects, testimonies, etc), with this research, I expect to find how different profiles of designers and students create their path based on their personal and professional interests.
 
             </p>
           </div>
@@ -101,7 +101,7 @@ I believe that each designer has different skills related to their field of expe
           <div className="col col-7 col-t-12 blog-post__body__copy">
           <h4>Know ourselves</h4>
             <p>
-            It could be useful to know our expectations and challenges within this program. Understand how each profile is better for each class and who is more interested in different topics could be useful for future projects.
+            It could be useful to know our expectations and challenges within this program. Understand how each profile is more suitable for each class and who is more interested in different topics, could be useful for future projects.
             </p>
 
             <h4>Understand the experience</h4>
@@ -363,11 +363,10 @@ I believe that each designer has different skills related to their field of expe
             </p><p>
 But even if that is the case, 4 classes are almost half of the total instances of each quarterly class. And for the nature of the objective of this project, that is getting an idea of how interesting and difficult is each class for each profile, It seems like the information will be relevant.
             </p><p>
-Other information, like weather, could be more relevant to find correlations if I collect data for more time. In a month maybe the weather is more or less the same and no interesting findings appear. For example, comparing December to June, seems more relevant than comparing 20 of October to 10 of November. But I'm hoping to find some correlation between assistance or lateness and a very cold day or a rainy week, or at least find that there is no correlation at all.
-            </p><p>
-The good thing is that the group has only 6 students, which means that I can study the whole population.
-            </p><p>
-Taking this limitations into account, I will look the data in 2 ways to try to arrive at better conclusions:
+Other information, like weather, could be more relevant to find correlations if I collect data for more time. In a month maybe the weather is more or less the same and no interesting findings appear. For example, comparing December to June seems more relevant than comparing the 20 of October to 10 of November. But I'm hoping to find some correlation between assistance or lateness and a very cold day or a rainy week, or at least find that there is no correlation at all.
+            </p>
+            <p>
+Taking these limitations into account, I will look at the data in 2 ways to try to arrive at better conclusions:
             </p>
             <div className="blog__list">
               <ul>
@@ -389,7 +388,7 @@ Taking this limitations into account, I will look the data in 2 ways to try to a
 
             <h4>Further possibilities</h4>
             <p>
-            This project could be a lot more relevant with the data of the whole program and classes, but this first step could be useful to test the idea and see if the information can give us interesting insights.
+            This project could be a lot more relevant with data of the whole program and classes, but this first step could be useful to test the idea and see if the information can give us interesting insights.
             </p>
           </div>
 
