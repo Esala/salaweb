@@ -63,7 +63,8 @@ class Info extends React.Component {
 
 
               <p className="p-b">
-                I studied graphic design in Argentina and start designing and building websites in 2003. I have <a href="https://www.linkedin.com/in/ezequielsalatino/" target="_blank" rel="noopener noreferrer" >experience</a> as <br className="only-desktop"/>a freelancer but also in a few design and IT companies. </p>
+                I studied graphic design in Argentina and start designing and building websites in 2003. In 2020 I finished a Master Degree in Data & Design at <a href="https://elisava.net" target="_blank" rel="noopener noreferrer">Elisava (Barcelona)</a>.
+                <br className="only-desktop"/>I have <a href="https://www.linkedin.com/in/ezequielsalatino/" target="_blank" rel="noopener noreferrer" >experience</a> as a freelancer but also in a few design and IT companies. </p>
               <p className="p-b"> I mainly work as a UI designer but I'm also working<br className="only-desktop"/> as a product, UX and brand designer. I love creating design systems, and now I'm focused on information design and data visualizations.
               </p>
               <p className="p-b"> I'm part of <a href="https://pannonica.design" target="_blank" rel="noopener noreferrer">pannonica.design</a> as a design partner. Also, I'm a design manager and co-founder of <a href="https://bebot.design" target="_blank" rel="noopener noreferrer">bebot.design</a> <br className="only-desktop"/> a conversational design agency.
